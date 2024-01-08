@@ -14,3 +14,16 @@ lint/fix:
 build:
 	deno task build
 
+_site: build
+
+.PHONY: deploy
+deploy: _site
+	netlify deploy
+
+.PHONY: deploy/prod
+deploy/prod: _site
+	netlify deploy --prod
+
+.PHONY: clean
+clean:
+	rm -rf _site
