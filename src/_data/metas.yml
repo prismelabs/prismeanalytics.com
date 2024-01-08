@@ -1,0 +1,10 @@
+type: "website"
+site: "Prisme Analytics"
+title: "Prisme Analytics"
+description: |-
+  An Open Source, privacy-focused and progressive analytics service.
+image: "/images/og.png"
+icon: "/favicon/favicon.ico"
+twitter: "prismeanalytics"
+color: "#0a0a0a"
+
