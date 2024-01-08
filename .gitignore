@@ -1,0 +1,7 @@
+.direnv/
+_site/
+src/_cache/
+
+# Local Netlify folder
+.netlify
+

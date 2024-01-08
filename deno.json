@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"jsx": "precompile",
+		"jsxImportSource": "npm:preact",
+		"types": [
+			"lume/types.ts"
+		]
+	},
+	"tasks": {
+		"lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+		"build": "deno task lume",
+		"serve": "deno task lume -s",
+		"check": "deno fmt --check --ignore=_site,.direnv && deno lint --ignore=_site,.direnv && deno check src/**/*.tsx"
+	},
+	"imports": {
+		"lume/": "https://deno.land/x/lume@v2.0.2/",
+		"@/": "./"
+	}
+}
