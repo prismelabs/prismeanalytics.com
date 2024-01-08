@@ -1,4 +1,3 @@
-export const lang = ["en", "fr"];
 export const title = "Prisme Analytics";
 export const layout = "layout.tsx";
 
@@ -8,7 +7,7 @@ export default ({ comp }: Lume.Data) => {
       <main className="px-4 sm:px-8 md:px-16 lg:px-32 mb-8">
         <section className="w-full py-16 md:py-24 lg:py-32">
           <div className="max-w-5xl mx-auto gap-4 md:gap-8 px-4 sm:px-6 md:px-10 flex flex-col justify-center text-center">
-            <h1 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-tighter ">
+            <h1 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-tighter">
               <span
                 className="text-transparent px-2 bg-black bg-gradient"
                 style={{
@@ -101,6 +100,7 @@ export default ({ comp }: Lume.Data) => {
           <form
             class="mx-auto flex flex-col gap-8 items-center px-4 md:px-8"
             method="POST"
+            action="/join-waitlist"
             data-netlify="true"
           >
             <div className="w-full max-w-2xl">
@@ -109,6 +109,7 @@ export default ({ comp }: Lume.Data) => {
                 id="email"
                 name="email"
                 type="email"
+                required={true}
                 className="bg-white w-full text-gray-800 rounded-md px-4 py-2 border-2"
                 placeholder="john@example.com"
               />
