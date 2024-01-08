@@ -7,6 +7,10 @@ export default ({ comp }: Lume.Data) => {
       <main className="px-4 sm:px-8 md:px-16 lg:px-32 mb-8">
         <section className="w-full py-16 md:py-24 lg:py-32">
           <div className="max-w-5xl mx-auto gap-4 md:gap-8 px-4 sm:px-6 md:px-10 flex flex-col justify-center text-center">
+            <img
+              src="/logo.jpg"
+              className="aspect-square w-full h-auto max-w-32 mx-auto mb-8"
+            />
             <h1 className="text-4xl md:text-5xl xl:text-6xl 2xl:text-7xl font-bold tracking-tighter">
               <span
                 className="text-transparent px-2 bg-black bg-gradient"
