@@ -41,7 +41,109 @@ export default ({ comp }: Lume.Data) => {
                 Star on GitHub
               </a>
             </div>
+            <img
+              src="/images/builtin-dashboard.png"
+              className="mt-16 shadow-lg"
+              transform-images="jpg png avif webp 1600@2"
+            />
           </div>
+        </section>
+        <comp.Hr />
+        <section className="w-full py-8 md:py-16 lg:py-24">
+          <div className="grid grid-cols-1 lg:grid-cols-2">
+            <div>
+              <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold text-center mb-4">
+                Advanced Querying And Transformation Capabilities
+              </h2>
+              <p className="text-center lg:mb-16">
+                Translate and transform any of your data into flexible and
+                versatile dashboards. Unlike other tools, Prisme Analytics
+                allows you to build dashboards specifically for you and your
+                team.
+              </p>
+              <div className="flex max-w-full mt-8 mb-16">
+                <img
+                  src="/images/grafana-clickhouse-query-builder.png"
+                  className="shadow-lg min-w-0 object-cover rounded-sm"
+                  transform-images="jpg png avif webp"
+                />
+                <img
+                  src="/images/pageviews-graph.png"
+                  className="shadow-lg min-w-0 -ml-4 mt-4 rounded-md"
+                  transform-images="jpg png avif webp"
+                />
+              </div>
+            </div>
+            <div>
+              <img
+                src="/images/script-snippet.png"
+                className="mx-auto hidden lg:block lg:max-w-full"
+                transform-images="jpg png avif webp"
+              />
+              <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold text-center mb-4">
+                Quick Setup, Deep Insights
+              </h2>
+              <img
+                src="/images/script-snippet.png"
+                className="mx-auto max-w-lg lg:hidden"
+                transform-images="jpg png avif webp"
+              />
+              <p className="text-center">
+                Copy paste an HTML tag and you're ready to go!
+                <br />
+                Prisme Analytics also comes with built-ins dashboard for common
+                use cases.
+              </p>
+            </div>
+          </div>
+        </section>
+        <comp.Hr />
+        <section className="w-full py-8 md:py-16 lg:py-24">
+          <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold text-center mb-4">
+            Deeply Open Source
+          </h2>
+          <p className="text-gray-700 dark:text-gray-300 text-center mb-16">
+            Prisme Analytics is built on top of state of the art Open Source
+            data visualization and storage.
+          </p>
+          <div className="grid grid-cols-5 gap-4 px-4 text-center max-w-3xl mx-auto">
+            <a
+              href="https://grafana.com/grafana"
+              target="_blank"
+              className="place-self-center"
+            >
+              <img
+                src="/images/grafana-icon.png"
+                transform-images="jpg png avif webp"
+              />
+            </a>
+            <span className="text-6xl md:text-9xl place-self-center">+</span>
+            <a
+              href="https://clickhouse.com/"
+              target="_blank"
+              className="p-4 bg-[#faff69] place-self-center"
+            >
+              <img src="/clickhouse-icon.svg" />
+            </a>
+            <span className="text-6xl md:text-9xl place-self-center">=</span>
+            <img
+              src="/logo.svg"
+              className="md:block max-h-32 place-self-center"
+            />
+          </div>
+          <p className="text-sm pt-8 md:pt-16 lg:pt-24 text-center">
+            Source code is, and will remains open and available&nbsp;
+            <a
+              href="https://github.com/prismelabs/analytics"
+              target="_blank"
+              className="underline"
+            >
+              here
+            </a>
+            .
+            <br />
+            ❤️
+          </p>
         </section>
         <comp.Hr />
         <section className="w-full py-8 md:py-16 lg:py-24">
@@ -70,24 +172,6 @@ export default ({ comp }: Lume.Data) => {
                 infrastructure ensures your data is always accessible.
               </p>
             </div>
-          </div>
-        </section>
-        <comp.Hr />
-        <section className="w-full py-8 md:py-16 lg:py-24">
-          <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold text-center mb-8 md:mb-16 lg:mb-24">
-            Gallery
-          </h2>
-          <div className="grid xl:grid-cols-2 gap-8 sm:gap-16 md:gap-32 my-8">
-            <img
-              src="/images/home-dashboard.png"
-              className="shadow-lg"
-              transform-images="jpg png avif webp 1600@2"
-            />
-            <img
-              src="/images/builtin-dashboard.png"
-              className="shadow-lg"
-              transform-images="jpg png avif webp 1600@2"
-            />
           </div>
         </section>
         <comp.Hr />
