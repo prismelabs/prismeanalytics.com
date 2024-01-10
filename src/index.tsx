@@ -85,7 +85,7 @@ export default ({ comp }: Lume.Data) => {
               </h2>
               <img
                 src="/images/script-snippet.png"
-                className="mx-auto max-w-lg lg:hidden"
+                className="mx-auto max-w-full lg:hidden"
                 transform-images="jpg png avif webp"
               />
               <p className="text-center">
