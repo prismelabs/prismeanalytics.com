@@ -9,6 +9,7 @@ export default function (
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <comp.Favicon />
         <comp.Css />
+        <comp.Analytics />
       </head>
       <body class="min-h-screen bg-background text-foreground relative mix-blend-normal pb-24">
         <comp.Header
