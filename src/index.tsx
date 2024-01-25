@@ -41,11 +41,11 @@ export default ({ comp }: Lume.Data) => {
                 Star on GitHub
               </a>
             </div>
-            <img
-              src="/images/builtin-dashboard.png"
-              className="mt-16 shadow-lg"
-              transform-images="jpg png avif webp 1600@2"
-            />
+            <video autoplay className="rounded-sm">
+              <source src="/videos/builtin-dashboard.mkv" type="video/mkv" />
+              <source src="/videos/builtin-dashboard.mp4" type="video/mp4" />
+              <source src="/videos/builtin-dashboard.webm" type="video/webm" />
+            </video>
           </div>
         </section>
         <comp.Hr />
@@ -113,7 +113,7 @@ export default ({ comp }: Lume.Data) => {
               className="place-self-center"
             >
               <img
-                src="/images/grafana-icon.png"
+                src="/images/grafana-icon.jpg"
                 transform-images="jpg png avif webp"
               />
             </a>
