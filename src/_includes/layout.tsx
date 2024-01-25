@@ -2,7 +2,7 @@ export default function (
   { title, comp, lang, alternates, navbar, url, children }: Lume.Data,
 ) {
   return (
-    <html class="scroll-smooth min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <html class="scroll-smooth min-h-screen bg-gray-50 dark:bg-[#111217] text-gray-800 dark:text-gray-200">
       <head>
         <meta charSet="UTF-8" />
         <title>{title}</title>

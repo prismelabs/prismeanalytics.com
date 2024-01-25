@@ -1,3 +1,3 @@
 export default function () {
-  return <hr className="dark:border-gray-600" />;
+  return <hr className="dark:border-zinc-600" />;
 }
