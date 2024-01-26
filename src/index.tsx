@@ -41,8 +41,11 @@ export default ({ comp }: Lume.Data) => {
                 Star on GitHub
               </a>
             </div>
-            <video autoplay className="rounded-sm">
-              <source src="/videos/builtin-dashboard.mkv" type="video/mkv" />
+            <video
+              autoplay
+              className="rounded-sm mt-8"
+              poster="/images/builtin-dashboard.jpg"
+            >
               <source src="/videos/builtin-dashboard.mp4" type="video/mp4" />
               <source src="/videos/builtin-dashboard.webm" type="video/webm" />
             </video>
