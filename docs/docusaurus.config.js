@@ -34,6 +34,7 @@ const config = {
   },
 
   scripts: [
+    "/docs/theme.js",
     {
       src: "https://prisme.negrel.dev/static/m.js",
       "data-prisme-domain": "prisme.negrel.dev",
@@ -68,6 +69,7 @@ const config = {
         logo: {
           alt: "Prisme Analytics Logo",
           src: "img/logo.svg",
+          srcDark: "img/logo.svg",
         },
         items: [
           {
