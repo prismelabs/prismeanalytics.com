@@ -70,6 +70,7 @@ const config = {
           alt: "Prisme Analytics Logo",
           src: "img/logo.svg",
           srcDark: "img/logo.svg",
+          href: "https://prismeanalytics.com/",
         },
         items: [
           {
