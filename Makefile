@@ -11,8 +11,12 @@ lint/fix:
 	deno fmt
 
 .PHONY: build
-build:
+build: docs/build
 	deno task build
+	mv docs/build _site/docs
+
+docs/build: $(wildcard ./docs/*)
+	cd docs; npm run build
 
 _site: build
 

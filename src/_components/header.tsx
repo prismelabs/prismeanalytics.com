@@ -12,6 +12,7 @@ export default function ({ comp }: Lume.Data) {
           </span>
         </a>
         <nav className="ml-auto flex gap-4 sm:gap-6 items-center">
+          <a href="/docs">Docs</a>
           <a
             target="_blank"
             href="https://x.com/prismeanalytics"
