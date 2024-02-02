@@ -1,3 +1,7 @@
 {
-  "label": "Configure Server"
+  "label": "Configure Server",
+  "link": {
+    "type": "doc",
+    "id": "server-modes"
+  }
 }

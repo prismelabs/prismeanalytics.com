@@ -1,4 +1,4 @@
-# HTTP API reference
+# HTTP API Reference
 
 This page document the HTTP APIs. These APIs are used
 by [client script](../02-set-up/01-configuration/02-configure-client-script.md)

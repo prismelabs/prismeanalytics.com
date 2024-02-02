@@ -113,6 +113,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Prisme Analytics`,
       },
       prism: {
+        additionalLanguages: ["nix"],
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },

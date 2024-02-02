@@ -1,10 +1,12 @@
 # Grafana
 
-Prisme Analytics is [deeply Open Source and favour the use of existing, specialized and Open Source tools instead of reinventing one](../07-contributing/01-philosophy.md)
+Prisme Analytics is [deeply Open Source and favour the use of existing, specialized and Open Source tools instead of reinventing one](../07-philosophy.md).
+That's why we choosed and recommend [Grafana](https://grafana.com) for visualizing
+your data.
 
-We choose [Grafana](https://grafana.com) for our dashboard as it is the best
-visualization tool and has several advantages:
+Using [Grafana](https://grafana.com) for visualization has several advantages:
 * Custom dashboards
+* Users management
 * Teams
 * Permissions management
 * [Datasource agnostic](https://grafana.com/docs/grafana/latest/datasources/)
@@ -12,7 +14,13 @@ visualization tool and has several advantages:
 * De facto standard for data visualization
 * Light and [easy to setup](../05-guides/01-setup-grafana.md)
 
+## Default Dashboard
+
 Here is a screenshot of the default Prisme Analytics dashboard setup on start when
 using the [default mode](../02-set-up/01-configuration/01-configure-server/02-default-mode.md).
+
+:::tip
+Create custom dashboards and tailor Prisme Analytics to your specific needs.
+:::
 
 ![Prisme Analytics built in general Grafana dashboard](/img/builtin-dashboard.jpg)
