@@ -71,6 +71,7 @@ const config = {
           src: "img/logo.svg",
           srcDark: "img/logo.svg",
           href: "https://prismeanalytics.com/",
+          target: "_self",
         },
         items: [
           {
