@@ -7,13 +7,6 @@ building [official Docker Image](https://hub.docker.com/r/prismelabs/analytics).
 
 Here is a simple Nix Flake with a development shell configured with Prisme Analytics.
 
-
-:::warning
-
-Binary name (`server`) and Flake output name (`prisme-bin`) will change in next release.
-
-:::
-
 ```nix
 {
   inputs = {
@@ -32,7 +25,7 @@ Binary name (`server`) and Flake output name (`prisme-bin`) will change in next 
     in
     {
       devShells.${system}.default = pkgs.mkShell {
-        buildInputs = [ prisme.packages.${system}.prisme-bin ];
+        buildInputs = [ prisme.packages.${system}.default ];
       };
     };
 }
@@ -45,5 +38,5 @@ Then you can run Prisme Analytics as follow:
 nix develop
 
 # Starts the server.
-server
+prisme
 ```
