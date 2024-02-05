@@ -1,3 +1,8 @@
+---
+pagination_prev: get-started/installation/installation
+pagination_next: set-up/configuration/configure-server/server-modes
+---
+
 # Nix
 
 Prisme Analytics uses [Nix](https://nixos.org/) for its development and for

@@ -1,10 +1,14 @@
+---
+pagination_prev: set-up/configuration/configure-server/server-modes
+---
+
 # Configure Client Script
 
 User tracking is done via an ultra light script tag added to pages of your website.
-Script is served at by Prisme Analytics instances at `/static/m.js`. You can consult
+This script is served by Prisme Analytics instances at `/static/m.js`. You can consult
 its content [here](https://github.com/prismelabs/analytics/blob/master/internal/embedded/static/m.js).
 
-This script is statically served (e.g. no templating) so you must be configure it using
+This script is statically served (e.g. no templating) so configuration is done via
 [data-attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).
 
 ## Configuration Options

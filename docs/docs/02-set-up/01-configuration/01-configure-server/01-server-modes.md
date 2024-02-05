@@ -1,15 +1,24 @@
+---
+pagination_prev: get-started/installation/installation
+pagination_next: set-up/configuration/configure-client-script
+---
+
+import DocCardList from '@theme/DocCardList';
+
 # Server Modes
 
-Prisme Analytics is configured via environment variables. You can customize your
-Prisme Analytics instance by setting `PRISME_<option name>` environment variables.
+Prisme Analytics can operate in two different modes with different options:
 
-Prisme Analytics can operate in two different modes:
 * `default`: a full-featured server
 * `ingestion`: a minimal server for event ingestion only
 
-You can use `PRISME_MODE` environment variable to define your instance mode.
-
-Depending on the chosen mode, certain options become applicable while others
-remain inactive.
+:::info
 
 New modes may be added in the future.
+
+:::
+
+You can use `PRISME_MODE` environment variable to define your instance mode.
+
+<DocCardList />
+

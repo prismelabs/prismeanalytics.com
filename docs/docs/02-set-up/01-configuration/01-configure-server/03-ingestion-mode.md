@@ -1,3 +1,8 @@
+---
+pagination_prev: set-up/configuration/configure-server/server-modes
+pagination_next: set-up/configuration/configure-client-script
+---
+
 # Ingestion Mode
 
 Ingestion mode is a light Prisme Analytics mode for handling and ingesting events.

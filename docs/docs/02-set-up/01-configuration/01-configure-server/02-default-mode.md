@@ -1,3 +1,8 @@
+---
+pagination_prev: set-up/configuration/configure-server/server-modes
+pagination_next: set-up/configuration/configure-client-script
+---
+
 # Default Mode
 
 Default mode is the default Prisme Analytics mode that aims to provide a fully

@@ -1,3 +1,8 @@
+---
+pagination_prev: get-started/installation/installation
+pagination_next: set-up/configuration/configure-server/server-modes
+---
+
 # MacOS
 
 Currently, there is no automated build of Prisme Analytics for MacOS...
