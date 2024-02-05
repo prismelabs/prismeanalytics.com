@@ -11,7 +11,9 @@ Let's see what this means in detail.
 
 ## Web Analytics
 
-First and foremost, **web analytics** is the **measurement**, collection,
+From [wikipedia](https://en.wikipedia.org/wiki/Web_analytics) definition:
+
+> First and foremost, **web analytics** is the **measurement**, collection,
 analysis, and reporting of **web data** to **understand and optimize web usage**.
 It can be used to estimate how traffic to a website changes after launching a
 new advertising campaign. It helps gauge traffic and popularity trends, which
@@ -23,13 +25,16 @@ Web Analytics tools do essentially 3 things:
 * Visualize data
 
 There are [plenty of Web Analytics tools](https://en.wikipedia.org/wiki/List_of_web_analytics_software)
-such as Google Analytics and Matomo but Prisme Analytics approach is **[unique](../07-philosophy.md)**.
+such as Google Analytics and Matomo but Prisme Analytics approach is **unique**.
 
 ## Users Privacy In Mind
 
-Next, Prisme Analytics is designed with users privacy in mind. We don't collect
+Prisme Analytics is designed with users privacy in mind. We don't collect
 personally identifiable information (PII) and we minimize data collection to the
 strict necessary.
+
+We're GDPR compliant, you don't have to add a cookie banner to your website nor
+consult your legal team.
 
 ## Deeply Open Source
 
@@ -48,4 +53,7 @@ Prisme Analytics source code and license are available
 Prisme Analytics is a progressive solution, allowing for quick adoption within
 minutes for basic needs while also being adaptable to meet your specific
 requirements.
+
+Check out [integrations](../03-integrations/00-integrations.md) page for more details
+and more specifically [Grafana](../03-integrations/01-grafana.md) page
 
