@@ -21,12 +21,12 @@ flowchart TD
     srv(Web Server)
 
     subgraph Prisme Analytics
-    pa(Prisme Analytics)
+    pa(Prisme Analytics server)
     db[(ClickHouse Database)]
     end
 
     cli<--GET page-->srv
-    cli<--Send page view event-->pa
+    cli--Send page view event-->pa
     pa--Store event-->db
 ```
 
