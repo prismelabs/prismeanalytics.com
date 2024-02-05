@@ -1,10 +1,10 @@
 # Grafana
 
 Prisme Analytics is [deeply Open Source and favour the use of existing, specialized and Open Source tools instead of reinventing one](../07-philosophy.md).
-That's why we choosed and recommend [Grafana](https://grafana.com) for visualizing
+That's why we choosed and recommend [Grafana](https://grafana.com/grafana) for visualizing
 your data.
 
-Using [Grafana](https://grafana.com) for visualization has several advantages:
+Using [Grafana](https://grafana.com/grafana) for visualization has several advantages:
 * Custom dashboards
 * Users management
 * Teams

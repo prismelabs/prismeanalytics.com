@@ -9,7 +9,7 @@ Default mode is the default Prisme Analytics mode that aims to provide a fully
 integrated and functional experience.
 
 It integrates with [ClickHouse](https://clickhouse.com) and
-[Grafana](https://grafana.com) to setup a functional environment. Databases tables,
+[Grafana](https://grafana.com/grafana/) to setup a functional environment. Databases tables,
 Grafana datasources and dashboards are all prepared during server start up.
 
 ## Overview
