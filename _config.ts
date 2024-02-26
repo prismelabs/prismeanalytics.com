@@ -10,6 +10,7 @@ import sass from "lume/plugins/sass.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import postcss from "lume/plugins/postcss.ts";
 import transform_images from "lume/plugins/transform_images.ts";
+import feed from "lume/plugins/feed.ts";
 
 const location = new URL("https://prismeanalytics.com");
 
@@ -50,5 +51,16 @@ site.use(sass());
 site.use(sitemap());
 site.use(postcss());
 site.use(transform_images());
+site.use(feed({
+  query: "type=post",
+  info: {
+    title: "=site.title",
+    description: "=site.description",
+  },
+  items: {
+    title: "=title",
+    description: "=excerpt",
+  },
+}));
 
 export default site;
