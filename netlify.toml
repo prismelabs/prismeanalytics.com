@@ -1,3 +1,7 @@
 [build]
   publish = "_site"
+[[headers]]
+  for = "/feed.rss"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
 
