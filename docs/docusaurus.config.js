@@ -36,8 +36,7 @@ const config = {
   scripts: [
     "/docs/theme.js",
     {
-      src: "https://prisme.negrel.dev/static/m.js",
-      "data-prisme-domain": "prisme.negrel.dev",
+      src: "https://app.prismeanalytics.com/static/m.js",
       async: true,
     },
   ],
@@ -68,12 +67,14 @@ const config = {
         title: "Prisme Analytics",
         logo: {
           alt: "Prisme Analytics Logo",
-          src: "img/logo.svg",
-          srcDark: "img/logo.svg",
+          src: "img/logo.jpg",
+          srcDark: "img/logo.jpg",
           href: "https://prismeanalytics.com/",
           target: "_self",
         },
         items: [
+          { to: "/docs/", label: "Docs", position: "left" },
+          // { to: "/docs/cloud", label: "Cloud", position: "left" },
           {
             href: "https://github.com/prismelabs/analytics",
             label: "GitHub",
@@ -99,11 +100,6 @@ const config = {
                 label: "Twitter",
                 href: "https://twitter.com/prismeanalytics",
               },
-            ],
-          },
-          {
-            title: "More",
-            items: [
               {
                 label: "GitHub",
                 href: "https://github.com/prismelabs/analytics",
@@ -114,7 +110,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Prisme Analytics`,
       },
       prism: {
-        additionalLanguages: ["nix"],
+        additionalLanguages: ["nix", "bash"],
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
@@ -129,21 +125,7 @@ const config = {
   },
   themes: ["@docusaurus/theme-mermaid"],
 
-  plugins: [
-    [
-      "client-redirects",
-      {
-        fromExtensions: ["html"],
-        createRedirects(routePath) {
-          // Redirect to /docs from /docs/introduction (now docs root doc)
-          if (routePath === "/docs" || routePath === "/docs/") {
-            return [`${routePath}/introduction`];
-          }
-          return [];
-        },
-      },
-    ],
-  ],
+  plugins: [],
 };
 
 export default config;

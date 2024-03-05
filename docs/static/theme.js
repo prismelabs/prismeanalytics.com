@@ -2,7 +2,7 @@ window.matchMedia("(prefers-color-scheme: dark)").addEventListener(
   "change",
   (event) => {
     const newColorScheme = event.matches ? "dark" : "light";
-    document.querySelector("html").dataset.theme = newColorScheme;
+    document.documentElement.dataset.theme = newColorScheme;
   },
 );
 
