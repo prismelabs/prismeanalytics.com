@@ -23,14 +23,14 @@ Default: `data-prisme-scheme="https"`
 
 Domain used to send event to Prisem Analytics server.
 
-Default: `data-prisme-scheme="prismeanalytics.com"`
+Example: `data-prisme-domain="prisme.example.com"`
 
 ### Domain
 
 Domain from which events originate. This is mainly useful if you have
 multiple domains pointing to the same site.
 
-Default: `data-domain=location.host`
+Default: `data-domain={window.location.host}`
 
 See https://developer.mozilla.org/en-US/docs/Web/API/Location/host
 

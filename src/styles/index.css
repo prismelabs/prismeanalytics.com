@@ -5,75 +5,93 @@
 @tailwind utilities;
 @tailwind variants;
 
-@layer base {
-  *:focus-visible {
-    @apply outline outline-pink-500;
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 84% 4.9%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 84% 4.9%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 222.2 84% 4.9%;
+
+  --primary: 222.2 47.4% 11.2%;
+  --primary-foreground: 210 40% 98%;
+
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+
+  --muted: 210 40% 96.1%;
+  --muted-foreground: 215.4 16.3% 46.9%;
+
+  --accent: 210 40% 96.1%;
+  --accent-foreground: 222.2 47.4% 11.2%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 210 40% 98%;
+
+  --border: 214.3 31.8% 91.4%;
+  --input: 240 5.9% 90%;
+  --ring: 222.2 84% 4.9%;
+
+  --radius: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
   }
 }
 
-mb-16 .animated-bg {
-  -webkit-animation: bg-position 20s ease infinite;
-  -moz-animation: bg-position 20s ease infinite;
-  -o-animation: bg-position 20s ease infinite;
-  animation: bg-position 20s ease infinite;
+/* Hide details marker */
+details.popover>summary:first-of-type {
+  list-style-type: none;
 }
 
-@-webkit-keyframes bg-position {
-  0% {
-    background-position: 0% 50%
-  }
-
-  50% {
-    background-position: 100% 50%
-  }
-
-  100% {
-    background-position: 0% 50%
+/* Animate details element */
+@keyframes details-show {
+  from {
+    opacity: 0;
+    transform: var(--details-translate, translate(var(--tw-translate-x), -0.5em));
   }
 }
 
-@-moz-keyframes bg-position {
-  0% {
-    background-position: 0% 50%
-  }
-
-  50% {
-    background-position: 100% 50%
-  }
-
-  100% {
-    background-position: 0% 50%
-  }
+details[open]>*:not(summary) {
+  animation: details-show 150ms ease-in-out;
 }
 
-@-o-keyframes bg-position {
-  0% {
-    background-position: 0% 50%
-  }
-
-  50% {
-    background-position: 100% 50%
-  }
-
-  100% {
-    background-position: 0% 50%
-  }
+/* Proper spacing list */
+main ul:not(.list-none) li::marker {
+  content: '•   '
 }
 
-@keyframes bg-position {
-  0% {
-    background-position: 0% 50%
-  }
-
-  50% {
-    background-position: 100% 50%
-  }
-
-  100% {
-    background-position: 0% 50%
-  }
-}
-
+/* Gradient background */
 .bg-gradient {
   background: linear-gradient(to left,
       #ff5770,
@@ -87,42 +105,9 @@ mb-16 .animated-bg {
       #ff5770);
 }
 
-.animated-gradient-shadow {
-  position: relative;
-  background: hsl(0, 0%, 100%);
-
-  &::after {
-    position: absolute;
-    content: "";
-    top: 15px;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    transform: scale(0.9) translateZ(0);
-    filter: blur(15px);
-    background: linear-gradient(to left,
-        #ff5770,
-        #e4428d,
-        #c42da8,
-        #9e16c3,
-        #6501de,
-        #9e16c3,
-        #c42da8,
-        #e4428d,
-        #ff5770);
-    background-size: 200% 200%;
-    animation: animateGlow 2s linear infinite;
-  }
-}
-
-@keyframes animateGlow {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  100% {
-    background-position: 200% 50%;
-  }
+/* TODO links */
+a[href="#todo"] {
+  text-decoration: line-through;
+  /* Uncomment for production build */
+  display: none;
 }

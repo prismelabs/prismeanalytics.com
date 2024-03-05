@@ -2,16 +2,17 @@ export default function (
   { title, comp, lang, alternates, navbar, url, children }: Lume.Data,
 ) {
   return (
-    <html class="scroll-smooth min-h-screen bg-gray-50 dark:bg-[#111217] text-gray-800 dark:text-gray-200">
+    <html>
       <head>
         <meta charSet="UTF-8" />
         <title>{title}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <comp.Favicon />
         <comp.Css />
+        <comp.Js />
         <comp.Analytics />
       </head>
-      <body class="min-h-screen bg-background text-foreground relative mix-blend-normal pb-24">
+      <body class="bg-background text-foreground min-h-screen flex flex-col">
         <comp.Header
           lang={lang}
           alternates={alternates}

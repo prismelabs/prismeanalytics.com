@@ -6,7 +6,7 @@ export default ({ comp }: Lume.Data) => {
     <div className="flex flex-col min-h-screen">
       <main className="px-4 sm:px-8 md:px-16 lg:px-32 mb-8">
         <section className="w-full py-16 md:py-24 lg:py-32">
-          <div className="max-w-5xl mx-auto gap-4 md:gap-8 px-4 sm:px-6 md:px-10 flex flex-col justify-center text-center">
+          <div className="max-w-5xl mx-auto gap-4 md:gap-8 px-4 sm:px-6 md:px-10 flex flex-col justify-center text-center -mt-8">
             <img
               src="/logo.jpg"
               className="aspect-square w-full h-auto max-w-32 mx-auto mb-8"
@@ -18,37 +18,35 @@ export default ({ comp }: Lume.Data) => {
                   backgroundClip: "text",
                 }}
               >
-                Prisme Analytics
-              </span>
-              : Illuminate your data
+                Tailored
+              </span>{" "}
+              Web Analytics for Your Online Success
             </h1>
             <p className="mt-4 text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-              An Open Source, privacy-focused and progressive analytics service.
+              Make impactful decisions and boost your online growth based on
+              comprehensive insights from Prisme Analytics.
             </p>
-            <div className="mt-8 flex justify-center gap-4 md:gap-6 lg:gap-8">
-              <a
-                className="animated-gradient-shadow bg-slate-50 text-gray-800 rounded-md px-4 flex items-center"
-                href="#join-waitlist"
-              >
-                Join Waitlist
-              </a>
-              <a
-                className="inline-flex py-3 items-center justify-center rounded-md bg-gray-900 px-4 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
-                target="_blank"
-                href="https://github.com/prismelabs/analytics"
-              >
-                <comp.GithubIcon className="w-5 h-5 mr-2" />
-                Star on GitHub
-              </a>
+            <div className="space-y-4">
+              <div className="mt-8 flex justify-center gap-4 md:gap-6 lg:gap-8">
+                <a href="https://app.prismeanalytics.com/">
+                  <comp.Button className="!p-6">
+                    Start free trial (beta)
+                  </comp.Button>
+                </a>
+                <a
+                  className=""
+                  target="_blank"
+                  href="https://app.prismeanalytics.com/grafana"
+                >
+                  <comp.Button variant="outline" className="!p-6">
+                    Live demo
+                  </comp.Button>
+                </a>
+              </div>
+              <p className="text-sm text-muted-foreground">
+                No credit card required
+              </p>
             </div>
-            <video
-              autoplay
-              className="rounded-sm mt-8"
-              poster="/images/builtin-dashboard.jpg"
-            >
-              <source src="/videos/builtin-dashboard.mp4" type="video/mp4" />
-              <source src="/videos/builtin-dashboard.webm" type="video/webm" />
-            </video>
           </div>
         </section>
         <comp.Hr />
@@ -129,10 +127,16 @@ export default ({ comp }: Lume.Data) => {
               <img src="/clickhouse-icon.svg" />
             </a>
             <span className="text-6xl md:text-9xl place-self-center">=</span>
-            <img
-              src="/logo.svg"
-              className="md:block max-h-32 place-self-center"
-            />
+            <a
+              href="https://github.com/prismelabs/analytics"
+              target="_blank"
+              className="underline"
+            >
+              <img
+                src="/logo.svg"
+                className="md:block max-h-32 place-self-center"
+              />
+            </a>
           </div>
           <p className="text-sm pt-8 md:pt-16 lg:pt-24 text-center">
             Source code is, and will remains open and available&nbsp;
@@ -176,42 +180,6 @@ export default ({ comp }: Lume.Data) => {
               </p>
             </div>
           </div>
-        </section>
-        <comp.Hr />
-        <section className="w-full py-8 md:py-16 lg:py-24">
-          <h2
-            className="text-2xl md:text-3xl xl:text-4xl font-bold text-center mb-4"
-            id="join-waitlist"
-          >
-            Join Waitlist
-          </h2>
-          <p className="text-center mb-8">
-            Sign up to receive development updates and early access.
-          </p>
-          <form
-            class="mx-auto flex flex-col gap-8 items-center px-4 md:px-8"
-            method="POST"
-            action="/join-waitlist"
-            data-netlify="true"
-          >
-            <div className="w-full max-w-2xl">
-              <label for="email" className="block my-2 font-bold">Email</label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required={true}
-                className="bg-white w-full text-gray-800 rounded-md px-4 py-2 border-2"
-                placeholder="john@example.com"
-              />
-            </div>
-            <button
-              type="submit"
-              className="animated-gradient-shadow bg-slate-50 text-gray-800 rounded-md px-4 py-2 flex items-center"
-            >
-              Join Waitlist
-            </button>
-          </form>
         </section>
       </main>
     </div>

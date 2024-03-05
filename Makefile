@@ -1,6 +1,6 @@
 .PHONY:
 start:
-	deno task serve
+	deno task serve -p 8080
 
 .PHONY: lint
 lint:
