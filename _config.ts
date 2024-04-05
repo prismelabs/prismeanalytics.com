@@ -28,6 +28,7 @@ site.use(metas());
 site.use(nav());
 site.use(picture());
 site.use(tailwindcss({
+  extensions: [".html", ".svg"],
   options: {
     theme: {
       extend: {

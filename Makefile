@@ -1,6 +1,10 @@
-.PHONY:
+.PHONY: start
 start:
 	deno task serve -p 8080
+
+.PHONY: docs/start
+docs/start:
+	cd docs; npm run start
 
 .PHONY: lint
 lint:

@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
-   sodipodi:docname="logo.svg"
+   sodipodi:docname="prism.svg"
    inkscape:export-filename="logo.jpg"
    inkscape:export-xdpi="192"
    inkscape:export-ydpi="192"
@@ -27,14 +27,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      inkscape:document-units="px"
-     inkscape:zoom="0.75818454"
-     inkscape:cx="360.73012"
-     inkscape:cy="199.15996"
-     inkscape:window-width="1504"
-     inkscape:window-height="950"
+     inkscape:zoom="1.0722349"
+     inkscape:cx="147.35577"
+     inkscape:cy="297.50944"
+     inkscape:window-width="1920"
+     inkscape:window-height="1028"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
      id="defs1">
@@ -417,7 +417,7 @@
        y2="284.67569"
        gradientUnits="userSpaceOnUse"
        spreadMethod="pad"
-       gradientTransform="matrix(1.0197119,0,0,1.7824478,-3.2976832,-205.4165)" />
+       gradientTransform="matrix(1.0197119,0,0,2.1177795,-3.2976832,-293.47315)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient14731"
@@ -427,7 +427,7 @@
        x2="359.4863"
        y2="257.37241"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.0197119,0,0,1.7824478,-3.2976832,-205.4165)" />
+       gradientTransform="matrix(1.0197119,0,0,2.1177795,-3.2976832,-293.47315)" />
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -442,7 +442,7 @@
        y="-17.535711"
        inkscape:label="bg" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:12;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:16;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
        id="rect7628"
        width="198.44011"
        height="8.6036367"
@@ -451,20 +451,20 @@
        transform="rotate(-15)"
        inkscape:label="light" />
     <path
-       style="display:inline;fill:url(#linearGradient14879);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.45312;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
-       d="m 167.29386,274.45318 195.92032,35.71451 -47.48729,-94.60097 -146.16677,39.45953 z"
+       style="display:inline;fill:url(#linearGradient14879);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10.304;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       d="M 167.29386,276.67436 363.21418,319.10784 315.72689,206.7096 169.56012,253.59264 Z"
        id="path14731"
        inkscape:label="inner light"
        sodipodi:nodetypes="ccccc" />
     <path
-       style="display:inline;opacity:1;mix-blend-mode:screen;fill:url(#linearGradient14878);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.45312;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
-       d="m 167.29386,274.45318 195.92032,35.71451 -44.40174,-95.04228 -149.25232,39.90084 z"
+       style="display:inline;opacity:1;mix-blend-mode:screen;fill:url(#linearGradient14878);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:10.304;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       d="M 167.29386,276.67436 363.21418,319.10784 318.81244,206.18526 169.56012,253.59264 Z"
        id="path14731-1"
        inkscape:label="inner light color"
        sodipodi:nodetypes="ccccc" />
     <path
        sodipodi:type="star"
-       style="fill:none;stroke:#ffffff;stroke-width:20.25541552;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill;fill-opacity:1;fill-rule:nonzero"
+       style="fill:none;stroke:#ffffff;stroke-width:30.38312327;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill;fill-opacity:1;fill-rule:nonzero"
        id="path1"
        inkscape:flatsided="false"
        sodipodi:sides="3"

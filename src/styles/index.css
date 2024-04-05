@@ -94,15 +94,13 @@ main ul:not(.list-none) li::marker {
 /* Gradient background */
 .bg-gradient {
   background: linear-gradient(to left,
-      #ff5770,
-      #e4428d,
-      #c42da8,
-      #9e16c3,
-      #6501de,
-      #9e16c3,
-      #c42da8,
-      #e4428d,
-      #ff5770);
+      #1a5beb,
+      #3b95ec,
+      #c679da,
+      #a060d1,
+      #c679da,
+      #3b95ec,
+      #1a5beb);
 }
 
 /* TODO links */

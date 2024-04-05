@@ -1,12 +1,13 @@
 export default function ({ comp }: Lume.Data) {
   return (
     <>
-      <header className="px-4 lg:px-6 py-4">
+      <header className="px-4 lg:px-6 py-4 sticky top-0 z-50 bg-background">
         <nav className="flex justify-between items-center">
           <a className="flex gap-2 items-center justify-center" href="/">
             <img
               className="w-10 h-10"
-              src="/logo.svg"
+              src="/images/logo.jpg"
+              transform-images="jpg png avif webp"
             />
             <span className="ml-2 text-xl font-bold tracking-tighter text-gray-800 dark:text-gray-200">
               Prisme Analytics
@@ -27,14 +28,14 @@ export default function ({ comp }: Lume.Data) {
             >
               <comp.GithubIcon className="w-6 h-6" />
             </a>
-            <a href="https://app.prismeanalytics.com/">
+            <a href="https://app.prismeanalytics.com/authn/sign_in">
               <comp.Button variant="ghost">
                 Sign in
               </comp.Button>
             </a>
-            <a href="https://app.prismeanalytics.com/">
+            <a href="https://app.prismeanalytics.com/authn/sign_up">
               <comp.Button>
-                Start free trial (beta)
+                Try Prisme
               </comp.Button>
             </a>
           </div>
@@ -71,7 +72,7 @@ export default function ({ comp }: Lume.Data) {
                 </a>
                 <a href="https://app.prismeanalytics.com/" className="w-full">
                   <comp.Button className="w-full">
-                    Start free trial (beta)
+                    Try Prisme
                   </comp.Button>
                 </a>
               </li>

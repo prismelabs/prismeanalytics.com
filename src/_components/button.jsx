@@ -1,4 +1,4 @@
-const variants: Record<string, string> = {
+const variants = {
   primary:
     "inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm text-center font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2",
   ghost:
@@ -10,15 +10,13 @@ const variants: Record<string, string> = {
 };
 
 export default function (
-  { children, variant, class: className }: {
-    class: string;
-    variant?: keyof typeof variants;
-    // deno-lint-ignore no-explicit-any
-    children: any;
-  },
+  { children, variant, class: className, onclick },
 ) {
   return (
-    <button className={variants[variant ?? "primary"] + " " + className}>
+    <button
+      className={variants[variant ?? "primary"] + " " + className}
+      onClick={onclick}
+    >
       {children}
     </button>
   );
