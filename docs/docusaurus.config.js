@@ -73,7 +73,7 @@ const config = {
           target: "_self",
         },
         items: [
-          { to: "/docs/", label: "Docs", position: "left" },
+          // { to: "/docs/", label: "Docs", position: "left" },
           // { to: "/docs/cloud", label: "Cloud", position: "left" },
           {
             href: "https://github.com/prismelabs/analytics",

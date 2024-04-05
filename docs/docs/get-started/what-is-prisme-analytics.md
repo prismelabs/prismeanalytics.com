@@ -46,7 +46,7 @@ Prisme provides a general dashboard and common metrics to help you get started.
 Number of visits, page views and more are built-in so you don't have to reinvent
 the wheel.
 
-## Users Privacy In Mind
+## Privacy-focused
 
 Prisme Analytics is designed with users privacy in mind. We don't collect
 personally identifiable information (PII) and we minimize data collection to the

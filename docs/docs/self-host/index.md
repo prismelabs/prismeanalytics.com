@@ -7,7 +7,7 @@ perform installation, maintenance, upgrades and monitor servers capacity,
 uptime, backups, security, stability, consistency and loading time, you can easily
 host your own Prisme instances.
 
-If you're not, please consider using [Prisme Cloud](../prisme-cloud/index.md),
+If you're not, please consider using [Prisme Cloud](../get-started/prisme-cloud-vs-self-hosted.md)
 our managed service.
 
 :::warning

@@ -1,5 +1,0 @@
----
-unlisted: true
----
-
-# Setup Grafana
