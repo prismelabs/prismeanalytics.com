@@ -356,7 +356,7 @@ export default ({ comp }: Lume.Data) => {
           </div>
         </section>
       </main>
-      <section className="w-full h-72 relative">
+      <section className="w-full h-72 relative mt-16">
         <img
           src="/images/builtin-dashboard-dark.jpg"
           className="mx-auto w-full h-72 brightness-50 object-cover object-center absolute"

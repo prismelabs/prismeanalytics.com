@@ -3,13 +3,16 @@ export const layout = "layout.tsx";
 
 export default ({}: Lume.Data) => {
   return (
-    <main className="max-w-3xl mx-auto px-4 sm:px-6 md:px-10 space-y-4 py-16">
+    <main className="max-w-3xl mx-auto px-4 sm:px-6 md:px-10 space-y-8 py-16">
       <h1
         id="privacy-policy-for-prisme-analytics"
-        className="text-3xl md:text-4xl xl:text-5xl font-bold"
+        className="text-3xl md:text-4xl xl:text-5xl font-bold pb-8"
       >
         Privacy Policy for Prisme Analytics
       </h1>
+      <div className="italic">
+        Last updated: April 09, 2024
+      </div>
       <p>
         <strong>TL;DR</strong>: For visitors to prismeanalytics.com, we refrain
         from using cookies and refrain from collecting any personal data. Should
@@ -29,9 +32,65 @@ export default ({}: Lume.Data) => {
         you that we never sell your data, neither have we nor will we ever do
         so.
       </p>
+
+      <h2
+        id="our-commitment-to-data-protection-and-privacy"
+        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-8 pb-4"
+      >
+        Our commitment to data protection and privacy
+      </h2>
+      <p>
+        Prisme Analytics is a privacy-first analytics company. We make money
+        from our paying customers, so there's no need or reason to sell, rent or
+        give away any of your data (that's not our business model).
+      </p>
+      <p>
+        We hope to provide you with clear and transparent information on how we
+        process your personal data (as a controller) and your data protection
+        rights. If you feel that any information is unclear or missing, please
+        do not hesitate to{" "}
+        <a href="/contact" className="underline">contact us</a>.
+      </p>
+
+      <h2
+        id="your-data-protection-rights"
+        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-8 pb-4"
+      >
+        Your data protection rights
+      </h2>
+      <ul className="list-disc pl-6 space-y-2">
+        <li>
+          <strong>Access and rectification</strong>: you may request a copy of
+          the information we process about you and ask us to rectify any
+          incorrect data.
+        </li>
+        <li>
+          <strong>Erasure or restriction</strong>: in some circumstances, you
+          may ask us to delete or restrict our processing of your data, but we
+          cannot delete any data we are legally required to process.
+        </li>
+        <li>
+          <strong>Object to processing</strong>: in some circumstances, you may
+          ask us to stop processing your data.
+        </li>
+        <li>
+          <strong>Data portability</strong>: in some circumstances, you may ask
+          us to transfer your data to you or another organization. Also, if
+          you're unhappy about how we process your data, you have a right to
+          complain to a national data authority. We hope, however, that you will
+          contact us first so that we can try to resolve the matter for you in a
+          satisfactory way.
+        </li>
+      </ul>
+      <p>
+        Please get in touch with us if you have any questions about how we
+        handle your data or want to exercise one of your rights. You are
+        entitled to a reply within 30 days.
+      </p>
+
       <h2
         id="for-visitors-to-prismeanalytics-com"
-        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-6"
+        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-8 pb-4"
       >
         For Visitors to prismeanalytics.com
       </h2>
@@ -66,7 +125,7 @@ export default ({}: Lume.Data) => {
       </p>
       <h2
         id="for-customers-and-subscribers-of-prisme-analytics"
-        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-6"
+        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-8 pb-4"
       >
         For Customers and Subscribers of Prisme Analytics
       </h2>
@@ -107,8 +166,38 @@ export default ({}: Lume.Data) => {
         </li>
       </ul>
       <h2
+        id="whom-we-share-your-personal-data-with"
+        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-8 pb-4"
+      >
+        Whom we share your personal data with
+      </h2>
+      <p>
+        To run our business efficiently and securely, we sometimes will have to
+        share your personal data with other (trusted) parties such as:
+        <ul className="list-disc pl-6 space-y-2">
+          <li>
+            <strong>IT support, when necessary</strong>
+          </li>
+          <li>
+            <strong>Public authorities</strong>: when we are obliged to report
+            to them
+          </li>
+          <li>
+            <a href="https://stripe.com" className="underline font-bold">
+              Stripe
+            </a>: to send invoices and manage subscriptions.
+          </li>
+          <li>
+            <a href="https://gravatar.com" className="underline font-bold">
+              Gravatar
+            </a>: to display a profile picture.
+          </li>
+        </ul>
+      </p>
+
+      <h2
         id="data-retention"
-        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-6"
+        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-8 pb-4"
       >
         Data Retention:
       </h2>
@@ -124,7 +213,7 @@ export default ({}: Lume.Data) => {
       </p>
       <h2
         id="changes-and-questions"
-        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-6"
+        className="text-2xl md:text-3xl xl:text-4xl font-bold pt-8 pb-4"
       >
         Changes and Questions:
       </h2>
@@ -138,8 +227,6 @@ export default ({}: Lume.Data) => {
         privacy policy, your data, or your rights, feel free to reach out to us
         at privacy@prismeanalytics.com.
       </p>
-
-      <p className="pt-4">Last updated: February 29, 2024</p>
     </main>
   );
 };
