@@ -13,7 +13,8 @@
 		"check": "deno fmt --check --ignore=_site,.direnv && deno lint --ignore=_site,.direnv && deno check src/**/*.tsx"
 	},
 	"imports": {
-		"lume/": "https://deno.land/x/lume@v2.0.2/",
-		"@/": "./"
+		"lume/": "https://deno.land/x/lume@v2.1.4/",
+		"@/": "./",
+		"markdown-it-emoji": "npm:markdown-it-emoji"
 	}
 }
