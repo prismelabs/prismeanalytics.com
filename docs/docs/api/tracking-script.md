@@ -25,6 +25,11 @@ You don't need to include the date, domain or the path of the page in the object
 as it automatically added by Prisme server.
 :::
 
+:::tip
+It is recommended to avoid nested JSON objects as it may
+impact performance at query time.
+:::
+
 ### Examples
 
 Send an empty custom event:

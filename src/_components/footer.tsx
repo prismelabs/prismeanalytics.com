@@ -19,6 +19,7 @@ const links = {
     "Privacy": "/privacy",
     "Data policy": "#todo",
     "Terms": "/terms",
+    "Blog": "/blog",
     "DPA": "#todo",
   },
   "Support": {
@@ -34,7 +35,7 @@ export default function ({ comp }: Lume.Data) {
       <footer className="bg-slate-900">
         <h2 id="footer-heading" className="sr-only">Footer</h2>
         <div className="mx-auto max-w-7xl px-6">
-          <a href="/">
+          <a href="/" className="inline">
             <img
               className="h-16 my-8"
               src="/logo.svg"

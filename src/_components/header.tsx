@@ -15,6 +15,7 @@ export default function ({ comp }: Lume.Data) {
           </a>
           <div className="hidden lg:flex items-center gap-8">
             <a href="/docs">Docs</a>
+            <a href="/blog">Blog</a>
             <a href="#todo">Use cases</a>
             <a href="#todo">Pricing</a>
             <a href="https://prisme.features.vote/board" target="_blank">
@@ -47,6 +48,11 @@ export default function ({ comp }: Lume.Data) {
               <a href="/docs">
                 <li className="rounded-sm py-1 px-2 hover:bg-accent cursor-pointer">
                   Docs
+                </li>
+              </a>
+              <a href="/blog">
+                <li className="rounded-sm py-1 px-2 hover:bg-accent cursor-pointer">
+                  Blog
                 </li>
               </a>
               <a href="#todo">

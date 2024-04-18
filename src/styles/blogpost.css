@@ -1,0 +1,97 @@
+main h2,
+main h3,
+main h4,
+main h5,
+main h6,
+main p,
+main pre,
+main table {
+  @apply mb-4 text-foreground;
+}
+
+main h1 {
+  @apply mb-8 font-bold text-foreground text-5xl tracking-normal;
+}
+
+main h2 {
+  @apply font-sans font-semibold text-2xl pt-8;
+}
+
+main h3 {
+  @apply font-sans font-semibold font-medium text-xl pt-6;
+}
+
+main p {
+  @apply font-sans text-foreground text-justify;
+}
+
+main ul,
+main ol {
+  @apply mb-4;
+}
+
+main ul li {
+  @apply list-disc ml-8 pl-2;
+}
+
+main ol li {
+  @apply list-decimal ml-8 pl-2;
+}
+
+main pre {
+  @apply px-1 border-2 rounded-md bg-background overflow-scroll;
+}
+
+main code {
+  @apply inline bg-background rounded-md;
+}
+
+main pre code.hljs,
+main pre code {
+  @apply block p-2 bg-background;
+}
+
+main .table-container {
+  @apply overflow-scroll mx-auto;
+}
+
+main table {
+  @apply mx-auto;
+}
+
+main thead {
+  @apply bg-foreground text-background;
+}
+
+main th,
+main td {
+  @apply py-2 px-2 border;
+}
+
+main th {
+  @apply border-foreground;
+}
+
+main tr:nth-child(even) {
+  @apply bg-gray-100 dark:bg-neutral-900;
+}
+
+main strong {
+  @apply text-foreground;
+}
+
+main a {
+  @apply text-blue-700 dark:text-blue-400;
+}
+
+main a:visited {
+  @apply text-indigo-800 dark:text-indigo-500;
+}
+
+main a:hover {
+  @apply underline;
+}
+
+main blockquote {
+  @apply pl-3 border-l-4 border-l-foreground;
+}

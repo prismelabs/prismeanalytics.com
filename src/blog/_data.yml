@@ -1,0 +1,7 @@
+metas:
+  title: "Prisme Analytics - Blog"
+  description: "Online, peoples often share their opinion as if they were absolute truths. Here's mine."
+
+type: blogpost
+layout: "post.tsx"
+

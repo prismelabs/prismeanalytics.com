@@ -46,6 +46,11 @@ Prisme stores custom events JSON in two columns, `keys` and `values`, instead
 of a single String column to improve query performances. Unfortunately, this is
 not practical, that's why we provide a `event_property` helper function.
 
+:::tip
+It is recommended to avoid nested JSON objects as it may impact performance at
+query time.
+:::
+
 Let's suppose you're website send `click` events with two properties, `x` and
 `y`, cursor position on X and Y axis respectively:
 
