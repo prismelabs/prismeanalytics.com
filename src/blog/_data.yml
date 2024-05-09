@@ -1,6 +1,6 @@
 metas:
   title: "Prisme Analytics - Blog"
-  description: "Online, peoples often share their opinion as if they were absolute truths. Here's mine."
+  description: "News, releases, technical articles, cool stories, and more."
 
 type: blogpost
 layout: "post.tsx"
