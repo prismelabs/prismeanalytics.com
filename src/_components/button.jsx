@@ -10,10 +10,11 @@ const variants = {
 };
 
 export default function (
-  { children, variant, class: className, onclick },
+  { children, variant, class: className, onclick, type },
 ) {
   return (
     <button
+      type={type}
       className={variants[variant ?? "primary"] + " " + className}
       onClick={onclick}
     >
