@@ -14,7 +14,7 @@ import transform_images from "lume/plugins/transform_images.ts";
 import feed from "@/plugins/feed.ts";
 import { full as markdownItEmoji } from "markdown-it-emoji";
 
-const location = new URL("https://prismeanalytics.com");
+const location = new URL("https://www.prismeanalytics.com");
 
 // deno-lint-ignore no-explicit-any
 const renderMd: (...args: any[]) => any = (tokens, idx, options, _env, self) =>
