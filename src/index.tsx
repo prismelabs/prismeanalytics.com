@@ -8,8 +8,7 @@ export default ({ comp }: Lume.Data) => {
         <section className="w-full">
           <div className="max-w-6xl mx-auto gap-4 md:gap-8 px-4 sm:px-6 md:px-10 flex flex-col justify-center text-center -mt-8">
             <img
-              src="/images/logo.jpg"
-              transform-images="jpg png avif webp"
+              src="/logo.svg"
               className="aspect-square w-full h-auto max-w-32 mx-auto my-4"
             />
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter">
@@ -182,9 +181,8 @@ export default ({ comp }: Lume.Data) => {
               className="underline"
             >
               <img
-                alt="Prisme logo"
-                src="/images/logo.jpg"
-                transform-images="jpg png avif webp"
+                alt="Prisme Analytics Logo"
+                src="/logo.svg"
                 className="md:block max-h-32 place-self-center"
               />
             </a>

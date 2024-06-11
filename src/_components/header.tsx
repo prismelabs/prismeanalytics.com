@@ -6,8 +6,8 @@ export default function ({ comp }: Lume.Data) {
           <a className="flex gap-2 items-center justify-center" href="/">
             <img
               className="w-10 h-10"
-              src="/images/logo.jpg"
-              transform-images="jpg png avif webp"
+              src="/logo.svg"
+              alt="Prisme Analytics logo"
             />
             <span className="ml-2 text-xl font-bold tracking-tighter text-gray-800 dark:text-gray-200">
               Prisme Analytics
