@@ -9,7 +9,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Prisme Analytics",
-  favicon: "img/favicon.ico",
+  favicon: "img/logo.jpg",
 
   // Set the production url of your site here
   url: "https://www.prismeanalytics.com",

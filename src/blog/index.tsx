@@ -7,7 +7,7 @@ export default (
   { search }: Lume.Data,
   { date }: Lume.Helpers,
 ) => {
-  const posts = search.pages("type=blogpost draft!=true", "created_at=desc");
+  const posts = search.pages("type=blogpost draft!=true", "date=desc");
 
   return (
     <main className="w-full flex flex-col pb-12 overflow-x-hidden md:overflow-visible">

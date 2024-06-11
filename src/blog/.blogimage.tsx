@@ -6,7 +6,7 @@ export default () => {
       <h1 className="text-4xl font-bold text-center">Release</h1>
       <div className="flex flex-row justify-center items-center gap-8">
         <img src="/images/logo.jpg" className="size-32"></img>
-        <p className="text-[9rem] font-bold">0.14</p>
+        <p className="text-[9rem] font-bold">0.15</p>
       </div>
     </main>
   );

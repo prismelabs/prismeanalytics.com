@@ -3,8 +3,8 @@ title: "Prisme 0.14 release: custom events, improved performances and clean shut
 date: "2024-04-17"
 tags: ["prisme", "release"]
 metas:
-  title: "Prisme 0.14 release"
-  description: "The Prisme 0.14 release includes support for custom events, clean shutdown and better performance!"
+  title: "Prisme 0.14 release: custom events, improved performances and clean shutdown!"
+  description: "Prisme 0.14 release post about custom events, clean shutdown and better performance!"
   image: "/images/blog/prisme-0.14-release.jpg"
   keywords:
     - Prisme Analytics
