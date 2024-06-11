@@ -12,7 +12,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://prismeanalytics.com",
+  url: "https://www.prismeanalytics.com",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: "/docs/",
@@ -69,7 +69,7 @@ const config = {
           alt: "Prisme Analytics Logo",
           src: "img/logo.jpg",
           srcDark: "img/logo.jpg",
-          href: "https://prismeanalytics.com/",
+          href: "https://www.prismeanalytics.com/",
           target: "_self",
         },
         items: [
