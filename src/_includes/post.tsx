@@ -13,7 +13,7 @@ export default function (
   { md }: Lume.Helpers,
 ) {
   return (
-    <html lang="en">
+    <html lang={lang}>
       <head>
         <meta charSet="UTF-8" />
         <title

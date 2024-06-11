@@ -1,4 +1,5 @@
 import lume from "lume/mod.ts";
+import multilanguage from "lume/plugins/multilanguage.ts";
 import { Options as MarkdownOptions } from "lume/plugins/markdown.ts";
 import date from "lume/plugins/date.ts";
 import inline from "lume/plugins/inline.ts";
@@ -163,5 +164,7 @@ site.use(feed({
     image: "=metas.image",
   },
 }));
+
+site.use(multilanguage({ languages: ["en"], defaultLanguage: "en" }));
 
 export default site;

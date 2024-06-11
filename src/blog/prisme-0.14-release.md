@@ -1,6 +1,5 @@
 ---
 title: "Prisme 0.14 release: custom events, improved performances and clean shutdown!"
-lang: "en"
 date: "2024-04-17"
 tags: ["prisme", "release"]
 metas:

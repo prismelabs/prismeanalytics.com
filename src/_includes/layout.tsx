@@ -2,7 +2,7 @@ export default function (
   { title, comp, lang, alternates, navbar, url, children }: Lume.Data,
 ) {
   return (
-    <html>
+    <html lang={lang}>
       <head>
         <meta charSet="UTF-8" />
         <title>{title}</title>

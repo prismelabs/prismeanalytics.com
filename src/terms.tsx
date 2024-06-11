@@ -1,5 +1,32 @@
 export const title = "Terms of Service - Prisme Analytics";
 export const layout = "layout.tsx";
+export const metas = {
+  title,
+  description: "Terms of Service of Prisme Analytics Cloud.",
+  keywords: [
+    "Terms of Service",
+    "Prisme Cloud",
+    "Analytics platform",
+    "Data visualization",
+    "Open-source analytics",
+    "Prisme Analytics",
+    "Grafana integration",
+    "ClickHouseDB storage",
+    "Custom dashboards",
+    "Progressive analytics",
+    "Collaborative data insights",
+    "Data-driven decisions",
+    "User-friendly analytics",
+    "Real-time analytics",
+    "Business intelligence",
+    "Data exploration",
+    "Insightful reporting",
+    "Dashboard customization",
+    "State-of-the-art technology",
+    "Seamless analytics",
+    "Team collaboration tools",
+  ],
+};
 
 export default ({}: Lume.Data) => {
   return (
