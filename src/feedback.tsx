@@ -1,6 +1,21 @@
 export const title = "Feedback - Prisme Analytics";
 export const layout = "layout.tsx";
 
+export const metas = {
+  title: "Feature Requests and Feedback",
+  description:
+    "Let us know how we can improve Prisme Analytics, our privacy-friendly and progressive web analytics service, by submitting your feedbacks.",
+  keywords: [
+    "Feedback form",
+    "User feedback form",
+    "Prisme Cloud",
+    "Analytics platform",
+    "Data visualization",
+    "Open-source analytics",
+    "Prisme Analytics",
+  ],
+};
+
 export default ({ comp }: Lume.Data) => {
   return (
     <main className="max-w-2xl w-full mx-auto px-4 sm:px-6 md:px-10 space-y-8 py-16">

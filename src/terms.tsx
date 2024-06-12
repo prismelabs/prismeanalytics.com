@@ -2,7 +2,8 @@ export const title = "Terms of Service - Prisme Analytics";
 export const layout = "layout.tsx";
 export const metas = {
   title,
-  description: "Terms of Service of Prisme Analytics Cloud.",
+  description:
+    "Prisme provides cookie-less web analytics without collecting personal data and while respecting the privacy of web visitors. This is our terms of service.",
   keywords: [
     "Terms of Service",
     "Prisme Cloud",

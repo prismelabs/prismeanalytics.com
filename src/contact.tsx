@@ -1,6 +1,20 @@
 export const title = "Contact Us - Prisme Analytics";
 export const layout = "layout.tsx";
 
+export const metas = {
+  title,
+  description:
+    "Contact Prisme Analytics team for support, privacy-related questions and more.",
+  keywords: [
+    "Contact form",
+    "Prisme Cloud",
+    "Analytics platform",
+    "Data visualization",
+    "Open-source analytics",
+    "Prisme Analytics",
+  ],
+};
+
 export default ({ comp }: Lume.Data) => {
   return (
     <main className="max-w-2xl w-full mx-auto px-4 sm:px-6 md:px-10 space-y-8 py-16">

@@ -1,5 +1,33 @@
-export const title = "Prisme Analytics";
+export const title =
+  "Prisme Analytics | Customizable, privacy-friendly Google Analytics alternative";
 export const layout = "layout.tsx";
+
+export const metas = {
+  title,
+  description:
+    "Prisme is an Open-Source, privacy-friendly and progressive web analytics service. Your website data is 100% yours and the privacy of your visitors is respected.",
+  keywords: [
+    "Prisme Cloud",
+    "Analytics platform",
+    "Data visualization",
+    "Open-source analytics",
+    "Prisme Analytics",
+    "Grafana integration",
+    "ClickHouseDB storage",
+    "Custom dashboards",
+    "Progressive analytics",
+    "Collaborative data insights",
+    "Data-driven decisions",
+    "User-friendly analytics",
+    "Real-time analytics",
+    "Business intelligence",
+    "Data exploration",
+    "Insightful reporting",
+    "Dashboard customization",
+    "State-of-the-art technology",
+    "Seamless analytics",
+  ],
+};
 
 export default ({ comp }: Lume.Data) => {
   return (
