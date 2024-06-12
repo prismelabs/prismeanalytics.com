@@ -134,7 +134,7 @@ export default ({ comp }: Lume.Data) => {
             Prisme Analytics is built on top of state of the art Open Source
             data visualization and storage, respectively{" "}
             <a
-              href="https://grafana.com/grafana"
+              href="https://grafana.com/grafana/"
               target="_blank"
               className="underline"
             >
@@ -151,7 +151,7 @@ export default ({ comp }: Lume.Data) => {
           </p>
           <div className="grid grid-cols-5 gap-4 px-4 text-center max-w-3xl mx-auto">
             <a
-              href="https://grafana.com/grafana"
+              href="https://grafana.com/grafana/"
               target="_blank"
               className="place-self-center"
             >

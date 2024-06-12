@@ -60,7 +60,7 @@ Also, we don't use cookies so you can ditch your cookie banner!
 
 Affirming our commitment to user privacy is one aspect; substantiating it is another.
 Because Prisme Analytics is in alignment with the Open Source Initiative's (OSI)
-[definition of Open Source](https://opensource.org/osd/), you have the
+[definition of Open Source](https://opensource.org/osd), you have the
 freedom to read, modify, redistribute, and even fork it to develop your own
 version of Prisme.
 

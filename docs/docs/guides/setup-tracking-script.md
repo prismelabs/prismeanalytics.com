@@ -46,7 +46,7 @@ You should see a `POST` request with a `200 OK` response.
 On the above screenshot, Prisme instance hostname is `app.prismeanalytics.com`.
 
 If you received a non 200 response, it means an error occurred. In that case, checkout
-relevant [troubleshoot](./#troubleshoot) section.
+relevant [troubleshoot](#troubleshoot) section.
 
 ## Troubleshoot
 
@@ -56,7 +56,7 @@ If you received a `400 Bad Request`, it means that your Prisme instance rejected
 the request because it came from an unautorized
 [origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin).
 
-This can be fixed by adding your website domain to [Prisme origins registry](../reference/configure-server/default-mode#origin-registry-options).
+This can be fixed by adding your website domain to [Prisme origins registry](../reference/server/default-mode#origin-registry-options).
 
 ### Other
 
