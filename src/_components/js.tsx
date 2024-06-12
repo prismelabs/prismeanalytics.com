@@ -1,7 +1,7 @@
 export default function () {
   return (
     <>
-      <script src="/popover.js" defer async></script>
+      <script src="/scripts/popover.js" defer async></script>
     </>
   );
 }

@@ -28,6 +28,9 @@ const links = {
     "Contact us": "/contact",
     "Feedback": "/feedback",
   },
+  "Tools": {
+    "UTM Builder": "/tools/utm_builder",
+  },
 };
 
 export default function ({ comp }: Lume.Data) {
@@ -44,7 +47,7 @@ export default function ({ comp }: Lume.Data) {
             />
           </a>
           <div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-16">
+            <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-y-16">
               {Object.entries(links).map(([section, sectionLinks]) => (
                 <div>
                   <h3 className="text-sm font-semibold leading-6 text-white">
