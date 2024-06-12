@@ -26,6 +26,7 @@ const links = {
     "Pricing": "#todo",
     "Documentation": "/docs",
     "Contact us": "/contact",
+    "Feedback": "/feedback",
   },
 };
 
