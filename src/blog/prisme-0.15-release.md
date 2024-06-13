@@ -2,6 +2,7 @@
 title: "Prisme 0.15 release"
 date: "2024-06-11"
 tags: ["prisme", "release"]
+author: '[Alexandre Negrel](https://www.negrel.dev)'
 metas:
   title: "Prisme 0.15 release: sessions tracking, bot filtering and admin metrics!"
   description: "Prisme 0.15 release post about privacy-friendly session tracking, bot filtering and admin metrics!"

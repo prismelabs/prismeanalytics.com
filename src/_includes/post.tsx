@@ -1,6 +1,7 @@
 export default function (
   {
     search,
+    date,
     title,
     children,
     comp,
@@ -11,6 +12,7 @@ export default function (
     tags,
     metas,
     basename,
+    author,
   }: Lume.Data,
   { md }: Lume.Helpers,
 ) {
@@ -43,7 +45,7 @@ export default function (
           navbar={navbar}
           url={url}
         />
-        <main className="w-full px-4 pt-8 mx-auto max-w-xl md:max-w-2xl lg:max-w-3xl overflow-x-hidden md:overflow-visible space-y-8">
+        <main className="w-full px-4 pt-8 mx-auto max-w-xl md:max-w-2xl lg:max-w-3xl overflow-x-hidden md:overflow-visible space-y-12">
           <section>
             <div>
               {metas?.image && typeof metas?.image === "string" &&
@@ -64,6 +66,14 @@ export default function (
                 }}
               >
               </h1>
+              <div className="flex justify-between">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: md(["By", author].join(" ")),
+                  }}
+                />
+                <p>Published on {date.toLocaleDateString()}</p>
+              </div>
               {tags && (
                 <div className="flex pb-8">
                   {tags.map((tag) => (
@@ -117,6 +127,7 @@ export default function (
             )
             : undefined}
         </main>
+        <comp.FooterCta />
         <comp.Footer lang={lang} alternates={alternates} />
       </body>
     </html>

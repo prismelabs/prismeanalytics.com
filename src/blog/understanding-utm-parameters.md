@@ -2,6 +2,7 @@
 title: "Understanding UTM parameters: A Guide to Effective Campaign Tracking"
 date: "2024-06-13"
 tags: ["marketing", "campaign", "tracking", "analytics"]
+author: '[Alexandre Negrel](https://www.negrel.dev)'
 metas:
   title: "Understanding UTM parameters: A Guide to Effective Campaign Tracking"
   description: "Prisme 0.15 release post about privacy-friendly session tracking, bot filtering and admin metrics!"

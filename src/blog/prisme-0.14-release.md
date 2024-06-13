@@ -2,6 +2,7 @@
 title: "Prisme 0.14 release"
 date: "2024-04-17"
 tags: ["prisme", "release"]
+author: '[Alexandre Negrel](https://www.negrel.dev)'
 metas:
   title: "Prisme 0.14 release: custom events, improved performances and clean shutdown!"
   description: "Prisme 0.14 release post about custom events, clean shutdown and better performance!"
