@@ -1,5 +1,5 @@
 ---
-title: "Prisme 0.15 release: sessions tracking, bot filtering and admin metrics!"
+title: "Prisme 0.15 release"
 date: "2024-06-11"
 tags: ["prisme", "release"]
 metas:

@@ -1,5 +1,4 @@
-export const title =
-  "Free UTM Builders - Easily generate UTM codes for your marketing campaigns in just a few clicks - Prisme Analytics";
+export const title = "Easily generate UTM codes for your marketing campaigns";
 export const layout = "layout.tsx";
 
 export const metas = {

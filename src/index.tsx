@@ -1,5 +1,5 @@
 export const title =
-  "Prisme Analytics | Customizable, privacy-friendly Google Analytics alternative";
+  "Customizable, privacy-friendly Google Analytics alternative";
 export const layout = "layout.tsx";
 
 export const metas = {
