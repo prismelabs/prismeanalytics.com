@@ -1,5 +1,6 @@
 export default function (
   {
+    search,
     title,
     children,
     comp,
@@ -9,9 +10,15 @@ export default function (
     url,
     tags,
     metas,
+    basename,
   }: Lume.Data,
   { md }: Lume.Helpers,
 ) {
+  const posts = search.pages("type=blogpost draft!=true", "date=asc");
+  const postIndex = posts.findIndex((p) => p.basename === basename);
+  const prevPost = posts[postIndex - 1];
+  const nextPost = posts[postIndex + 1];
+
   return (
     <html lang={lang}>
       <head>
@@ -36,10 +43,10 @@ export default function (
           navbar={navbar}
           url={url}
         />
-        <main className="w-full px-4 pt-8 mx-auto max-w-xl md:max-w-2xl lg:max-w-3xl overflow-x-hidden md:overflow-visible">
-          <comp.Sections>
+        <main className="w-full px-4 pt-8 mx-auto max-w-xl md:max-w-2xl lg:max-w-3xl overflow-x-hidden md:overflow-visible space-y-8">
+          <section>
             <div>
-              {metas?.image &&
+              {metas?.image && typeof metas?.image === "string" &&
                 (
                   <img
                     src={metas.image}
@@ -47,7 +54,14 @@ export default function (
                   />
                 )}
               <h1
-                dangerouslySetInnerHTML={{ __html: md(title ?? "", true) }}
+                dangerouslySetInnerHTML={{
+                  __html: md(
+                    (typeof metas?.title === "string")
+                      ? metas.title
+                      : title ?? "",
+                    true,
+                  ),
+                }}
               >
               </h1>
               {tags && (
@@ -61,7 +75,47 @@ export default function (
               )}
               {children}
             </div>
-          </comp.Sections>
+          </section>
+          {nextPost ?? prevPost !== undefined
+            ? (
+              <>
+                <comp.Hr />
+                <section>
+                  <div className="flex gap-4 flex-wrap space-between items-center">
+                    {prevPost?.url
+                      ? (
+                        <a
+                          href={prevPost.url}
+                          className="flex-1 min-w-64 flex overflow-hidden"
+                          title={prevPost.metas.title}
+                        >
+                          &lt;&nbsp;&nbsp;
+                          <span className="text-ellipsis overflow-hidden text-nowrap">
+                            {prevPost.metas.title}
+                          </span>
+                        </a>
+                      )
+                      : <span className="flex-1" />}
+                    {nextPost?.url
+                      ? (
+                        <a
+                          href={nextPost.url}
+                          className="flex-1 min-w-64 flex overflow-hidden justify-end"
+                          title={nextPost.metas.title}
+                        >
+                          <span className="text-ellipsis overflow-hidden text-nowrap">
+                            {nextPost.metas.title}
+                          </span>
+                          &nbsp;&nbsp;&gt;
+                        </a>
+                      )
+                      : <span />}
+                  </div>
+                </section>
+                <div />
+              </>
+            )
+            : undefined}
         </main>
         <comp.Footer lang={lang} alternates={alternates} />
       </body>

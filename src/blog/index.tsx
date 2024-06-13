@@ -10,14 +10,14 @@ export default (
   const posts = search.pages("type=blogpost draft!=true", "date=desc");
 
   return (
-    <main className="w-full flex flex-col pb-12 overflow-x-hidden md:overflow-visible">
-      <h1 className="text-5xl mt-12 mb-6 mx-auto text-foreground-dark font-bold">
+    <main className="w-full flex flex-col pb-12 overflow-x-hidden md:overflow-visible px-4">
+      <h1 className="text-5xl mt-12 mb-6 mx-auto text-foreground-dark font-bold text-center">
         Prisme Labs Blog
       </h1>
       <h2 className="text-xl text-center mb-12">
         News, releases, technical articles, cool stories, and more.
       </h2>
-      <div className="max-w-3xl mx-auto px-4">
+      <div className="max-w-2xl mx-auto">
         {posts.map((post, index) => (
           <>
             <time
@@ -30,10 +30,10 @@ export default (
               href={post.page.outputPath}
               class="block text-xl text-blue-700 dark:text-blue-400 visited:text-indigo-800 visited:dark:text-indigo-500"
             >
-              {post.title}
+              {post.metas.title ?? post.title}
             </a>
             <img
-              class="block max-w-full mt-4 rounded-sm"
+              class="block mx-auto max-w-full max-h-92 mt-4 rounded-sm"
               src={post.metas.image}
               transform-images="jpg png avif webp 1600@2"
             />
