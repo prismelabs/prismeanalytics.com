@@ -5,7 +5,7 @@ tags: ["marketing", "campaign", "tracking", "analytics"]
 metas:
   title: "Understanding UTM parameters: A Guide to Effective Campaign Tracking"
   description: "Prisme 0.15 release post about privacy-friendly session tracking, bot filtering and admin metrics!"
-  image: "/images/blog/prisme-0.15-release.jpg"
+  image: "/images/blog/utm-parameters.jpg"
   keywords:
     - Prisme Analytics
     - UTM parameters
@@ -46,8 +46,10 @@ work, and why you should incorporate them into your marketing efforts.
 UTM stands for **U**rchin **T**racking **M**odule, a term coined by Google
 Analytics. Essentially, UTM parameters are **small strings of text that can be
 added to the end of URLs to track specific aspects of your online campaigns**.
-These parameters provide valuable insights into how users interact with your
-website or landing pages after clicking on an ad or link.
+These parameters enable analytics services such as [Prisme](/) to knows how
+users landed on your website after clicking on an ad or link.
+
+Let's see how it works.
 
 ## The Anatomy of a UTM Parameter
 
@@ -63,6 +65,13 @@ website, like social media, paid search, or organic search.
 3. **utm_campaign**: Tracks the specific campaign or promotion that drove
 traffic to your site.
 
+Additionnaly, you can add these optional parameters:
+
+4. **utm_search**: Identifies specific keywords or terms driving traffic to your
+website, such as `summer sale` for ads related to summer sale.
+5. **utm_content**: Tracks performance of specific ad creatives or content,
+helping optimize engagement and conversions.
+
 ## Why Use UTM Parameters?
 
 Incorporating UTM parameters into your marketing campaigns offers numerous
@@ -72,7 +81,7 @@ benefits:
 campaigns, you can gain a deeper understanding of how users interact with your
 content and identify areas for optimization.
 2. **Enhanced Reporting**: UTM parameters enable you to create customized
-reports in Google Analytics that provide actionable insights into campaign
+reports in [Prisme Analytics](/) that provide actionable insights into campaign
 performance.
 3. **Better Targeting**: With UTM parameters, you can target specific segments
 of your audience and optimize your campaigns accordingly.
@@ -89,9 +98,9 @@ your campaign, whether it's generating leads, driving conversions, or
 increasing brand awareness.
 2. **Choose Your UTM Parameters**: Select the relevant source, medium, and
 campaign parameters that align with your goals.
-3. **Add UTM Parameters to Your URLs**: Insert the UTM parameter strings into
-the links you share across various marketing channels (e.g., social media,
-email, paid search).
+3. **Add UTM Parameters to Your URLs**: Use our [free UTM builder tool](/tools/utm_builder)
+to add parameters to the links you share across various marketing channels (e.g.
+social media, email, paid search).
 
 ## Conclusion
 
