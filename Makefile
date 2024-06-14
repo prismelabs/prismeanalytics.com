@@ -19,7 +19,7 @@ build: docs/build
 	deno task build
 	mv docs/build _site/docs
 	mv ./_site/sitemap.xml sitemap.xml
-	./scripts/cat-sitemap.ts sitemap.xml ./_site/docs/sitemap.xml > ./_site/sitemap.xml
+	./scripts/cat-sitemap.js sitemap.xml ./_site/docs/sitemap.xml > ./_site/sitemap.xml
 	rm -f sitemap.xml
 
 docs/build: $(wildcard ./docs/*)
