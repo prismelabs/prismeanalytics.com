@@ -97,11 +97,8 @@ export default function ({ comp }: Lume.Data) {
       </main>
       <comp.Hr className="px-4 my-16 w-full max-w-2xl mx-auto" />
       <section className="px-4 max-w-2xl mx-auto w-full space-y-8">
-        <details className="flex-1">
-          <summary className="hover:underline hover:cursor-pointer select-none text-lg font-bold">
-            What are UTM parameters?
-          </summary>
-          <p className="mt-4">
+        <comp.Details summary="What are UTM parameters?">
+          <p>
             Urchin Tracking Module (UTM) parameters were first introduced by
             Google Analytics' predecessor Urchin and are a widely accepted tool
             to track the effectiveness of online marketing campaigns. With
@@ -109,26 +106,20 @@ export default function ({ comp }: Lume.Data) {
             people visited your website and compare the results of your
             campaigns.
           </p>
-        </details>
+        </comp.Details>
         <comp.Hr />
-        <details>
-          <summary className="hover:underline hover:cursor-pointer select-none text-lg font-bold">
-            How does a UTM campaign work?
-          </summary>
-          <p className="mt-4">
+        <comp.Details summary="How does a UTM campaign work?">
+          <p>
             A UTM campaign works by appending specific tags to your URLs, which
             can then be tracked by analytics platforms like Prisme Analytics.
             These tags help you understand where your website traffic is coming
             from and which marketing campaigns are driving the most engagement
             and conversions.
           </p>
-        </details>
+        </comp.Details>
         <comp.Hr />
-        <details>
-          <summary className="hover:underline hover:cursor-pointer select-none text-lg font-bold">
-            Why should I use UTM parameters?
-          </summary>
-          <p className="mt-4">
+        <comp.Details summary="Why should I use UTM parameters?">
+          <p>
             UTM parameters allow you to take a closer look at the origin of your
             website visitors. Prisme Analytics shows where a visitor comes from
             by the referrer, but this information is not always passed on by the
@@ -138,13 +129,10 @@ export default function ({ comp }: Lume.Data) {
             clicked on which page and at the same time improve the reliability
             of your statistics.
           </p>
-        </details>
+        </comp.Details>
         <comp.Hr />
-        <details>
-          <summary className="hover:underline hover:cursor-pointer select-none text-lg font-bold">
-            What are the UTM parameters and how do I use them?
-          </summary>
-          <p className="mt-4">
+        <comp.Details summary="What are the UTM parameters and how do I use them?">
+          <p>
             There are five UTM parameters in total. Namely{" "}
             <code>utm_source</code>, <code>utm_medium</code>,{" "}
             <code>utm_campaign</code>, <code>utm_content</code> and{" "}
@@ -184,30 +172,24 @@ export default function ({ comp }: Lume.Data) {
             used only for inbound links, not for links that link to pages on the
             same website.
           </p>
-        </details>
+        </comp.Details>
         <comp.Hr />
-        <details>
-          <summary className="hover:underline hover:cursor-pointer select-none text-lg font-bold">
-            Can I manually create UTM tags?
-          </summary>
-          <p className="mt-4">
+        <comp.Details summary="Can I manually create UTM tags?">
+          <p>
             Yes, you can manually create UTM tags by adding parameters to your
             URLs. However, this process can be time-consuming and prone to
             errors. Using a UTM campaign generator tool can streamline this
             process and ensure consistency in your tagging.
           </p>
-        </details>
+        </comp.Details>
         <comp.Hr />
-        <details>
-          <summary className="hover:underline hover:cursor-pointer select-none text-lg font-bold">
-            Are UTM tags case sensitive?
-          </summary>
-          <p className="mt-4">
+        <comp.Details summary="Are UTM tags case sensitive?">
+          <p>
             No, UTM tags are not case sensitive. However, it's a good practice
             to maintain consistency in your tagging to avoid any discrepancies
             in your analytics data.
           </p>
-        </details>
+        </comp.Details>
       </section>
       <comp.FooterCta />
     </div>
