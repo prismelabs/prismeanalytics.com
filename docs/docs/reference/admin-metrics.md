@@ -1,9 +1,9 @@
 # Admin Metrics
 
 This document list and explain metrics exposed by Prisme instances. If you're not
-self-hosting Prisme you're may be looking for [analytics metrics](./analytics-metrics).
+self-hosting Prisme you're may be looking for [analytics metrics](./analytics-metrics.md).
 
-Admin metrics are exposed under [`http://<PRISME_ADMIN_HOSTPORT>/metrics`](./server/default-mode#host-port)
+Admin metrics are exposed under [`http://<PRISME_ADMIN_HOSTPORT>/metrics`](./server/default-mode.md#host-port)
 
 ## HTTP Server
 

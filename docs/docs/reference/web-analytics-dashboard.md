@@ -66,10 +66,10 @@ website traffic.
 
 Summary panel is made of metrics and change block.
 Metrics meaning are detailed on another page:
-* [Unique visitors](./analytics-metrics#unique-visitors)
-* [Total visits](./analytics-metrics#total-visits)
-* [Total page views](./analytics-metrics#total-page-views)
-* [Views per visit](./analytics-metrics#views-per-visit)
+* [Unique visitors](./analytics-metrics.md#unique-visitors)
+* [Total sessions](./analytics-metrics.md#total-sessions-or-visits)
+* [Total page views](./analytics-metrics.md#total-page-views)
+* [Views per session](./analytics-metrics.md#views-per-session)
 
 The `Change` values represent the percentage change from one time period to
 another within the metric. For instance, if your dashboard displays data for the
@@ -85,9 +85,9 @@ previous 7-day period (blue rectangle).
 
 Second summary panel shows more advanced metrics.
 Metrics meaning are detailed on another page:
-* [Live visitors](./analytics-metrics#live-visitors)
-* [Bounce rate](./analytics-metrics#bounce-rate)
-* [Visit duration](./analytics-metrics#visit-duration)
+* [Live visitors](./analytics-metrics.md#live-visitors)
+* [Bounce rate](./analytics-metrics.md#bounce-rate)
+* [Session duration](./analytics-metrics.md#session-duration)
 
 
 ### Time series
@@ -121,7 +121,7 @@ This section shows most popular pages of you websites.
 
 ### Entry pages
 
-This bar gauge panels show the 10 most popular [entry pages](./analytics-metrics#entry-pages).
+This bar gauge panels show the 10 most popular [entry pages](./analytics-metrics.md#entry-pages).
 
 ![entry pages bar gauge screenshot](./images/general-dashboard/top-entry-pages.png)
 
@@ -133,7 +133,7 @@ This bar gauge panels show the 10 most popular pages.
 
 ### Exit pages
 
-This bar gauge panels show the 10 most popular [exit pages](./analytics-metrics#exit-pages).
+This bar gauge panels show the 10 most popular [exit pages](./analytics-metrics.md#exit-pages).
 
 ![exit pages bar gauge screenshot](./images/general-dashboard/top-exit-pages.png)
 

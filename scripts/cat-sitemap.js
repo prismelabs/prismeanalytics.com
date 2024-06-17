@@ -30,9 +30,4 @@ for (const sitemap of siteMaps.slice(1)) {
   result.urlset.url.push(...sitemap.urlset.url);
 }
 
-result.urlset.url = result.urlset.url.map((url) => {
-  if (!url.loc.endsWith('/')) url.loc = url.loc + "/";
-  return url
-})
-
 console.log(XML.stringify(result));

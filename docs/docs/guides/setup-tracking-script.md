@@ -56,7 +56,7 @@ If you received a `400 Bad Request`, it means that your Prisme instance rejected
 the request because it came from an unautorized
 [origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin).
 
-This can be fixed by adding your website domain to [Prisme origins registry](../reference/server/default-mode#origin-registry-options).
+This can be fixed by adding your website domain to [Prisme origins registry](../reference/server/default-mode.md#origin-registry-options).
 
 ### Other
 
