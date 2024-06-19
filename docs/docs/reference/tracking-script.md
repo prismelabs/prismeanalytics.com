@@ -11,7 +11,7 @@ JavaScript API.
 
 User tracking is done via an ultra light script (< 1kb) tag added to pages of your website.
 This script is served by Prisme Analytics instances at `/static/m.js`. You can consult
-its content [here](https://github.com/prismelabs/analytics/blob/master/tracker/prisme.js).
+its content [here](https://github.com/prismelabs/analytics/blob/master/tracker).
 
 This script is statically served (e.g. no templating) so configuration is done via
 [data-attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes).

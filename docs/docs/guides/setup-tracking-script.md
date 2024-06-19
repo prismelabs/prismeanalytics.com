@@ -4,7 +4,7 @@ This guides shows you how to add Prisme Analytics tracking script to your
 website.
 
 Our tracking script is ultra light (< 1kB) and designed to not slow down your website.
-You can consult its content [here](https://github.com/prismelabs/analytics/blob/master/tracker/prisme.js).
+You can consult its content [here](https://github.com/prismelabs/analytics/blob/master/tracker).
 
 ## Prerequisites
 
