@@ -31,16 +31,19 @@ export const metas = {
 
 export default ({ comp }: Lume.Data) => {
   return (
-    <div className="flex flex-col min-h-screen">
-      <main className="pt-16 px-4 mb-16 space-y-16 md:space-y-32 lg:space-y-48">
+    <div className="flex flex-col">
+      <main className="pt-16 px-4 mb-16 space-y-16 md:space-y-32 lg:space-y-48 z-10">
         <section className="w-full">
           <div className="max-w-6xl mx-auto gap-4 md:gap-8 px-4 sm:px-6 md:px-10 flex flex-col justify-center text-center -mt-8">
             <img
               src="/logo.svg"
               className="aspect-square w-full h-auto max-w-32 mx-auto my-4"
             />
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter">
-              Customize your web analytics. Track metrics that matter.
+            <h1
+              id="top"
+              className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tighter"
+            >
+              Convert more and better with customizable web analytics.
             </h1>
             <p className="text-lg md:text-xl leading-relaxed text-muted-foreground">
               Query, visualize and understand your web traffic. With Prisme
@@ -65,7 +68,7 @@ export default ({ comp }: Lume.Data) => {
                 </a>
               </div>
               <p className="text-sm text-muted-foreground">
-                Free trial with no credit card required
+                Prisme is free during beta!
               </p>
             </div>
             <div className="mt-8 rounded-xl w-fit mx-auto bg-muted p-2 ring-1 ring-inset ring-input lg:rounded-2xl lg:p-4">
@@ -80,17 +83,24 @@ export default ({ comp }: Lume.Data) => {
                 transform-images="jpg png avif webp"
               />
             </div>
+            <p className="uppercase font-bold pt-8">
+              Perfect for 💙 <span id="perfect-for">enterprises</span>
+            </p>
+            <script src="/scripts/perfect_for.js" />
           </div>
         </section>
         <section className="w-full max-w-6xl mx-auto">
-          <h2 className="text-center text-2xl md:text-3xl xl:text-4xl px-8 font-bold mb-16">
+          <h2
+            id="why-prisme"
+            className="text-center text-2xl md:text-3xl xl:text-4xl px-8 font-bold mb-16"
+          >
             Why Prisme?
           </h2>
           <div className="grid grid-cols-1 xl:grid-cols-2 my-8 gap-x-8 gap-y-8 md:gap-y-12 lg:gap-y-16">
             <div className="space-y-4">
               <comp.DashboardIcon />
               <h3 className="text-2xl font-bold">
-                Tailored metrics and dashboards
+                Analytics that matter (finally!)
               </h3>
               <p className="text-muted-foreground">
                 Our platform allows you to track custom events that truly matter
@@ -98,20 +108,25 @@ export default ({ comp }: Lume.Data) => {
                 visualize your metrics in a way that suits your unique needs.
               </p>
               <p className="text-muted-foreground text-xs italic">
-                Of course, you don't have to reinvent the wheel, a general
-                dashboard with common metrics is built-in.
+                Prisme is battery included and comes equipped with a dashboard
+                featuring essential metrics so you don't have to reinvent the
+                wheel.
               </p>
             </div>
             <div className="space-y-4">
               <comp.PrivacyFriendlyIcon />
               <h3 className="text-2xl font-bold mt-2">
-                Privacy-first
+                Privacy friendly analytics for a more enjoyable web
               </h3>
               <p className="text-muted-foreground">
-                Prisme is privacy-first by design, we don't use cookies and
-                don't store any Personal Identifiable Information (PII). We
-                comply by design with all privacy policies. Including: GDPR,
-                PECR, CCPA and more. Cookie banners not required.
+                Built from the ground up with privacy in mind, Prisme don't use
+                cookies and don't store any Personal Identifiable Information
+                (PII). We comply by design with all privacy policies. Including:
+                GDPR, PECR, CCPA and more.
+              </p>
+              <p className="text-muted-foreground text-xs italic">
+                Say goodbye to annoying consent cookie banners and give to your
+                visitors, a cleaner, more enjoyable online experience.
               </p>
             </div>
             <div className="space-y-4">
@@ -131,7 +146,7 @@ export default ({ comp }: Lume.Data) => {
                 Simple, lightweight, flexible and Open Source
               </h3>
               <p className="text-muted-foreground">
-                On top of everything, Prisme is simple to use, lightweight (&lt;
+                On top of everything, Prisme is simple to use, lightweight (≈
                 1kB tracking script), flexible and Open Source (as per{" "}
                 <a
                   target="_blank"
@@ -155,8 +170,11 @@ export default ({ comp }: Lume.Data) => {
         {/* TODO: customers quote section */}
         {/* TODO: success stories section */}
         <section className="w-full py-16">
-          <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold text-center mb-4">
-            Powered by Open Source
+          <h2
+            id="open-source"
+            className="text-2xl md:text-3xl xl:text-4xl font-bold text-center mb-4"
+          >
+            Proudly Open Source
           </h2>
           <p className="text-gray-700 dark:text-gray-300 text-center mb-16">
             Prisme Analytics is built on top of state of the art Open Source
@@ -215,17 +233,27 @@ export default ({ comp }: Lume.Data) => {
               />
             </a>
           </div>
-          <a
-            href="https://github.com/prismelabs/analytics"
-            target="_blank"
-            className="mt-16 flex justify-center items-center gap-2 underline"
-          >
-            <comp.GithubIcon className="w-8 h-8" /> View source code
-          </a>
+          <div className="mt-16 flex flex-col justify-center items-center gap-6">
+            <p>
+              Our source code is available on GitHub - feel free to read,
+              review, or contribute to it however you want!
+            </p>
+            <a
+              href="https://github.com/prismelabs/analytics"
+              target="_blank"
+              className="underline flex gap-2 items-center"
+            >
+              <comp.GithubIcon className="w-8 h-8" />
+              View source code
+            </a>
+          </div>
         </section>
         <section className="px-4 w-full max-w-7xl mx-auto flex flex-wrap justify-between gap-16">
           <div className="flex-1 min-w-96">
-            <h2 className="text-2xl md:text-3xl xl:text-4xl font-bold mb-8">
+            <h2
+              id="faq"
+              className="text-2xl md:text-3xl xl:text-4xl font-bold mb-8"
+            >
               Frequently asked questions (and answers)
             </h2>
             <p class="text-lg">
