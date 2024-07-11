@@ -1,7 +1,7 @@
 export default function ({ comp }: Lume.Data) {
   return (
     <>
-      <header className="px-4 lg:px-6 py-4 sticky top-0 z-50 bg-background">
+      <header className="px-4 lg:px-6 py-4 sticky top-0 z-50 bg-background shadow">
         <nav className="flex justify-between items-center">
           <a className="flex gap-2 items-center justify-center" href="/">
             <img

@@ -1,6 +1,6 @@
 export default function ({ comp }: Lume.Data) {
   return (
-    <section className="w-full h-72 relative mt-16">
+    <section className="w-full h-72 relative mt-16 z-50">
       <img
         src="/images/builtin-dashboard-dark.jpg"
         className="mx-auto w-full h-72 brightness-50 object-cover object-center absolute"

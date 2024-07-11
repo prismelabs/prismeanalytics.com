@@ -19,6 +19,7 @@ export default function (
           navbar={navbar}
           url={url}
         />
+        <comp.PageBg />
         {children}
         <comp.Footer lang={lang} alternates={alternates} />
       </body>

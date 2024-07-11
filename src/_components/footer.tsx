@@ -36,7 +36,7 @@ const links = {
 export default function ({ comp }: Lume.Data) {
   return (
     <>
-      <footer className="bg-slate-900">
+      <footer className="bg-slate-900 z-50">
         <h2 id="footer-heading" className="sr-only">Footer</h2>
         <div className="mx-auto max-w-7xl px-6">
           <a href="/" className="inline">
