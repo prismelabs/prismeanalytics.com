@@ -91,6 +91,14 @@ export default function ({ comp }: Lume.Data) {
               <span className="sr-only">GitHub</span>
               <comp.GithubIcon className="w-5 h-5" />
             </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/company/prisme-analytics/"
+              className="text-zinc-300 hover:text-white"
+            >
+              <span className="sr-only">LinkedIn</span>
+              <comp.LinkedInIcon className="w-5 h-5" />
+            </a>
           </div>
         </div>
       </footer>
