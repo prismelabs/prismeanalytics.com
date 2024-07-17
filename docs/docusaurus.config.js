@@ -74,6 +74,11 @@ const config = {
           target: "_self",
         },
         items: [
+          {
+            type: "docsVersionDropdown",
+            position: "left",
+            dropdownActiveClassDisabled: true,
+          },
           // { to: "/docs/", label: "Docs", position: "left" },
           // { to: "/docs/cloud", label: "Cloud", position: "left" },
           {
