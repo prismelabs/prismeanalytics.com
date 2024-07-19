@@ -57,6 +57,12 @@ Web server listening TCP port.
 
 Default: `PRISME_PORT=80`
 
+#### API Endpoints Timeout
+
+Duration before handlers timeout on `/api/*` endpoints.
+
+Default: `PRISME_API_EVENTS_TIMEOUT=3s`
+
 ### Administration Server
 
 Since [v0.15.0](https://github.com/prismelabs/analytics/releases/tag/v0.15.0),
