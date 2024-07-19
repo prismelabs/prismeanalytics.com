@@ -37,7 +37,7 @@ const config = {
   scripts: [
     "/docs/theme.js",
     {
-      src: "https://app.prismeanalytics.com/static/m.js",
+      src: "https://app.prismeanalytics.com/static/wa.js",
       async: true,
     },
   ],

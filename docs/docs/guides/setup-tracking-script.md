@@ -18,14 +18,14 @@ In order to track pageviews and other metrics, you must add Prisme tracking scri
 Regardless of the technology used, the site must contain the following tag:
 
 ```html
-<script src="https://<your-prisme-instance-hostname>/static/m.js" defer></script>
+<script src="https://<your-prisme-instance-hostname>/static/wa.js" defer></script>
 ```
 
 Depending on the tools you're using to build your website this can be as simple
 as editing a single file.
 
 :::note
-Tracking script can be configured
+Tracking script can be configured, see options [here](../reference/tracking-script.md).
 :::
 
 ## Step 2: Test
