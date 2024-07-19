@@ -34,7 +34,7 @@ Sessions are stored in `sessions` table with the following schemas:
 | utm_term | String | [UTM term parameter](https://en.wikipedia.org/wiki/UTM_parameters).|
 | utm_content | String | [UTM content parameter](https://en.wikipedia.org/wiki/UTM_parameters).|
 | version | UInt16 (ALIAS) | [Version field of VersionelCollapsingMergeTree](https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/versionedcollapsingmergetree#version) |
-| pageviews | UInt16 (ALIAS version) | Number of pageviews associated to this session. |
+| pageview_count | UInt16 (ALIAS version) | Number of pageviews associated to this session. |
 | is_bounce | UInt16 (ALIAS) | Whether this session is a bounce or not. |
 
 ## Events Tables
