@@ -34,6 +34,13 @@ Prisme Analytics is a **progressive** solution, allowing for quick adoption with
 minutes for basic needs while also being **adaptable** to meet your specific
 requirements.
 
+Prisme is also progressive in the sense of PWA (Progressive Web App)
+capabilities, supporting seamless tracking experiences without JavaScript, with
+JavaScript, and even embracing new standards like
+[`Sec-CH-UA-Platform`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Sec-CH-UA-Platform)
+as they emerge and
+standardize.
+
 ### Tailored Analytics
 
 Since v0.14.0, Prisme supports collecting custom events with **arbitrary** data.
