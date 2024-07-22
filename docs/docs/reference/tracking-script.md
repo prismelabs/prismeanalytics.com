@@ -27,7 +27,7 @@ Default to [origin](https://developer.mozilla.org/en-US/docs/Web/API/URL/origin)
 of URL used to load the script:
 ```html
 <!-- Events will be send to https://my-prisme-instance.example.com -->
-<script src="https://my-prisme-instance.example.com/static/wa.js"></script>
+<script src="https://my-prisme-instance.example.com/static/wa.js" defer></script>
 ```
 ### Domain (`data-domain`)
 
@@ -40,6 +40,23 @@ See https://developer.mozilla.org/en-US/docs/Web/API/Location/host
 
 Example: `data-domain="www.example.com"`
 
+### Path (`data-path`)
+
+Path of the viewed page. This is useful if you have a lot of dynamic pages
+with path parameters and you don't want to track them individually.
+
+```html
+<script src="https://my-prisme-instance.example.com/static/wa.js" data-path="/products/:product-id" defer></script>
+```
+
+This options is **ignored** when [manual tracking](#manual-data-manual) is enabled
+or a pageview event was already sent using `data-path` (e.g. second pageview on
+websites with client side routing).
+
+### Manual (`data-manual`)
+
+Enable manual tracking if value isn't `false`. When enabled, a `pageview` method
+is added to global `prisme` object.
 
 ## JavaScript API
 
@@ -50,11 +67,41 @@ using tracking script provided
 
 Page view events are automatically send on page load and when a new entry is
 pushed to [`window.history`](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState).
-This should cover static websites and SPA (Single Page Application) using client router.
+This should cover static websites and SPA (Single Page Application) using client
+side routing.
+
+If you enabled **manual tracking**, you **MUST** send pageview event manually
+using `window.prisme.pageview`.
+
+This function takes a single parameter, an object with the following optional
+properties:
+* `domain`: Viewed page domain name. Default to [`location.host`](https://developer.mozilla.org/en-US/docs/Web/API/Location/host)
+* `path`: Viewed page path. Default to [`location.pathname`](https://developer.mozilla.org/en-US/docs/Web/API/Location/pathname)
+* `visitorId`: Unique identifier associated with the session.
+
+> **NOTE**: If you specify a visitor id that allows you to track your visitor
+> over days, you must ask for their consent.
+
+> **NOTE**: Avoid using Personal Identifiable Information (PII) such as an email
+> address as visitors id.
+
+#### Examples
+
+Send an simple pageview event:
+
+```js
+window.prisme.pageview()
+```
+
+Send a pageview event with custom path:
+
+```js
+window.prisme.pageview({ path: "/products/:product-id" })
+```
 
 ### Custom Events
 
-Custom events can be send via the `window.prisme.trigger` function. This 
+Custom events can be send via the `window.prisme.trigger` function. This
 function takes two argument:
 * a string: the name of the event
 * an object: key-value pairs or attributes attached to the event.

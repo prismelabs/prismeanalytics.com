@@ -28,7 +28,23 @@ as editing a single file.
 Tracking script can be configured, see options [here](../reference/tracking-script.md).
 :::
 
-## Step 2: Test
+## Step 2: Add noscript tag (optional)
+
+If you website can works without javascript and you wants to track visitors with
+javascript disabled, you can add the following snippet:
+
+```html
+<noscript>
+    <img src="https://my-prisme-instance.example.com/api/v1/noscript/events/pageviews" style="position:relative;">
+</noscript>
+```
+
+For all `/api/v1/noscript/events/*` handlers, Prisme returns a small (35 bytes)
+single transparent pixel GIF image.
+
+You can read more about noscript events [here](../reference/http.md#noscript-events-api).
+
+## Step 3: Test
 
 Once you've added the script tag, check that tracking works by visiting a page
 containing it.
