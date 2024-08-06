@@ -117,6 +117,8 @@ site.use(tailwindcss({
             DEFAULT: "hsl(var(--card))",
             foreground: "hsl(var(--card-foreground))",
           },
+          ["grafana-blue"]: "hsl(var(--grafana-blue))",
+          ["grafana-purple"]: "hsl(var(--grafana-purple))",
         },
         borderRadius: {
           lg: "var(--radius)",

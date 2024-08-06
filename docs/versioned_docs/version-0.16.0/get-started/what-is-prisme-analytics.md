@@ -63,7 +63,7 @@ We're GDPR, CCPA and PECR compliant by design.
 
 Also, we don't use cookies so you can ditch your cookie banner!
 
-## Deeply Open Source
+## Open Source
 
 Affirming our commitment to user privacy is one aspect; substantiating it is another.
 Because Prisme Analytics is in alignment with the Open Source Initiative's (OSI)

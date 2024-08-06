@@ -1,11 +1,11 @@
-export interface AccordionData extends Lume.Data {
+export interface DetailsData extends Lume.Data {
   summary: string;
 }
 
-export default function ({ summary, children }: AccordionData) {
+export default function ({ summary, children }: DetailsData) {
   return (
     <details>
-      <summary className="hover:underline hover:cursor-pointer select-none text-lg font-bold">
+      <summary className="hover:cursor-pointer select-none">
         {summary}
       </summary>
       <div className="mt-4">
