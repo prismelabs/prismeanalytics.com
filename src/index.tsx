@@ -373,12 +373,12 @@ export default ({ comp }: Lume.Data) => {
                     <img
                       src="/images/funnel-light.png"
                       alt="Product screenshot"
-                      className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:hidden"
+                      className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-muted dark:hidden"
                     />
                     <img
                       src="/images/funnel-dark.png"
                       alt="Product screenshot"
-                      className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 hidden dark:block"
+                      className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-muted hidden dark:block"
                     />
                   </div>
                 </div>
@@ -447,12 +447,12 @@ export default ({ comp }: Lume.Data) => {
                     <img
                       src="/images/explore-light.png"
                       alt="Explore page screenshot"
-                      className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 dark:hidden"
+                      className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-muted dark:hidden"
                     />
                     <img
                       src="/images/explore-dark.png"
                       alt="Explore page screenshot"
-                      className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 hidden dark:block"
+                      className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-muted hidden dark:block"
                     />
                   </div>
                 </div>
