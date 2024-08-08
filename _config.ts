@@ -15,6 +15,8 @@ import transform_images from "lume/plugins/transform_images.ts";
 import feed from "@/plugins/feed.ts";
 import { full as markdownItEmoji } from "markdown-it-emoji";
 
+import codeHighlight from "lume/plugins/code_highlight.ts";
+
 const location = new URL("https://www.prismeanalytics.com");
 
 // deno-lint-ignore no-explicit-any
@@ -168,5 +170,7 @@ site.use(feed({
 }));
 
 site.use(multilanguage({ languages: ["en"], defaultLanguage: "en" }));
+
+site.use(codeHighlight());
 
 export default site;

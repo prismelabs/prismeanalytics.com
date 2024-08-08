@@ -39,16 +39,16 @@ main ol li {
 }
 
 main pre {
-  @apply px-1 border-2 rounded-md bg-background overflow-scroll;
+  @apply px-1 rounded-md bg-muted overflow-auto;
 }
 
 main code {
-  @apply inline bg-background rounded-md;
+  @apply inline p-1 bg-muted rounded-md;
 }
 
 main pre code.hljs,
 main pre code {
-  @apply block p-2 bg-background;
+  @apply block p-2 bg-muted;
 }
 
 main .table-container {
