@@ -80,12 +80,12 @@ export default ({ comp }: Lume.Data) => {
                 </div>
                 <div className="mt-8 rounded-xl w-fit mx-auto bg-muted p-2 ring-1 ring-inset ring-input lg:rounded-2xl lg:p-4">
                   <img
-                    src="/images/builtin-dashboard-light.jpg"
+                    src="/images/web-analytics-dashboard-light.png"
                     className="mx-auto rounded-md dark:hidden"
                     transform-images="jpg png avif webp"
                   />
                   <img
-                    src="/images/builtin-dashboard-dark.jpg"
+                    src="/images/web-analytics-dashboard-dark.png"
                     className="mx-auto rounded-md hidden dark:block"
                     transform-images="jpg png avif webp"
                   />

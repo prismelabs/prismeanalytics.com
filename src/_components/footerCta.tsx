@@ -2,7 +2,7 @@ export default function ({ comp }: Lume.Data) {
   return (
     <section className="w-full h-72 relative z-50">
       <img
-        src="/images/builtin-dashboard-dark.jpg"
+        src="/images/web-analytics-dashboard-dark.jpg"
         className="mx-auto w-full h-72 brightness-50 object-cover object-center absolute"
         transform-images="jpg png avif webp"
       />
