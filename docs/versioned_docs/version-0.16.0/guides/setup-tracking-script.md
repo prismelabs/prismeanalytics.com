@@ -35,7 +35,7 @@ javascript disabled, you can add the following snippet:
 
 ```html
 <noscript>
-    <img src="https://my-prisme-instance.example.com/api/v1/noscript/events/pageviews" style="position:relative;">
+    <img src="https://my-prisme-instance.example.com/api/v1/noscript/events/pageviews" style="position:absolute;top:-100px">
 </noscript>
 ```
 

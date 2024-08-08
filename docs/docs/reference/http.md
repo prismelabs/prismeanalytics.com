@@ -77,8 +77,8 @@ image.
 This way you can send events using HTML:
 
 ```html
-<!-- Set position to relative to not disrupt document layout flow -->
-<img src="https://<prisme-instance-hostname>/api/v1/noscript/events/<event>" style="position:relative;">
+<!-- Set position to absolute to not disrupt document layout flow -->
+<img src="https://<prisme-instance-hostname>/api/v1/noscript/events/<event>" style="position:absolute;top:-100px;">
 ```
 
 ### Page View Events
