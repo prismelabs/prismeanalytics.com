@@ -32,11 +32,6 @@ export const metas = {
 export default ({ comp }: Lume.Data) => {
   return (
     <>
-      <script
-        defer
-        data-url="https://devhunt.org/tool/prisme-analytics"
-        src="https://cdn.jsdelivr.net/gh/sidiDev/devhunt-banner/indexV0.js"
-      />
       <div className="flex flex-col">
         <main className="">
           <section className="relative overflow-hidden w-full pb-8 md:pb-16 lg:pb-24">
