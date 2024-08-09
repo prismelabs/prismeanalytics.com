@@ -22,7 +22,7 @@ Sessions are stored in `sessions` table with the following schemas:
 | visitor_id | String | Unique visitor identifier. |
 | is_anon | Bool | Whether the visitor is anonymous. |
 | session_uuid | UUID | UUIDv7 associated to this session. |
-| session_id | UInt128 (ALIAS) | session_uuid as a UInt128, [use this field if you want to sort on session_uuid](https://clickhouse.com/docs/en/sql-reference/data-types/uuid). |
+| session_id | UInt128 (ALIAS) | session_uuid as a UInt128, [use this field if you want to sort on session_uuid](https://clickhouse.com/docs/en/sql-references/data-types/uuid). |
 | operating_system | LowCardinality(String) | Visitor's Operating System (OS) |
 | browser_family | LowCardinality(String) | Visitor's browser family (e.g. Chrome, Firefox, etc) |
 | device | LowCardinality(String) | Visitor's device name. |
@@ -96,7 +96,7 @@ SELECT * FROM prisme.events_custom
 :::note
 Properties are compared against a String value as `event_property` helper function
 always returns a JSON string. You can cast value if needed using appropriate
-[type conversion function](https://clickhouse.com/docs/en/sql-reference/functions/type-conversion-functions).
+[type conversion function](https://clickhouse.com/docs/en/sql-references/functions/type-conversion-functions).
 :::
 
 Now let's say we want to retrieve clicks in the first 100 pixels on Y axis. We
@@ -112,5 +112,5 @@ SELECT * FROM prisme.events_custom
 
 If you're deeling with a more complex case, you may need more specialized JSON
 functions. You can find the list of all ClickHouse JSON functions
-[here](https://clickhouse.com/docs/en/sql-reference/functions/json-functions).
+[here](https://clickhouse.com/docs/en/sql-references/functions/json-functions).
 

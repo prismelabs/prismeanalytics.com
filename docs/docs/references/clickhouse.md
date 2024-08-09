@@ -2,12 +2,12 @@
 sidebar_position: 2
 ---
 
-# ClickHouse Table Schemas
+# ClickHouse table schemas
 
 [ClickHouse](https://clickhouse.com) database is used as Prisme Analytics events store.
 This page document schemas of Prisme Analytics tables.
 
-## Sessions Table
+## Sessions table
 
 Sessions are stored in `sessions` table with the following schemas:
 
@@ -22,7 +22,7 @@ Sessions are stored in `sessions` table with the following schemas:
 | visitor_id | String | Unique visitor identifier. |
 | is_anon | Bool | Whether the visitor is anonymous. |
 | session_uuid | UUID | UUIDv7 associated to this session. |
-| session_id | UInt128 (ALIAS) | session_uuid as a UInt128, [use this field if you want to sort on session_uuid](https://clickhouse.com/docs/en/sql-reference/data-types/uuid). |
+| session_id | UInt128 (ALIAS) | session_uuid as a UInt128, [use this field if you want to sort on session_uuid](https://clickhouse.com/docs/en/sql-references/data-types/uuid). |
 | operating_system | LowCardinality(String) | Visitor's Operating System (OS) |
 | browser_family | LowCardinality(String) | Visitor's browser family (e.g. Chrome, Firefox, etc) |
 | device | LowCardinality(String) | Visitor's device name. |
@@ -34,14 +34,14 @@ Sessions are stored in `sessions` table with the following schemas:
 | utm_term | String | [UTM term parameter](https://en.wikipedia.org/wiki/UTM_parameters).|
 | utm_content | String | [UTM content parameter](https://en.wikipedia.org/wiki/UTM_parameters).|
 | version | UInt16 (ALIAS) | [Version field of VersionelCollapsingMergeTree](https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/versionedcollapsingmergetree#version) |
-| pageviews | UInt16 (ALIAS version) | Number of pageviews associated to this session. |
+| pageview_count | UInt16 (ALIAS version) | Number of pageviews associated to this session. |
 | is_bounce | UInt16 (ALIAS) | Whether this session is a bounce or not. |
 
-## Events Tables
+## Events tables
 
-### Page Views Events
+### Page views events
 
-Page Views Events are stored in `pageviews` table with the following schemas:
+Page views events are stored in `pageviews` table with the following schemas:
 
 | Column name | Type | Description |
 | :---------: | :--: | :---------: |
@@ -51,9 +51,9 @@ Page Views Events are stored in `pageviews` table with the following schemas:
 | visitor_id | String | The visitor ID. |
 | session_uuid | UUID | The session UUIDv7. |
 
-### Custom Events
+### Custom events
 
-Custom Events are stored in `events_custom` table with the following schemas:
+Custom events are stored in `events_custom` table with the following schemas:
 
 | Column name | Type | Description |
 | :---------: | :--: | :---------: |
@@ -96,7 +96,7 @@ SELECT * FROM prisme.events_custom
 :::note
 Properties are compared against a String value as `event_property` helper function
 always returns a JSON string. You can cast value if needed using appropriate
-[type conversion function](https://clickhouse.com/docs/en/sql-reference/functions/type-conversion-functions).
+[type conversion function](https://clickhouse.com/docs/en/sql-references/functions/type-conversion-functions).
 :::
 
 Now let's say we want to retrieve clicks in the first 100 pixels on Y axis. We
@@ -112,5 +112,5 @@ SELECT * FROM prisme.events_custom
 
 If you're deeling with a more complex case, you may need more specialized JSON
 functions. You can find the list of all ClickHouse JSON functions
-[here](https://clickhouse.com/docs/en/sql-reference/functions/json-functions).
+[here](https://clickhouse.com/docs/en/sql-references/functions/json-functions).
 
