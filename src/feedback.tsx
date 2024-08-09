@@ -27,7 +27,18 @@ export default ({ comp }: Lume.Data) => {
         improving our product. Please adds as many details as needed so that we
         can understand your problems! 🌈△
       </p>
-      <form class="mx-auto px-4 md:px-8" method="POST" data-netlify="true">
+      <form
+        class="mx-auto px-4 md:px-8 space-y-4"
+        method="POST"
+        data-netlify="true"
+      >
+        <comp.Input
+          type="email"
+          label="Email (optional)"
+          id="email"
+          name="email"
+        >
+        </comp.Input>
         <comp.Input
           type="textarea"
           label="Message"
