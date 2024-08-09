@@ -26,7 +26,7 @@ docs/build: $(wildcard ./docs/*)
 	cd docs; npm run build
 
 _site: build
-	key=$(shell uuid); echo "$$key" > "$${key}.txt"
+	key=$(shell uuid); echo "$$key" > "_site/$${key}.txt"
 
 .PHONY: deploy
 deploy: _site
