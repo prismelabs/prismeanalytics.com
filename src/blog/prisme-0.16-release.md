@@ -10,6 +10,25 @@ metas:
   keywords:
     - Prisme Analytics
     - Web analytics
+    - Prisme 0.16 release
+    - JavaScript less tracking
+    - Recurring visitors
+    - Marketing campaigns
+    - Analytics tools
+    - Website optimization
+    - User engagement metrics
+    - Conversion rate improvement
+    - Data-driven decision making
+    - Web development updates
+    - Prisme software
+    - Digital marketing strategies
+    - Tracking and analysis
+    - Visitor behavior insights
+    - How to improve recurring visitors with Prisme 0.16 release
+    - Marketing campaign optimization using JavaScript less tracking
+    - Boosting website engagement with Prisme's latest features
+    - Understanding visitor behavior with Prisme's analytics tools
+    - Improving conversion rates with data-driven decision making
 ---
 
 Changelog is available [here](https://github.com/prismelabs/analytics/releases/tag/v0.16.0),
