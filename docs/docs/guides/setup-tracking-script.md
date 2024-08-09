@@ -1,4 +1,4 @@
-# How to Setup Tracking Script
+# How to setup tracking script
 
 This guides shows you how to add Prisme Analytics tracking script to your
 website.

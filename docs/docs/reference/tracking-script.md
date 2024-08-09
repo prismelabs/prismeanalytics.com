@@ -2,12 +2,12 @@
 sidebar_position: 1
 ---
 
-# Tracking Script
+# Tracking script
 
 This page document Prisme Analytics tracking script configuration options and
 JavaScript API.
 
-## Configuration Options
+## Configuration options
 
 User tracking is done via an ultra light script (< 1kb) tag added to pages of your website.
 This script is served by Prisme Analytics instances at `/static/wa.js`. You can consult
@@ -63,7 +63,7 @@ is added to global `prisme` object.
 Prisme expose all of it's public API functions under `window.prisme`. If you're
 using tracking script provided
 
-### Page Views
+### Page views
 
 Page view events are automatically send on page load and when a new entry is
 pushed to [`window.history`](https://developer.mozilla.org/en-US/docs/Web/API/History/pushState).
@@ -99,7 +99,7 @@ Send a pageview event with custom path:
 window.prisme.pageview({ path: "/products/:product-id" })
 ```
 
-### Custom Events
+### Custom events
 
 Custom events can be send via the `window.prisme.trigger` function. This
 function takes two argument:
@@ -108,12 +108,12 @@ function takes two argument:
 
 :::note
 You don't need to include the date, domain or the path of the page in the object
-as it automatically added by Prisme server.
+as it is automatically added by Prisme server.
 :::
 
 :::tip
-It is recommended to avoid nested JSON objects as it may
-impact performance at query time.
+It is recommended to avoid nested JSON objects as it may impact performance at
+query time.
 :::
 
 #### Examples

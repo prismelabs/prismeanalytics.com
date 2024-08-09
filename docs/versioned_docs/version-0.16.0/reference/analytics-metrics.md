@@ -1,4 +1,4 @@
-# Analytics Metrics
+# Analytics metrics
 
 This document list all analytics metrics and explain their meaning.
 

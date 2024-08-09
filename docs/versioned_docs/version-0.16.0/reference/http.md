@@ -17,7 +17,7 @@ and [standard `429 Too Many Requests`
 responses](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429) are
 returned if limit is exceeded.
 
-### Page View Events
+### Page view events
 
 You can create page view events using the following operation:
 `POST /api/v1/events/pageviews`.
@@ -48,7 +48,7 @@ proxies (such as Envoy used by Prisme Cloud) adds this header.
 Server return `400 Bad Request` if URLs from headers are invalid or origin is
 not registered.
 
-### Custom Events
+### Custom events
 
 Since v0.14.0, Prisme supports custom events. You can create custom events using
 the following operation: `POST /api/v1/events/custom/:name` (`:name`
@@ -66,7 +66,7 @@ of request. This is automatically added by browsers.
 * Request body **MUST** contains a valid, *preferably* flat for better query
 performance, JSON **object**. This is where you should put you're custom data.
 
-## Noscript Events API
+## Noscript events API
 
 Since v0.16.0, Prisme support JavaScript less tracking with `/api/v1/noscript/events/*`
 endpoints.
@@ -81,7 +81,7 @@ This way you can send events using HTML:
 <img src="https://<prisme-instance-hostname>/api/v1/noscript/events/<event>" style="position:absolute;top:-100px;">
 ```
 
-### Page View Events
+### Page view events
 
 You can create page view events using the following operation:
 `GET /api/v1/noscript/events/pageviews`.
@@ -114,7 +114,7 @@ present.
 Server return `400 Bad Request` if URLs from headers are invalid or origin is
 not registered.
 
-### Custom Events
+### Custom events
 
 You can send custom events using the following operation:
 `GET /api/v1/noscript/events/custom/:name` (`:name` corresponding to the name of
@@ -131,7 +131,7 @@ of request. This is automatically added by browsers.
 * `prop-<property-name>` search parameters **MUST** contains valid JSON values
 (e.g. string property `name` has `prop-name="John"` value with double quotes).
 
-## Health Check
+## Health check
 
 You can check that your instance is running, ready and healthy with the
 following operation: `GET /api/v1/healthcheck`.

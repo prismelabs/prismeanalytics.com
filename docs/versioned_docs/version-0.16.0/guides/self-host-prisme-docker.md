@@ -1,4 +1,4 @@
-# How to Self-Host Prisme with Docker Compose
+# How to self-host prisme with docker compose
 
 This guides shows you how to setup your own Prisme Analytics server using
 [Docker](https://docker.com).

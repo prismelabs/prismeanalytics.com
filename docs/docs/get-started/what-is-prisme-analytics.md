@@ -3,14 +3,14 @@ slug: /
 sidebar_position: 1
 ---
 
-# What Is Prisme Analytics ?
+# What is Prisme Analytics?
 
 Prisme Analytics is an **Open Source**, **privacy-focused** and **progressive
 web analytics service**.
 
 Let's see what this means in detail.
 
-## Web Analytics
+## Web analytics
 
 From [wikipedia](https://en.wikipedia.org/wiki/Web_analytics) definition:
 
@@ -41,13 +41,13 @@ JavaScript, and even embracing new standards like
 as they emerge and
 standardize.
 
-### Tailored Analytics
+### Tailored analytics
 
 Since v0.14.0, Prisme supports collecting custom events with **arbitrary** data.
 You can create events that matters to your specific business and then **visualize**
 them **the way you want** (pie chart, time serie, gauge, etc).
 
-### Ready to Use
+### Ready to use
 
 Prisme provides a general dashboard and common metrics to help you get started.
 Number of visits, page views and more are built-in so you don't have to reinvent
@@ -63,7 +63,7 @@ We're GDPR, CCPA and PECR compliant by design.
 
 Also, we don't use cookies so you can ditch your cookie banner!
 
-## Deeply Open Source
+## Open Source
 
 Affirming our commitment to user privacy is one aspect; substantiating it is another.
 Because Prisme Analytics is in alignment with the Open Source Initiative's (OSI)

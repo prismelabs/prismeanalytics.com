@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Default Mode
+# Default mode
 
 Default mode is the default Prisme Analytics mode that aims to provide a fully
 integrated and functional experience.
@@ -35,11 +35,11 @@ flowchart TD
     you<--Consult dashboard-->dashboard
 ```
 
-## Configuration Options
+## Configuration options
 
 Configuration of your instance is done by environment variable.
 
-### Web Server
+### Web server
 
 Prisme has 2 logs, an access logs for processed requests and a general logs
 for everything else.
@@ -79,28 +79,28 @@ added administration interface.
 
 Default: `PRISME_ADMIN_HOSTPORT=127.0.0.1:9090` (`PRISME_ADMIN_HOSTPORT="0.0.0.0:9090"` in Docker)
 
-### Proxy Options
+### Proxy options
 
 Prisme Analytics can be positioned behind a reverse proxy, and this section
 provides information on options related to the proxy setup. It's important to
 note that a misconfigured server can have security implications. Hence, Prisme
 Analytics prioritizes **security by default** with carefully chosen default values.
 
-#### Trust Proxy
+#### Trust proxy
 
 Whether X-Forwarded-For, X-Request-Id and other proxy related headers should be
 trusted. Sets this value to true only if your instance is running behind a proxy.
 
 Default: `PRISME_TRUST_PROXY=false`
 
-#### Proxy Header
+#### Proxy header
 
 HTTP header used to detemine client IP address when Prisme Analytics is placed
 behind a trusted proxy.
 
 Default: `PRISME_PROXY_HEADER=X-Forwarded-For`
 
-### Grafana Options
+### Grafana options
 
 #### URL
 
@@ -129,7 +129,7 @@ ID of Grafana organization in which Grafana ressources will be setup.
 
 Default: `PRISME_GRAFANA_ORG_ID=1`
 
-### ClickHouse Options
+### ClickHouse options
 
 #### Secure connection
 
@@ -137,7 +137,7 @@ Use a TLS connection for ClickHouse.
 
 Default: `PRISME_CLICKHOUSE_TLS=false`
 
-#### Host And Port
+#### Host and port
 
 `<host>:<port>` string pointing to a ClickHouse instance.
 
@@ -150,31 +150,31 @@ ClickHouse database to use.
 
 Default: `PRISME_CLICKHOUSE_DATABASE=prisme`
 
-### Origin Registry Options
+### Origin registry options
 
 #### Origins
 
-Comma separated list (without whitespace) of valid 
+Comma separated list (without whitespace) of valid
 [origins](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin).
 Events coming from an invalid source are rejected.
 
 Example: `PRISME_ORIGIN_REGISTRY_ORIGINS=www.example.com,app.example.com`
 
-### Event Store Options
+### Event store options
 
 Event store is responsible of storing events efficiently in ClickHouse.
 
 ClickHouse recommend keeping number of insertions to 1 per seconds max and inserting
 rows per batch of tens of thousands.
 
-#### Maximum Batch Size
+#### Maximum batch size
 
 Maximum size of an events batch before it is sent to ClickHouse. Leave as default
 unless you have high traffic load.
 
 Default: `PRISME_EVENTSTORE_MAX_BATCH_SIZE=4096`
 
-#### Maximum Batch Timeout
+#### Maximum batch timeout
 
 Maximum duration before current batch is sent to event store.
 

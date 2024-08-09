@@ -1,6 +1,6 @@
 import DocCardList from '@theme/DocCardList';
 
-# Server Modes
+# Server modes
 
 Prisme Analytics can operate in two different modes with different options:
 

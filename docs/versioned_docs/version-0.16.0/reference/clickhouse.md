@@ -2,12 +2,12 @@
 sidebar_position: 2
 ---
 
-# ClickHouse Table Schemas
+# ClickHouse table schemas
 
 [ClickHouse](https://clickhouse.com) database is used as Prisme Analytics events store.
 This page document schemas of Prisme Analytics tables.
 
-## Sessions Table
+## Sessions table
 
 Sessions are stored in `sessions` table with the following schemas:
 
@@ -37,11 +37,11 @@ Sessions are stored in `sessions` table with the following schemas:
 | pageview_count | UInt16 (ALIAS version) | Number of pageviews associated to this session. |
 | is_bounce | UInt16 (ALIAS) | Whether this session is a bounce or not. |
 
-## Events Tables
+## Events tables
 
-### Page Views Events
+### Page views events
 
-Page Views Events are stored in `pageviews` table with the following schemas:
+Page views events are stored in `pageviews` table with the following schemas:
 
 | Column name | Type | Description |
 | :---------: | :--: | :---------: |
@@ -51,9 +51,9 @@ Page Views Events are stored in `pageviews` table with the following schemas:
 | visitor_id | String | The visitor ID. |
 | session_uuid | UUID | The session UUIDv7. |
 
-### Custom Events
+### Custom events
 
-Custom Events are stored in `events_custom` table with the following schemas:
+Custom events are stored in `events_custom` table with the following schemas:
 
 | Column name | Type | Description |
 | :---------: | :--: | :---------: |

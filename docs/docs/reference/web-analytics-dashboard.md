@@ -1,4 +1,4 @@
-# Web Analytics Dashboard
+# Web analytics dashboard
 
 Prisme Analytics comes with a built-in web analytics dashboard, that focus on
 measuring and analyzing anonymous traffic in order to understand how to
@@ -17,7 +17,7 @@ is a screenshot of 7 parameters of general dashboard:
 
 ![General dashboard parameters screenshot](./images/general-dashboard/parameters.png)
 
-### Date Time Range
+### Date time range
 
 First parameter is date time range. It is built-in into [Grafana](https://grafana.com/grafana),
 the software we're using to display our dashboard.
@@ -38,7 +38,7 @@ This parameter let you filter which domains you want to see.
 
 Path parameter filters pages path.
 
-### Operating Systems (OS)
+### Operating systems (OS)
 
 Operating Systems filter on visitors operating systems family.
 
