@@ -12,10 +12,11 @@ You can consult its content [here](https://github.com/prismelabs/analytics/blob/
 
 ## Step 1: Add script tag
 
-In order to track pageviews and other metrics, you must add Prisme tracking script on
-**all pages** you want to have metrics on.
+In order to track pageviews and other metrics, you must add Prisme tracking
+script on **all pages**.
 
-Regardless of the technology used, the site must contain the following tag:
+Regardless of the technology used, all pages must contain the following tag either
+in `<head>` or `<body>` tag.
 
 ```html
 <script src="https://<your-prisme-instance-hostname>/static/wa.js" defer></script>
