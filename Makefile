@@ -26,6 +26,7 @@ docs/build: $(wildcard ./docs/*)
 	cd docs; npm run build
 
 _site: build
+	key=$(shell uuid); echo "$$key" > "$${key}.txt"
 
 .PHONY: deploy
 deploy: _site
@@ -34,6 +35,16 @@ deploy: _site
 .PHONY: deploy/prod
 deploy/prod: _site
 	netlify deploy --prod
+
+.PHONY: indexnow
+indexnow:
+	@test -d _site || $(MAKE) deploy/prod
+	indexnow-submit sitemap-fetch -o urlsfile https://www.prismeanalytics.com/sitemap.xml
+	for engine in "bing.com" "yandex.com"; do \
+		indexnow-submit submit-urls -e "$$engine" -h "www.prismeanalytics.com" -k $(shell ls _site | grep -oE '[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}') urlsfile; \
+	done
+	rm -f urlsfile
+	gis https://www.prismeanalytics.com
 
 .PHONY: clean
 clean:
