@@ -573,7 +573,7 @@ export default ({ comp }: Lume.Data) => {
                           </>
                         ),
                         ctaHref:
-                          "https://www.prismeanalytics.com/docs/reference/http/#noscript-events-api",
+                          "https://www.prismeanalytics.com/docs/references/http/#noscript-events-api",
                       },
                       {
                         title: "Real-time",

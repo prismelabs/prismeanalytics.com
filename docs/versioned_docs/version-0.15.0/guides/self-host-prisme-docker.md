@@ -22,7 +22,7 @@ versions that are tested to work with Prisme.
 Our Docker Compose file comes with sane default but there is some options that you
 **must** tweak. Lines preceded by an `EDIT_ME: ...` comment must be edited.
 
-Be sure to read all [Prisme configuration options](../reference/server/server-modes.md).
+Be sure to read all [Prisme configuration options](../references/server/server-modes.md).
 
 You can also configure Grafana and ClickHouse as you like.
 

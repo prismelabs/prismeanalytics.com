@@ -47,12 +47,12 @@ now create a custom dashboard based on tailored, custom metrics for your
 specific business.
 
 Tracking script now exposes an javascript API under `window.prisme` so you can
-send custom events, documentation and examples available [here](/docs/reference/tracking-script#custom-events).
+send custom events, documentation and examples available [here](/docs/references/tracking-script#custom-events).
 
-If you want to directly use the HTTP API, documentation is available [here](/docs/reference/http#custom-events).
+If you want to directly use the HTTP API, documentation is available [here](/docs/references/http#custom-events).
 
 Finally, to build custom dashboards, you will need the table schema of the new
-`events_custom` table. It is available [here](/docs/reference/clickhouse#custom-events)
+`events_custom` table. It is available [here](/docs/references/clickhouse#custom-events)
 
 Before starting to send custom events, please read all documentation so you
 can get the most out of it.

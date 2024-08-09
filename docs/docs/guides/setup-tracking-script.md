@@ -25,7 +25,7 @@ Depending on the tools you're using to build your website this can be as simple
 as editing a single file.
 
 :::note
-Tracking script can be configured, see options [here](../reference/tracking-script.md).
+Tracking script can be configured, see options [here](../references/tracking-script.md).
 :::
 
 ## Step 2: Add noscript tag (optional)
@@ -42,7 +42,7 @@ javascript disabled, you can add the following snippet:
 For all `/api/v1/noscript/events/*` handlers, Prisme returns a small (35 bytes)
 single transparent pixel GIF image.
 
-You can read more about noscript events [here](../reference/http.md#noscript-events-api).
+You can read more about noscript events [here](../references/http.md#noscript-events-api).
 
 ## Step 3: Test
 
@@ -72,7 +72,7 @@ If you received a `400 Bad Request`, it means that your Prisme instance rejected
 the request because it came from an unautorized
 [origin](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Origin).
 
-This can be fixed by adding your website domain to [Prisme origins registry](../reference/server/default-mode.md#origin-registry-options).
+This can be fixed by adding your website domain to [Prisme origins registry](../references/server/default-mode.md#origin-registry-options).
 
 ### Other
 

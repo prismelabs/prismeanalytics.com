@@ -5,3 +5,9 @@
   [headers.values]
     Access-Control-Allow-Origin = "*"
 
+[[redirects]]
+  from = "/docs/next/reference/*"
+  to = "/docs/next/references/:splat"
+[[redirects]]
+  from = "/docs/reference/*"
+  to = "/docs/references/:splat"

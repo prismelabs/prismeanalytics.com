@@ -71,7 +71,7 @@ as they emerge and standardize.
 
 <img src="https://app.prismeanalytics.com/api/v1/noscript/events/<event>" style="position:absolute;top:-100px;">
 
-[New API endpoints](/docs/reference/http/#noscript-events-api) serving
+[New API endpoints](/docs/references/http/#noscript-events-api) serving
 ultra-lightweight (35 bytes) transparent single pixel GIF image were added for
 all events. You can now send events using plain HTML:
 ```html

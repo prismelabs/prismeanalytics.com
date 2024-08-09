@@ -44,21 +44,21 @@ please make sure to read it before upgrading.
 
 The most important new feature of this release is **session tracking**. Previous
 versions of Prisme are able to track unique visitors across pages but there was
-no such thing as [sessions](/docs/reference/analytics-metrics#total-sessions-or-visits).
+no such thing as [sessions](/docs/references/analytics-metrics#total-sessions-or-visits).
 
-Sessions tracking enables the addition of few metrics such as [bounce rate](/docs/reference/analytics-metrics#bounce-rate),
-[views per sessions](/docs/reference/analytics-metrics#views-per-session) and
-[average session duration](/docs/reference/analytics-metrics#session-duration).
+Sessions tracking enables the addition of few metrics such as [bounce rate](/docs/references/analytics-metrics#bounce-rate),
+[views per sessions](/docs/references/analytics-metrics#views-per-session) and
+[average session duration](/docs/references/analytics-metrics#session-duration).
 
-It is now possible to filter on [entry pages](/docs/reference/analytics-metrics#entry-pages),
-[exit pages](/docs/reference/analytics-metrics#exit-pages),
-[pageviews per session](/docs/reference/analytics-metrics#views-per-session) and
+It is now possible to filter on [entry pages](/docs/references/analytics-metrics#entry-pages),
+[exit pages](/docs/references/analytics-metrics#exit-pages),
+[pageviews per session](/docs/references/analytics-metrics#views-per-session) and
 more.
 
 ## Bot filtering
 
 If you've used previous versions of Prisme Analytics, you may have noticed
-`AhrefsBot` or other bots appearing in your [browsers pie chart](/docs/reference/web-analytics-dashboard#browsers-1).
+`AhrefsBot` or other bots appearing in your [browsers pie chart](/docs/references/web-analytics-dashboard#browsers-1).
 These bots don't represent real users and can impact your metrics. To provide a
 more accurate picture of your website's performance, we're introducing a light
 bot filter in this release.
@@ -73,7 +73,7 @@ This releases also adds admin metrics in prometheus format. With these metrics,
 you can now monitor the health and performance of your instance, receive timely
 alerts in case of issues.
 
-If you're hosting Prisme instances be sure to read our [metrics reference](/docs/reference/admin-metrics).
+If you're hosting Prisme instances be sure to read our [metrics reference](/docs/references/admin-metrics).
 
 ## Minor changes and maintenance
 

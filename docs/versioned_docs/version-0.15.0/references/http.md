@@ -36,8 +36,8 @@ which viewer comes from, if present.
 This is used to determine browser and device.
 
 * [`X-Forwarded-For`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For)
-or [value of PRISME_PROXY_HEADER option](../reference/server/default-mode.md#proxy-header)
-header (if [PRISME_TRUST_PROXY](../reference/server/default-mode.md#trust-proxy) is true) to determine
+or [value of PRISME_PROXY_HEADER option](../references/server/default-mode.md#proxy-header)
+header (if [PRISME_TRUST_PROXY](../references/server/default-mode.md#trust-proxy) is true) to determine
 client IP address. This is used to determine clients location. Typically, reverse
 proxies (such as Envoy used by Prisme Cloud) adds this header.
 
