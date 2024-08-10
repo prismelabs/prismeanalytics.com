@@ -66,7 +66,7 @@ website, like social media, paid search, or organic search.
 3. **utm_campaign**: Tracks the specific campaign or promotion that drove
 traffic to your site.
 
-Additionnaly, you can add these optional parameters:
+Additionnally, you can add these optional parameters:
 
 4. **utm_search**: Identifies specific keywords or terms driving traffic to your
 website, such as `summer sale` for ads related to summer sale.
