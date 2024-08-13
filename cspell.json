@@ -14,7 +14,8 @@
     "traefik",
     "geolocator",
     "geolocations",
-    "templating"
+    "templating",
+    "dropmenu"
   ],
   "ignoreRegExpList": [
     "`[^`]*`"

@@ -31,8 +31,9 @@ metas:
     - Improving conversion rates with data-driven decision making
 ---
 
-Changelog is available [here](https://github.com/prismelabs/analytics/releases/tag/v0.16.0),
-please make sure to read it before upgrading.
+Changelog is available
+[here](https://github.com/prismelabs/analytics/releases/tag/v0.16.0), please
+make sure to read it before upgrading.
 
 ## Marketing campaigns
 
@@ -74,14 +75,15 @@ as they emerge and standardize.
 [New API endpoints](/docs/references/http/#noscript-events-api) serving
 ultra-lightweight (35 bytes) transparent single pixel GIF image were added for
 all events. You can now send events using plain HTML:
+
 ```html
 <!-- Set position to absolute to not disrupt document layout flow -->
 <img src="https://<prisme-instance-hostname>/api/v1/noscript/events/<event>" style="position:absolute;top:-100px;">
 ```
 
 If you want to use it as a fallback, be sure to wrap your `<img>` tags in a
-`<noscript>` tag. This way, browsers will load (and thus send events) images only
-when JavaScript is not supported/disabled.
+`<noscript>` tag. This way, browsers will load (and thus send events) images
+only when JavaScript is not supported/disabled.
 
 ## Grafana 11.0
 
@@ -91,10 +93,11 @@ Grafana 11.0 was released and break its API, starting from this version Grafana
 ## Minor changes and maintenance
 
 Other few minor changes comes with this release:
-* go dependencies got updated
-* update of embedded IP geolocation database
-* Web Analytics dashboard got updated
-* update of nix flake
+
+- go dependencies got updated
+- update of embedded IP geolocation database
+- Web Analytics dashboard got updated
+- update of nix flake
 
 ## Upgrade to Prisme 0.16
 
@@ -111,6 +114,5 @@ Your contributions, ranging from pull requests to valuable feedback, are crucial
 in continually enhancing Prisme. And your enthusiasm and dedication inspire us
 at Prisme Labs to persistently innovate and elevate the Prisme platform.
 
-*[Prisme Cloud](https://app.prismeanalytics.com) is the easiest way to get
-started with web analytics. Sign up for a free trial now!*
-
+_[Prisme Cloud](https://app.prismeanalytics.com) is the easiest way to get
+started with web analytics. Sign up for a free trial now!_

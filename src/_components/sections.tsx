@@ -20,4 +20,3 @@ export default function ({ children }: SectionsData) {
 
   return <div class="pb-12 lg:pb-20">{children}</div>;
 }
-

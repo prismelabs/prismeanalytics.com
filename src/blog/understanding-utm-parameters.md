@@ -60,18 +60,18 @@ A typical UTM parameter looks like this:
 Each part of the string serves a specific purpose:
 
 1. **utm_source**: Identifies the source of the traffic, such as social media
-platforms (e.g., Twitter), search engines (e.g., Google), or email campaigns.
+   platforms (e.g., Twitter), search engines (e.g., Google), or email campaigns.
 2. **utm_medium**: Indicates the medium through which the user arrived at your
-website, like social media, paid search, or organic search.
+   website, like social media, paid search, or organic search.
 3. **utm_campaign**: Tracks the specific campaign or promotion that drove
-traffic to your site.
+   traffic to your site.
 
 Additionnally, you can add these optional parameters:
 
 4. **utm_search**: Identifies specific keywords or terms driving traffic to your
-website, such as `summer sale` for ads related to summer sale.
+   website, such as `summer sale` for ads related to summer sale.
 5. **utm_content**: Tracks performance of specific ad creatives or content,
-helping optimize engagement and conversions.
+   helping optimize engagement and conversions.
 
 ## Why Use UTM Parameters?
 
@@ -79,29 +79,30 @@ Incorporating UTM parameters into your marketing campaigns offers numerous
 benefits:
 
 1. **Improved Campaign Insights**: By tracking specific aspects of your
-campaigns, you can gain a deeper understanding of how users interact with your
-content and identify areas for optimization.
+   campaigns, you can gain a deeper understanding of how users interact with
+   your content and identify areas for optimization.
 2. **Enhanced Reporting**: UTM parameters enable you to create customized
-reports in [Prisme Analytics](/) that provide actionable insights into campaign
-performance.
+   reports in [Prisme Analytics](/) that provide actionable insights into
+   campaign performance.
 3. **Better Targeting**: With UTM parameters, you can target specific segments
-of your audience and optimize your campaigns accordingly.
+   of your audience and optimize your campaigns accordingly.
 4. **Increased ROI**: By optimizing your campaigns based on UTM parameter data,
-you can improve your return on investment (ROI) and maximize the effectiveness
-of your marketing spend.
+   you can improve your return on investment (ROI) and maximize the
+   effectiveness of your marketing spend.
 
 ## How to Implement UTM Parameters
 
 To start using UTM parameters, follow these simple steps:
 
 1. **Determine Your Campaign Goals**: Identify what you want to achieve with
-your campaign, whether it's generating leads, driving conversions, or
-increasing brand awareness.
+   your campaign, whether it's generating leads, driving conversions, or
+   increasing brand awareness.
 2. **Choose Your UTM Parameters**: Select the relevant source, medium, and
-campaign parameters that align with your goals.
-3. **Add UTM Parameters to Your URLs**: Use our [free UTM builder tool](/tools/utm_builder)
-to add parameters to the links you share across various marketing channels (e.g.
-social media, email, paid search).
+   campaign parameters that align with your goals.
+3. **Add UTM Parameters to Your URLs**: Use our
+   [free UTM builder tool](/tools/utm_builder) to add parameters to the links
+   you share across various marketing channels (e.g. social media, email, paid
+   search).
 
 ## Conclusion
 
@@ -111,4 +112,3 @@ gain valuable insights into user behavior, improve campaign performance, and
 increase ROI. As the digital landscape continues to evolve, it's essential to
 leverage tools like UTM parameters to stay ahead of the curve and achieve
 success in your marketing endeavors.
-
