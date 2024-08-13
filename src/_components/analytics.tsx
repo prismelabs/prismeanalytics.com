@@ -7,6 +7,11 @@ export default function () {
         defer
       >
       </script>
+      <script
+        src="/docs/scroll-depth.js"
+        defer
+      >
+      </script>
     </>
   );
 }

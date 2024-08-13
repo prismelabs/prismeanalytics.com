@@ -40,6 +40,7 @@ const config = {
       src: "https://app.prismeanalytics.com/static/wa.js",
       async: true,
     },
+    "/docs/scroll-depth.js",
   ],
 
   presets: [
