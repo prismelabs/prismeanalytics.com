@@ -9,6 +9,7 @@ docs/start:
 .PHONY: lint
 lint:
 	deno task check
+	cspell docs/docs/**/*.md
 
 .PHONY: lint/fix
 lint/fix:

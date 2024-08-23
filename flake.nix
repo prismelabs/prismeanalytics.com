@@ -27,6 +27,9 @@
               vips
               stdenv.cc.cc.lib
               pkg-config
+
+              # Spell checker
+              nodePackages_latest.cspell
             ]
             ++ [ gis.packages.${system}.default ]
             ++ [ indexnow.packages.${system}.default ];

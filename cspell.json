@@ -1,0 +1,22 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": [
+    "CCPA",
+    "Matomo",
+    "PECR",
+    "Prisme",
+    "datasource",
+    "pageview",
+    "pageviews",
+    "prisme",
+    "serie",
+    "traefik",
+    "geolocator",
+    "geolocations",
+    "templating"
+  ],
+  "ignoreRegExpList": [
+    "`[^`]*`"
+  ]
+}
