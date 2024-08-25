@@ -71,12 +71,18 @@ export default function ({ comp }: Lume.Data) {
                 </li>
               </a>
               <li className="flex items-center gap-2 mt-2">
-                <a href="https://app.prismeanalytics.com/" className="w-full">
+                <a
+                  href="https://app.prismeanalytics.com/authn/sign_in"
+                  className="w-full"
+                >
                   <comp.Button variant="ghost" className="w-full">
                     Sign in
                   </comp.Button>
                 </a>
-                <a href="https://app.prismeanalytics.com/" className="w-full">
+                <a
+                  href="https://app.prismeanalytics.com/authn/sign_up"
+                  className="w-full"
+                >
                   <comp.Button className="w-full">
                     Try Prisme
                   </comp.Button>
