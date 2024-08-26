@@ -8,7 +8,7 @@ export default function ({ comp }: Lume.Data) {
         transform-images="jpg png avif webp"
       />
       <h2 className="w-full text-3xl text-center font-bold text-white absolute top-20 z-10">
-        Ready to ditch Google Analytics?
+        Ready to switch?
       </h2>
       <div className="w-full flex justify-center space-x-8 absolute bottom-20">
         <a href="https://app.prismeanalytics.com/authn/sign_up">
