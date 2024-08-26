@@ -11,6 +11,7 @@
       "npm:estree-walker@3.0.3": "npm:estree-walker@3.0.3",
       "npm:highlight.js@11.9.0": "npm:highlight.js@11.9.0",
       "npm:ico-endec@0.1.6": "npm:ico-endec@0.1.6",
+      "npm:markdown-it-anchor": "npm:markdown-it-anchor@9.1.0_@types+markdown-it@14.1.2_markdown-it@14.0.0",
       "npm:markdown-it-attrs@4.1.6": "npm:markdown-it-attrs@4.1.6_markdown-it@14.0.0",
       "npm:markdown-it-deflist@3.0.0": "npm:markdown-it-deflist@3.0.0",
       "npm:markdown-it-emoji": "npm:markdown-it-emoji@3.0.0",
@@ -565,6 +566,21 @@
           "@types/node": "@types/node@18.16.19"
         }
       },
+      "@types/linkify-it@5.0.0": {
+        "integrity": "sha512-sVDA58zAw4eWAffKOaQH5/5j3XeayukzDk+ewSsnv3p4yJEZHCCzMDiZM8e0OUrRvmpGZ85jf4yDHkHsgBNr9Q==",
+        "dependencies": {}
+      },
+      "@types/markdown-it@14.1.2": {
+        "integrity": "sha512-promo4eFwuiW+TfGxhi+0x3czqTYJkG8qB17ZUJiVF10Xm7NLVRSLUsfRTU/6h1e24VvRnXCx+hG7li58lkzog==",
+        "dependencies": {
+          "@types/linkify-it": "@types/linkify-it@5.0.0",
+          "@types/mdurl": "@types/mdurl@2.0.0"
+        }
+      },
+      "@types/mdurl@2.0.0": {
+        "integrity": "sha512-RGdgjQUZba5p6QEFAVx2OGb8rQDL/cPRG7GiedRzMcJ1tYnUANBncjbSB1NRGwbvjcPeikRABz2nshyPk1bhWg==",
+        "dependencies": {}
+      },
       "@types/node@18.16.19": {
         "integrity": "sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==",
         "dependencies": {}
@@ -1052,6 +1068,13 @@
         "integrity": "sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==",
         "dependencies": {
           "yallist": "yallist@4.0.0"
+        }
+      },
+      "markdown-it-anchor@9.1.0_@types+markdown-it@14.1.2_markdown-it@14.0.0": {
+        "integrity": "sha512-a5WqArGkkLQZUEdC9cpkWvrdLJyS45r+28nE4jxiQynFLZ6VXdX4+hulCRzxmS+hi9+Dwfi5zTFIz3dY1YA6xQ==",
+        "dependencies": {
+          "@types/markdown-it": "@types/markdown-it@14.1.2",
+          "markdown-it": "markdown-it@14.0.0"
         }
       },
       "markdown-it-attrs@4.1.6_markdown-it@14.0.0": {
@@ -2701,6 +2724,7 @@
   },
   "workspace": {
     "dependencies": [
+      "npm:markdown-it-anchor",
       "npm:markdown-it-emoji"
     ]
   }

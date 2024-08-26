@@ -1,97 +1,97 @@
-main h2,
-main h3,
-main h4,
-main h5,
-main h6,
-main p,
-main pre,
-main table {
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6,
+.post-content p,
+.post-content pre,
+.post-content table {
   @apply mb-4 text-foreground;
 }
 
-main h1 {
+.post-content h1 {
   @apply mb-8 font-bold text-foreground text-4xl tracking-normal;
 }
 
-main h2 {
+.post-content h2 {
   @apply font-sans font-semibold text-2xl pt-8;
 }
 
-main h3 {
+.post-content h3 {
   @apply font-sans font-semibold font-medium text-xl pt-6;
 }
 
-main p {
+.post-content p {
   @apply font-sans text-foreground text-justify;
 }
 
-main ul,
-main ol {
+.post-content ul,
+.post-content ol {
   @apply mb-4;
 }
 
-main ul li {
+.post-content ul li {
   @apply list-disc ml-8 pl-2;
 }
 
-main ol li {
+.post-content ol li {
   @apply list-decimal ml-8 pl-2;
 }
 
-main pre {
+.post-content pre {
   @apply px-1 rounded-md bg-muted overflow-auto;
 }
 
-main code {
+.post-content code {
   @apply inline p-1 bg-muted rounded-md;
 }
 
-main pre code.hljs,
-main pre code {
+.post-content pre code.hljs,
+.post-content pre code {
   @apply block p-2 bg-muted;
 }
 
-main .table-container {
+.post-content .table-container {
   @apply overflow-scroll mx-auto;
 }
 
-main table {
+.post-content table {
   @apply mx-auto;
 }
 
-main thead {
+.post-content thead {
   @apply bg-foreground text-background;
 }
 
-main th,
-main td {
+.post-content th,
+.post-content td {
   @apply py-2 px-2 border;
 }
 
-main th {
+.post-content th {
   @apply border-foreground;
 }
 
-main tr:nth-child(even) {
+.post-content tr:nth-child(even) {
   @apply bg-gray-100 dark:bg-neutral-900;
 }
 
-main strong {
+.post-content strong {
   @apply text-foreground;
 }
 
-main a {
+.post-content a {
   @apply text-blue-700 dark:text-blue-400;
 }
 
-main a:visited {
+.post-content a:visited {
   @apply text-indigo-800 dark:text-indigo-500;
 }
 
-main a:hover {
+.post-content a:hover {
   @apply underline;
 }
 
-main blockquote {
+.post-content blockquote {
   @apply pl-3 border-l-4 border-l-foreground;
 }

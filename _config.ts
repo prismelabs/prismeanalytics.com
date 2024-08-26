@@ -14,6 +14,7 @@ import postcss from "lume/plugins/postcss.ts";
 import transform_images from "lume/plugins/transform_images.ts";
 import feed from "@/plugins/feed.ts";
 import { full as markdownItEmoji } from "markdown-it-emoji";
+import markdownItAnchor from "markdown-it-anchor";
 
 import codeHighlight from "lume/plugins/code_highlight.ts";
 
@@ -64,7 +65,7 @@ const markdown: Partial<MarkdownOptions> = {
       return renderMd(tokens, idx, options, env, self);
     },
   },
-  plugins: [markdownItEmoji],
+  plugins: [markdownItEmoji, [markdownItAnchor, { level: 2 }]],
 };
 
 const site = lume({

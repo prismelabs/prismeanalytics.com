@@ -1,7 +1,7 @@
 ---
 title: "Funnel Analysis in Web Analytics: Boost Conversions with Data-Driven Insights"
 date: "2024-08-26"
-tags: ["prisme"]
+tags: ["prisme", "funnel analysis", "conversion"]
 author: '[Alexandre Negrel](https://www.negrel.dev)'
 metas:
   title: "Funnel Analysis in Web Analytics: Boost Conversions with Data-Driven Insights"
@@ -30,8 +30,6 @@ metas:
     - customer journey mapping
     - website traffic analysis
 ---
-
-## Introduction to Funnel Analysis
 
 In the world of digital marketing and e-commerce, understanding user behavior is
 crucial for success. One of the most powerful tools in a web analyst's arsenal
