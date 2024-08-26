@@ -638,7 +638,7 @@ export default ({ comp }: Lume.Data) => {
                     ].map(({ title, Icon, desc, ctaHref }) => (
                       <div className="flex flex-col">
                         <dt className="text-base font-semibold leading-7 text-foreground">
-                          <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-grafana-purple shadow-xl shadow-grafana-purple">
+                          <div className="mb-6 flex h-10 w-10 items-center justify-center rounded-lg bg-grafana-purple shadow-lg shadow-grafana-purple/50">
                             <Icon class="size-6 text-white" />
                           </div>
                           {title}
