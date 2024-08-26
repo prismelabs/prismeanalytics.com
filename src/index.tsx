@@ -40,6 +40,7 @@ export default ({ comp }: Lume.Data) => {
               <div className="max-w-6xl mx-auto gap-4 md:gap-8 px-4 sm:px-6 md:px-10 text-center -mt-8">
                 <img
                   src="/logo.svg"
+                  alt="Prisme logo"
                   className="aspect-square w-full h-auto max-w-32 mx-auto mt-4 mb-16"
                 />
                 <h1
@@ -81,11 +82,13 @@ export default ({ comp }: Lume.Data) => {
                 <div className="mt-8 rounded-xl w-fit mx-auto bg-muted p-2 ring-1 ring-inset ring-input lg:rounded-2xl lg:p-4">
                   <img
                     src="/images/web-analytics-dashboard-light.png"
+                    alt="Screenshot of web analytics dashboard"
                     className="mx-auto rounded-md dark:hidden"
                     transform-images="jpg png avif webp"
                   />
                   <img
                     src="/images/web-analytics-dashboard-dark.png"
+                    alt="Screenshot of web analytics dashboard in dark mode"
                     className="mx-auto rounded-md hidden dark:block"
                     transform-images="jpg png avif webp"
                   />
@@ -372,13 +375,13 @@ export default ({ comp }: Lume.Data) => {
                   <div className="px-6 md:px-0">
                     <img
                       src="/images/funnel-light.png"
-                      alt="Product screenshot"
+                      alt="Funnel panel screenshot"
                       className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-muted dark:hidden"
                       transform-images="jpg png avif webp"
                     />
                     <img
                       src="/images/funnel-dark.png"
-                      alt="Product screenshot"
+                      alt="Dark funnel panel screenshot"
                       className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-muted hidden dark:block"
                       transform-images="jpg png avif webp"
                     />
