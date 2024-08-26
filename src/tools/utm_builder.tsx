@@ -96,7 +96,7 @@ export default function ({ comp }: Lume.Data) {
         </section>
       </main>
       <comp.Hr className="px-4 my-16 w-full max-w-2xl mx-auto" />
-      <section className="px-4 max-w-2xl mx-auto w-full space-y-8">
+      <section className="px-4 max-w-2xl mx-auto w-full space-y-8 mb-16">
         <comp.Details summary="What are UTM parameters?">
           <p>
             Urchin Tracking Module (UTM) parameters were first introduced by
