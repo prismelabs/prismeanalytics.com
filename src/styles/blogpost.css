@@ -10,7 +10,7 @@ main table {
 }
 
 main h1 {
-  @apply mb-8 font-bold text-foreground text-5xl tracking-normal;
+  @apply mb-8 font-bold text-foreground text-4xl tracking-normal;
 }
 
 main h2 {

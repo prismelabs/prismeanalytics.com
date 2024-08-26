@@ -46,45 +46,44 @@ export default function (
           url={url}
         />
         <main className="w-full px-4 pt-8 mx-auto max-w-xl md:max-w-2xl lg:max-w-3xl overflow-x-hidden md:overflow-visible space-y-12">
-          <section>
-            <div>
-              {metas?.image && typeof metas?.image === "string" &&
-                (
-                  <img
-                    src={metas.image}
-                    transform-images="png jpg webp avif"
-                  />
-                )}
-              <h1
+          <section className="space-y-6">
+            <img
+              src={metas!.image?.toString()}
+              className="rounded-sm"
+              transform-images="jpg png avif webp 1600@2"
+            />
+            <h1
+              dangerouslySetInnerHTML={{
+                __html: md(
+                  (typeof metas?.title === "string")
+                    ? metas.title
+                    : title ?? "",
+                  true,
+                ),
+              }}
+            >
+            </h1>
+            <div className="flex justify-between">
+              <div
+                className="-mb-4"
                 dangerouslySetInnerHTML={{
-                  __html: md(
-                    (typeof metas?.title === "string")
-                      ? metas.title
-                      : title ?? "",
-                    true,
-                  ),
+                  __html: md(["By", author].join(" ")),
                 }}
-              >
-              </h1>
-              <div className="flex justify-between">
-                <div
-                  dangerouslySetInnerHTML={{
-                    __html: md(["By", author].join(" ")),
-                  }}
-                />
-                <p>Published on {date.toLocaleDateString()}</p>
-              </div>
-              {tags && (
-                <div className="flex pb-8">
-                  {tags.map((tag) => (
-                    <div className="rounded-md py-1 px-2 mr-2 bg-background-dark">
-                      <span>#{tag}</span>
-                    </div>
-                  ))}
-                </div>
-              )}
-              {children}
+              />
+              <p className="-mb-4">
+                Published on {date.toLocaleDateString()}
+              </p>
             </div>
+            {tags && (
+              <div className="flex">
+                {tags.map((tag) => (
+                  <div className="rounded-md px-2 mr-2 bg-background-dark">
+                    <span>#{tag}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+            {children}
           </section>
           {nextPost ?? prevPost !== undefined
             ? (
