@@ -50,9 +50,9 @@ export default function (
           navbar={navbar}
           url={url}
         />
-        <main className="w-full px-4 pt-8 mx-auto max-w-xl md:max-w-4xl lg:max-w-7xl overflow-x-hidden md:overflow-visible space-y-12">
-          <div className="flex gap-16">
-            <section className="order-last sticky top-24 hidden lg:block h-min">
+        <main className="w-full px-4 pt-8 mx-auto max-w-xl md:max-w-4xl lg:max-w-7xl space-y-12">
+          <div className="flex gap-12 xl:gap-24">
+            <section className="order-last sticky top-24 hidden lg:block h-min w-1/3">
               <h2 className="font-bold mb-4">On this page</h2>
               <ul className="list-none w-max space-y-2 text-sm">
                 {toc.map((t) => (
@@ -66,12 +66,51 @@ export default function (
                   </li>
                 ))}
               </ul>
+              <div className="mx-auto mt-8 rounded-xl ring-1 ring-muted lg:mx-0 lg:max-w-none bg-muted p-8 space-y-4">
+                <div className="space-y-6">
+                  <img
+                    className="w-10 h-10"
+                    src="/logo.svg"
+                    alt="Prisme Analytics logo"
+                  />
+                  <p className="text-2xl font-bold">Prisme Cloud (beta)</p>
+                </div>
+
+                <ul className="list-none text-sm space-y-2">
+                  {[
+                    "Unlimited websites",
+                    "Unlimited pageviews / events",
+                    "Unlimited dashboards",
+                    "GDPR compliance",
+                    "Intuitive, fast, built-in Web Analytics dashboard",
+                    "... and more",
+                  ].map((item) => (
+                    <li className="flex items-center gap-x-2">
+                      <comp.CheckIcon className="h-4 w-4 flex-none text-primary" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="pt-4 flex flex-col justify-center items-center gap-2">
+                  <a
+                    href="https://app.prismeanalytics.com/authn/sign_up"
+                    className="w-full"
+                  >
+                    <comp.Button className="w-full">
+                      Create free account
+                    </comp.Button>
+                  </a>
+                  <p className="text-xs leading-5 text-muted-foreground">
+                    No credit card required.
+                  </p>
+                </div>
+              </div>
             </section>
-            <section className="space-y-6">
+            <section className="space-y-6 w-full flex-1 md:w-2/3">
               <img
                 src={metas!.image?.toString()}
                 className="rounded-sm"
-                transform-images="jpg png avif webp 1600@2"
+                transform-images="jpg png avif webp"
               />
               <h1
                 className="font-bold text-foreground text-4xl tracking-normal"
@@ -105,7 +144,7 @@ export default function (
                   ))}
                 </div>
               )}
-              <div className="post-content">
+              <div className="post-content overflow-hidden">
                 {children}
               </div>
             </section>
