@@ -470,7 +470,10 @@ export default ({ comp }: Lume.Data) => {
             <div className="py-16 sm:py-24 ring-1">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl sm:text-center">
-                  <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+                  <h2
+                    id="pricing"
+                    className="text-3xl font-bold tracking-tight sm:text-4xl"
+                  >
                     Simple no-tricks pricing
                   </h2>
                   <p className="mt-6 text-lg leading-8 text-muted-foreground">
