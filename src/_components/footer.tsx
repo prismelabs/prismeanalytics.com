@@ -30,6 +30,7 @@ const links = {
   },
   "Tools": {
     "UTM Builder": "/tools/utm_builder",
+    "CTR Calculator": "/tools/ctr_calculator",
   },
 };
 
