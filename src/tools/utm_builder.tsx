@@ -96,102 +96,143 @@ export default function ({ comp }: Lume.Data) {
           </div>
         </section>
       </main>
-      <comp.Hr className="px-4 my-16 w-full max-w-2xl mx-auto" />
-      <section className="px-4 max-w-2xl mx-auto w-full space-y-8 mb-16">
-        <comp.Details summary="What are UTM parameters?">
-          <p>
-            Urchin Tracking Module (UTM) parameters were first introduced by
-            Google Analytics' predecessor Urchin and are a widely accepted tool
-            to track the effectiveness of online marketing campaigns. With
-            Prisme Analytics, you can use UTM parameters to break down how many
-            people visited your website and compare the results of your
-            campaigns.
-          </p>
-        </comp.Details>
-        <comp.Hr />
-        <comp.Details summary="How does a UTM campaign work?">
-          <p>
-            A UTM campaign works by appending specific tags to your URLs, which
-            can then be tracked by analytics platforms like Prisme Analytics.
-            These tags help you understand where your website traffic is coming
-            from and which marketing campaigns are driving the most engagement
-            and conversions.
-          </p>
-        </comp.Details>
-        <comp.Hr />
-        <comp.Details summary="Why should I use UTM parameters?">
-          <p>
-            UTM parameters allow you to take a closer look at the origin of your
-            website visitors. Prisme Analytics shows where a visitor comes from
-            by the referrer, but this information is not always passed on by the
-            browser. In addition, only the origin website is listed, but not,
-            for example, on which link on a page was clicked. With the help of
-            UTM parameters, you get precise information about which links were
-            clicked on which page and at the same time improve the reliability
-            of your statistics.
-          </p>
-        </comp.Details>
-        <comp.Hr />
-        <comp.Details summary="What are the UTM parameters and how do I use them?">
-          <p>
-            There are five UTM parameters in total. Namely{" "}
-            <code>utm_source</code>, <code>utm_medium</code>,{" "}
-            <code>utm_campaign</code>, <code>utm_content</code> and{" "}
-            <code>utm_term</code>. Typically, the first three parameters are
-            set, and optionally <code>utm_content</code> and{" "}
-            <code>utm_term</code>.
-            <br />
-            <br />
-            <code>utm_source</code>{" "}
-            specifies the source, such as a website or newsletter.
-            <br />
-            <br />
-            <code>utm_medium</code>{" "}
-            contains the medium used for the campaign, such as social media.
-            <br />
-            <br />
-            <code>utm_campaign</code>, as the name suggests, identifies the
-            campaign. Each campaign is usually given a name, such as Summer
-            Sale.
-            <br />
-            <br />
-            <code>utm_content</code> and <code>utm_term</code>{" "}
-            are used less frequently, but can be very useful for finding out
-            what link a visitor followed and what keywords were used.{" "}
-            <code>utm_content</code>{" "}
-            indicates what part of a page or email was viewed. This can be e.g.
-            the header or footer to identify the area where the link is placed.
-            <code>utm_term</code>{" "}
-            is used for search terms. For example, if links are displayed as the
-            result of a search, the search terms can be sent with the campaign.
-            <br />
-            <br />
-            In general, the values for the parameters can be freely chosen.
-            However, they are case sensitive and no spaces can be used.
-            Alternatively, plus signs can be used, which are automatically
-            converted into spaces by Prisme Analytics. UTM parameters should be
-            used only for inbound links, not for links that link to pages on the
-            same website.
-          </p>
-        </comp.Details>
-        <comp.Hr />
-        <comp.Details summary="Can I manually create UTM tags?">
-          <p>
-            Yes, you can manually create UTM tags by adding parameters to your
-            URLs. However, this process can be time-consuming and prone to
-            errors. Using a UTM campaign generator tool can streamline this
-            process and ensure consistency in your tagging.
-          </p>
-        </comp.Details>
-        <comp.Hr />
-        <comp.Details summary="Are UTM tags case sensitive?">
-          <p>
-            No, UTM tags are not case sensitive. However, it's a good practice
-            to maintain consistency in your tagging to avoid any discrepancies
-            in your analytics data.
-          </p>
-        </comp.Details>
+      <comp.Hr className="px-4 mt-16 w-full max-w-2xl mx-auto" />
+      <section className="max-w-2xl mx-auto w-full space-y-6 divide-y divide-muted mb-8">
+        {[
+          {
+            question: "What are UTM parameters?",
+            answer: (
+              <>
+                Urchin Tracking Module (UTM) parameters were first introduced by
+                Google Analytics' predecessor Urchin and are a widely accepted
+                tool to track the effectiveness of online marketing campaigns.
+                With Prisme Analytics, you can use UTM parameters to break down
+                how many people visited your website and compare the results of
+                your campaigns.
+              </>
+            ),
+          },
+          {
+            question: "How does a UTM campaign work?",
+            answer: (
+              <>
+                A UTM campaign works by appending specific tags to your URLs,
+                which can then be tracked by analytics platforms like Prisme
+                Analytics. These tags help you understand where your website
+                traffic is coming from and which marketing campaigns are driving
+                the most engagement and conversions.
+              </>
+            ),
+          },
+          {
+            question: "Why should I use UTM parameters?",
+            answer: (
+              <>
+                UTM parameters allow you to take a closer look at the origin of
+                your website visitors. Prisme Analytics shows where a visitor
+                comes from by the referrer, but this information is not always
+                passed on by the browser. In addition, only the origin website
+                is listed, but not, for example, on which link on a page was
+                clicked. With the help of UTM parameters, you get precise
+                information about which links were clicked on which page and at
+                the same time improve the reliability of your statistics.
+              </>
+            ),
+          },
+          {
+            question: "What are the UTM parameters and how do I use them?",
+            answer: (
+              <>
+                There are five UTM parameters in total. Namely{" "}
+                <code>utm_source</code>, <code>utm_medium</code>,{" "}
+                <code>utm_campaign</code>, <code>utm_content</code> and{" "}
+                <code>utm_term</code>. Typically, the first three parameters are
+                set, and optionally <code>utm_content</code> and{" "}
+                <code>utm_term</code>.
+                <br />
+                <br />
+                <code>utm_source</code>{" "}
+                specifies the source, such as a website or newsletter.
+                <br />
+                <br />
+                <code>utm_medium</code>{" "}
+                contains the medium used for the campaign, such as social media.
+                <br />
+                <br />
+                <code>utm_campaign</code>, as the name suggests, identifies the
+                campaign. Each campaign is usually given a name, such as Summer
+                Sale.
+                <br />
+                <br />
+                <code>utm_content</code> and <code>utm_term</code>{" "}
+                are used less frequently, but can be very useful for finding out
+                what link a visitor followed and what keywords were used.{" "}
+                <code>utm_content</code>{" "}
+                indicates what part of a page or email was viewed. This can be
+                e.g. the header or footer to identify the area where the link is
+                placed.
+                <code>utm_term</code>{" "}
+                is used for search terms. For example, if links are displayed as
+                the result of a search, the search terms can be sent with the
+                campaign.
+                <br />
+                <br />
+                In general, the values for the parameters can be freely chosen.
+                However, they are case sensitive and no spaces can be used.
+                Alternatively, plus signs can be used, which are automatically
+                converted into spaces by Prisme Analytics. UTM parameters should
+                be used only for inbound links, not for links that link to pages
+                on the same website.
+              </>
+            ),
+          },
+          {
+            question: "Can I manually create UTM tags?",
+            answer: (
+              <>
+                Yes, you can manually create UTM tags by adding parameters to
+                your URLs. However, this process can be time-consuming and prone
+                to errors. Using a UTM campaign generator tool can streamline
+                this process and ensure consistency in your tagging.
+              </>
+            ),
+          },
+          {
+            question: "Are UTM tags case sensitive?",
+            answer: (
+              <>
+                No, UTM tags are not case sensitive. However, it's a good
+                practice to maintain consistency in your tagging to avoid any
+                discrepancies in your analytics data.
+              </>
+            ),
+          },
+        ].map(({ question, answer }) => (
+          <dl class="pt-6">
+            <div>
+              <dt>
+                <comp.Details
+                  class="flex w-full items-start justify-between text-left text-gray-900"
+                  aria-controls="faq-0"
+                  aria-expanded="false"
+                  summary={
+                    <h3 className="inline text-base">
+                      {question}
+                    </h3>
+                  }
+                >
+                  <dd class="mt-2 pr-12" id="faq-0">
+                    <p class="leading-7 text-muted-foreground">
+                      {answer}
+                    </p>
+                  </dd>
+                </comp.Details>
+              </dt>
+            </div>
+          </dl>
+        ))}
       </section>
+
       <comp.FooterCta />
     </div>
   );
