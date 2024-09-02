@@ -1,20 +1,21 @@
 {
-	"compilerOptions": {
-		"jsx": "precompile",
-		"jsxImportSource": "npm:preact",
-		"types": [
-			"lume/types.ts"
-		]
-	},
-	"tasks": {
-		"lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
-		"build": "deno task lume",
-		"serve": "deno task lume -s",
-		"check": "deno fmt --check --ignore=_site,.direnv,docs && deno lint --ignore=_site,.direnv,docs && deno check src/**/*.tsx"
-	},
-	"imports": {
-		"lume/": "https://deno.land/x/lume@v2.1.4/",
-		"@/": "./",
-		"markdown-it-emoji": "npm:markdown-it-emoji""markdown-it-anchor": "npm:markdown-it-anchor"
-	}
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "npm:preact",
+    "types": [
+      "lume/types.ts"
+    ]
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "check": "deno fmt --check --ignore=_site,.direnv,docs && deno lint --ignore=_site,.direnv,docs && deno check src/**/*.tsx"
+  },
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.1.4/",
+    "@/": "./",
+    "markdown-it-emoji": "npm:markdown-it-emoji",
+    "markdown-it-anchor": "npm:markdown-it-anchor"
+  }
 }

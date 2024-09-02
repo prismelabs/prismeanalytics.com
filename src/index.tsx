@@ -822,7 +822,7 @@ export default ({ comp }: Lume.Data) => {
               <a
                 href="https://clickhouse.com/"
                 target="_blank"
-                className="p-4 bg-[#faff69] place-self-center"
+                className="p-6 bg-[#faff69] place-self-center"
               >
                 <img
                   alt="Clickhouse logo"

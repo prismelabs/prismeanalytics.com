@@ -24,6 +24,8 @@ export default function (
   const prevPost = posts[postIndex - 1];
   const nextPost = posts[postIndex + 1];
 
+  const isBlog = url.startsWith("/blog/");
+
   const toc = tableOfContent(content!.toString());
 
   return (
@@ -50,13 +52,13 @@ export default function (
           navbar={navbar}
           url={url}
         />
-        <main className="w-full px-4 pt-8 mx-auto max-w-xl md:max-w-4xl lg:max-w-7xl space-y-12">
+        <main className="w-full px-4 py-8 mx-auto max-w-xl md:max-w-4xl lg:max-w-7xl space-y-12">
           <div className="flex gap-12 xl:gap-24">
             <section className="order-last sticky top-24 hidden lg:block h-min w-1/3">
               <h2 className="font-bold mb-4">On this page</h2>
-              <ul className="list-none w-max space-y-2 text-sm">
+              <ul className="list-none w-max max-w-full space-y-2 text-sm">
                 {toc.map((t) => (
-                  <li className="list-none ml-0 pl-0">
+                  <li className="list-none ml-0 pl-0 text-ellipsis">
                     <a
                       href={`#${t.anchor}`}
                       className="text-muted-foreground hover:text-foreground"
@@ -107,11 +109,14 @@ export default function (
               </div>
             </section>
             <section className="space-y-6 w-full flex-1 md:w-2/3">
-              <img
-                src={metas!.image?.toString()}
-                className="rounded-sm"
-                transform-images="jpg png avif webp"
-              />
+              {metas?.image && metas.image !== "/images/og.png" &&
+                (
+                  <img
+                    src={metas.image.toString()}
+                    className="rounded-sm"
+                    transform-images="jpg png avif webp"
+                  />
+                )}
               <h1
                 className="font-bold text-foreground text-4xl tracking-normal"
                 dangerouslySetInnerHTML={{
@@ -124,32 +129,37 @@ export default function (
                 }}
               >
               </h1>
-              <div className="flex justify-between">
-                <div
-                  className="post-content"
-                  dangerouslySetInnerHTML={{
-                    __html: md(["By", author].join(" ")),
-                  }}
-                />
-                <p>
-                  Published on {date.toLocaleDateString()}
-                </p>
-              </div>
-              {tags && (
-                <div className="flex">
-                  {tags.map((tag) => (
-                    <div className="rounded-md px-2 mr-2 bg-background-dark">
-                      <span>#{tag}</span>
+              {isBlog &&
+                (
+                  <>
+                    <div className="flex justify-between">
+                      <div
+                        className="post-content"
+                        dangerouslySetInnerHTML={{
+                          __html: md(["By", author].join(" ")),
+                        }}
+                      />
+                      <p>
+                        Published on {date.toLocaleDateString()}
+                      </p>
                     </div>
-                  ))}
-                </div>
-              )}
-              <div className="post-content overflow-hidden">
+                    {tags && (
+                      <div className="flex">
+                        {tags.map((tag) => (
+                          <div className="rounded-md px-2 mr-2 bg-background-dark">
+                            <span>#{tag}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                )}
+              <div className="post-content overflow-hidden md:text-lg md:leading-8">
                 {children}
               </div>
             </section>
           </div>
-          {nextPost ?? prevPost !== undefined
+          {isBlog && (nextPost ?? prevPost) !== undefined
             ? (
               <>
                 <comp.Hr />
@@ -185,7 +195,6 @@ export default function (
                       : <span />}
                   </div>
                 </section>
-                <div />
               </>
             )
             : undefined}
