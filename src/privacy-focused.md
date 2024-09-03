@@ -73,8 +73,8 @@ rejecting all investment offers to maintain our focus on user privacy.
 We believe in collecting only essential data points, contrasting with tools like
 Google Analytics that gather vast amounts of information. Our streamlined
 approach not only enhances privacy but also simplifies analytics interpretation.
-Prisme Analytics is 75 times lighter than Google Analytics, improving site
-performance and reducing your carbon footprint. Explore our
+[Prisme Analytics is 75 times lighter](/lightweight/) than Google Analytics,
+improving site performance and reducing your carbon footprint. Explore our
 [live demo dashboard](https://app.prismeanalytics.com/grafana) to see the
 concise data we collect.
 
@@ -125,7 +125,8 @@ gives you additional flexibility and control.
 ## Ready to embrace privacy-focused analytics?
 
 [Experience Prisme Analytics with our 30-day free trial - no credit card
-required](https://app.prismeanalytics.com/authn/sign_up). Our lightweight script
-allows you to run Prisme alongside your current analytics, enabling a smooth
-transition to privacy-friendly web analytics. Start your journey towards
-ethical, insightful website tracking today!
+required](https://app.prismeanalytics.com/authn/sign_up). Our
+[lightweight](/lightweight/) script allows you to run Prisme alongside your
+current analytics, enabling a smooth transition to privacy-friendly web
+analytics. Start your journey towards ethical, insightful website tracking
+today!
