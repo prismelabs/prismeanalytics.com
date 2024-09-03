@@ -2,6 +2,7 @@
 _site/
 src/_cache/
 .cache
+_cache
 
 # Local Netlify folder
 .netlify

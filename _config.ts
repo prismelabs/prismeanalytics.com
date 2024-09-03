@@ -11,8 +11,9 @@ import tailwindcss from "lume/plugins/tailwindcss.ts";
 import sass from "lume/plugins/sass.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import postcss from "lume/plugins/postcss.ts";
+import cssnano from "npm:cssnano";
 import transform_images from "lume/plugins/transform_images.ts";
-import feed from "@/plugins/feed.ts";
+import feed from "lume/plugins/feed.ts";
 import { full as markdownItEmoji } from "markdown-it-emoji";
 import markdownItAnchor from "markdown-it-anchor";
 
@@ -152,7 +153,9 @@ site.use(tailwindcss({
 }));
 site.use(sass());
 site.use(sitemap());
-site.use(postcss());
+site.use(postcss({
+  plugins: [cssnano],
+}));
 site.use(transform_images());
 
 site.use(feed({
