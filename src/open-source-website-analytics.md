@@ -39,7 +39,7 @@ many proprietary tools, Prisme's [Open Source] nature allows for transparency,
 self-hosting flexibility, and a privacy-first approach to data collection and
 analysis. Let's take a look at what that means exactly.
 
-![screenshot of Web Analytics dashboard](/images/web-analytics-dashboard-light.png)
+![Prisme: Open Source Google Analytics alternative](/images/web-analytics-dashboard-light.png)
 
 ## What is web analytics?
 

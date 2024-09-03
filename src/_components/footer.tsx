@@ -3,7 +3,7 @@ const links = {
     "Open Source": "/open-source-website-analytics/",
     "Simple metrics": "#todo",
     "Lightweight script": "#todo",
-    "Privacy focused": "#todo",
+    "Privacy focused": "/privacy-focused/",
     "Progressive": "#todo",
     "For creators": "#todo",
     "For agencies": "#todo",
