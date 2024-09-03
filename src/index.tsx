@@ -376,12 +376,14 @@ export default ({ comp }: Lume.Data) => {
                     <img
                       src="/images/funnel-light.png"
                       alt="Funnel panel screenshot"
+                      loading="lazy"
                       className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-muted dark:hidden"
                       transform-images="jpg png avif webp"
                     />
                     <img
                       src="/images/funnel-dark.png"
                       alt="Dark funnel panel screenshot"
+                      loading="lazy"
                       className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-muted hidden dark:block"
                       transform-images="jpg png avif webp"
                     />
@@ -452,12 +454,14 @@ export default ({ comp }: Lume.Data) => {
                     <img
                       src="/images/explore-light.png"
                       alt="Explore page screenshot"
+                      loading="lazy"
                       className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-muted dark:hidden"
                       transform-images="jpg png avif webp"
                     />
                     <img
                       src="/images/explore-dark.png"
                       alt="Explore page screenshot"
+                      loading="lazy"
                       className="max-w-full md:max-w-none rounded-xl shadow-xl ring-1 ring-muted hidden dark:block"
                       transform-images="jpg png avif webp"
                     />
@@ -815,6 +819,7 @@ export default ({ comp }: Lume.Data) => {
                   alt="Grafana logo"
                   title="Grafana"
                   src="/images/grafana-icon.jpg"
+                  loading="lazy"
                   transform-images="jpg png avif webp"
                 />
               </a>
@@ -827,6 +832,7 @@ export default ({ comp }: Lume.Data) => {
                 <img
                   alt="Clickhouse logo"
                   title="Clickhouse"
+                  loading="lazy"
                   src="/clickhouse-icon.svg"
                 />
               </a>
@@ -839,6 +845,7 @@ export default ({ comp }: Lume.Data) => {
                 <img
                   alt="Prisme Analytics Logo"
                   src="/logo.svg"
+                  loading="lazy"
                   className="md:block max-h-32 place-self-center"
                 />
               </a>

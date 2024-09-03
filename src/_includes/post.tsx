@@ -40,9 +40,10 @@ export default function (
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <comp.Favicon />
-        <link rel="stylesheet" href="/styles/syntax-highlight.css" />
+
+        <comp.LinkStylesheet href="/styles/syntax-highlight.css" />
+        <comp.LinkStylesheet href="/styles/blogpost.css" />
         <comp.Css />
-        <link rel="stylesheet" href="/styles/blogpost.css" />
         <comp.Analytics />
       </head>
       <body class="bg-background text-foreground min-h-screen flex flex-col">

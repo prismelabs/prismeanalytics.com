@@ -1,8 +1,7 @@
-export default function () {
+export default function ({ comp }: Lume.Data) {
   return (
     <>
-      <link rel="stylesheet" href="/styles/index.css" />
-      <link rel="stylesheet" href="/styles/tabs.css" />
+      <comp.linkStylesheet href="/styles/index.css" />
     </>
   );
 }
