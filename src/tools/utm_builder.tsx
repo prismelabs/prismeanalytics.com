@@ -104,11 +104,12 @@ export default function ({ comp }: Lume.Data) {
                 answer: (
                   <>
                     Urchin Tracking Module (UTM) parameters were first
-                    introduced by Google Analytics' predecessor Urchin and are a
-                    widely accepted tool to track the effectiveness of online
-                    marketing campaigns. With Prisme Analytics, you can use UTM
-                    parameters to break down how many people visited your
-                    website and compare the results of your campaigns.
+                    introduced by Google Analytics{"'"}{" "}
+                    predecessor Urchin and are a widely accepted tool to track
+                    the effectiveness of online marketing campaigns. With Prisme
+                    Analytics, you can use UTM parameters to break down how many
+                    people visited your website and compare the results of your
+                    campaigns.
                   </>
                 ),
               },
@@ -204,9 +205,9 @@ export default function ({ comp }: Lume.Data) {
                 question: "Are UTM tags case sensitive?",
                 answer: (
                   <>
-                    No, UTM tags are not case sensitive. However, it's a good
-                    practice to maintain consistency in your tagging to avoid
-                    any discrepancies in your analytics data.
+                    No, UTM tags are not case sensitive. However, it{"'"}s a
+                    good practice to maintain consistency in your tagging to
+                    avoid any discrepancies in your analytics data.
                   </>
                 ),
               },
