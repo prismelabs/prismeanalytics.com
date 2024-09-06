@@ -115,7 +115,7 @@ historical data.
 
 ## Lightweight script for optimal performance
 
-Prisme's tracking script is designed to be as [lightweight](/is/lightweight/) as
+Prisme's tracking script is designed to be as [lightweight](/is/lightweight-analytics/) as
 possible:
 
 - At just 1KB, it's 75 times smaller than Google Analytics' Global Site Tag.
@@ -127,7 +127,7 @@ sacrificing your website's performance or user experience.
 
 ## Privacy-first analytics
 
-Prisme takes a strong stance on [user privacy](/is/privacy-focused/):
+Prisme takes a strong stance on [user privacy](/is/privacy-focused-analytics/):
 
 - No cookies or persistent identifiers are used.
 - Personal data is not collected, focusing instead on aggregate information.
