@@ -17,27 +17,27 @@
       let
         pkgs = import nixpkgs { inherit system; };
         lib = pkgs.lib;
-      in
-      {
+      in {
         devShells = {
           default = pkgs.mkShell rec {
-            buildInputs = with pkgs; [
-              deno
-              netlify-cli
-              vips
-              stdenv.cc.cc.lib
-              pkg-config
+            buildInputs = with pkgs;
+              [
+                deno
+                netlify-cli
+                vips
+                stdenv.cc.cc.lib
+                pkg-config
 
-              # Spell checker
-              nodePackages_latest.cspell
-            ]
-            ++ [ gis.packages.${system}.default ]
-            ++ [ indexnow.packages.${system}.default ];
+                # Spell checker
+                nodePackages_latest.cspell
+                # Broken link checker
+                linkchecker
+              ] ++ [ gis.packages.${system}.default ]
+              ++ [ indexnow.packages.${system}.default ];
 
             LD_LIBRARY_PATH = "${lib.makeLibraryPath buildInputs}";
           };
         };
-      }
-    );
+      });
 }
 
