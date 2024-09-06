@@ -16,6 +16,7 @@
       "jsr:@std/front-matter": "jsr:@std/front-matter@1.0.4",
       "jsr:@std/front-matter@1.0.3": "jsr:@std/front-matter@1.0.3",
       "jsr:@std/front-matter@1.0.4": "jsr:@std/front-matter@1.0.4",
+      "jsr:@std/fs": "jsr:@std/fs@1.0.2",
       "jsr:@std/fs@1.0.2": "jsr:@std/fs@1.0.2",
       "jsr:@std/fs@^1.0.2": "jsr:@std/fs@1.0.2",
       "jsr:@std/html@1.0.0": "jsr:@std/html@1.0.0",
