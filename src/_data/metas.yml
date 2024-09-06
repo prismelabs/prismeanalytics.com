@@ -2,30 +2,30 @@ type: "website"
 site: "Prisme Analytics"
 title: "Prisme Analytics"
 description: |-
-  An Open Source, privacy-focused and progressive analytics service.
+  Prisme is an Open-Source, privacy-friendly and progressive web analytics service. Your website data is 100% yours and the privacy of your visitors is respected.
 image: "/images/og.png"
 icon: "/favicon/favicon.ico"
 twitter: "prismeanalytics"
 color: "#0a0a0a"
 lang: "en"
 keywords:
+  - Prisme Cloud
   - Analytics platform
   - Data visualization
   - Open-source analytics
   - Prisme Analytics
-  - Grafana integration
-  - ClickHouseDB storage
-  - Custom dashboards
-  - Progressive analytics
-  - Collaborative data insights
-  - World-class documentation
-  - Data-driven decisions
-  - User-friendly analytics
-  - Real-time analytics
-  - Business intelligence
-  - Data exploration
-  - Insightful reporting
-  - Dashboard customization
-  - State-of-the-art technology
-  - Seamless analytics
-  - Team collaboration tools
+  - Open source web analytics
+  - Privacy-focused web analytics
+  - Google Analytics alternative
+  - Self-hosted web analytics
+  - Lightweight web analytics
+  - Prisme Analytics
+  - Prisme vs Google Analytics
+  - Transparent web analytics
+  - Simple web analytics dashboard
+  - Web analytics without cookies
+  - GDPR-compliant web analytics
+  - Free and open source web analytics
+  - Prisme Analytics features
+  - Prisme Analytics benefits
+  - Open source analytics software

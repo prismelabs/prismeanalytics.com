@@ -45,6 +45,39 @@ export default function (
         <comp.LinkStylesheet href="/styles/blogpost.css" />
         <comp.Css />
         <comp.Analytics />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BlogPosting",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": url,
+              },
+              "headline": title,
+              "description": metas?.description,
+              "image": metas?.image,
+              "author": {
+                "@type": "Person",
+                "name": "Alexandre Negrel",
+                "url": "https://www.negrel.dev/",
+              },
+              "publisher": {
+                "@type": "Organization",
+                "name": "Prisme Analytics",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "/logo.jpg",
+                },
+              },
+              "datePublished": date.toISOString(),
+              "dateModified": date.toISOString(),
+              "keywords": metas?.keywords.join(", "),
+            }),
+          }}
+        >
+        </script>
       </head>
       <body class="bg-background text-foreground min-h-screen flex flex-col">
         <comp.Header
