@@ -27,6 +27,48 @@ metas:
     - transparent web analytics
     - self-hosted analytics option
     - privacy-focused metrics
+structuedData:
+  - "@context": https://schema.org
+    "@type": BlogPosting
+    mainEntityOfPage:
+      "@type": WebPage
+      "@id": https://www.prismeanalytics.com/c/is/privacy-focused
+    headline: "Prisme: Privacy focused Google analytics alternative"
+    description: "Prisme Analytics: Privacy-first web analytics without personal data collection. Track website usage ethically with our cookie-free, GDPR-compliant solution. Get actionable insights while respecting visitor privacy. Try our 30-day free trial today!"
+    image:
+      "@type": ImageObject
+      url: https://www.prismeanalytics.com/images/web-analytics-dashboard-light.png
+    author:
+      "@type": Person
+      name: Alexandre Negrel
+      url: https://www.negrel.dev
+    publisher:
+      "@type": Organization
+      name: Prisme Analytics
+      logo:
+        "@type": ImageObject
+        url: https://www.prismeanalytics.com/logo.png
+    keywords:
+      - Prisme Cloud
+      - Analytics platform
+      - Data visualization
+      - Open-source analytics
+      - Prisme Analytics
+      - Open source web analytics
+      - privacy-friendly analytics
+      - GDPR-compliant web tracking
+      - cookie-free analytics
+      - ethical website monitoring
+      - EU-hosted analytics
+      - lightweight website stats
+      - anonymous visitor tracking
+      - Google Analytics alternative
+      - data privacy
+      - website insights
+      - no personal data collection
+      - transparent web analytics
+      - self-hosted analytics option
+      - privacy-focused metrics
 ---
 
 Prisme Analytics offers a unique approach to website tracking, prioritizing user

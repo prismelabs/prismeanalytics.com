@@ -31,10 +31,37 @@ metas:
     - Prisme Analytics features
     - Prisme Analytics benefits
     - Open source analytics software
+structuredData:
+  - "@context": https://schema.org
+    "@type": BlogPosting
+    headline: "Prisme: Open Source Google Analytics alternative"
+    description: "Prisme is an Open-Source, privacy-friendly and progressive Google Analytics alternative. Your website data is 100% yours and the privacy of your visitors is respected."
+    image:
+      - https://www.prismeanalytics.com/images/web-analytics-dashboard-light.png
+    author:
+      "@type": Person
+      name: Alexandre Negrel
+      url: https://www.negrel.dev
+    publisher:
+      "@type": Organization
+      name: Prisme Analytics
+      url: https://www.prismeanalytics.com/
+    mainEntityOfPage: https://www.prismeanalytics.com/c/is/open-source-website-analytics
+    keywords:
+      - Prisme Analytics
+      - Open Source Analytics
+      - Google Analytics Alternative
+      - Privacy-friendly Analytics
+      - Web Analytics
+      - AGPL-3.0 License
+      - Self-hosted Analytics
+    wordCount: 2000
+    articleBody: >-
+      Prisme Analytics is an Open Source, privacy-friendly, and lightweight web analytics solution that serves as an alternative to Google Analytics. Unlike many proprietary tools, Prisme's Open Source nature allows for transparency, self-hosting flexibility, and a privacy-first approach to data collection and analysis. The article discusses what web analytics is, explains open source web analytics, details Prisme's AGPL-3.0 license, confirms that Prisme can be self-hosted, and highlights how Prisme differs from Google Analytics. It also provides information on how to switch from Google Analytics to Prisme, emphasizing its simplicity, lightweight nature, and compliance with privacy regulations.
 ---
 
-Prisme Analytics is an [Open Source], [privacy-friendly](/is/privacy-focused/), and
-[lightweight](/is/lightweight/) web analytics solution that serves as an
+Prisme Analytics is an [Open Source], [privacy-friendly](/is/privacy-focused/),
+and [lightweight](/is/lightweight/) web analytics solution that serves as an
 alternative to Google Analytics. Unlike many proprietary tools, Prisme's
 [Open Source] nature allows for transparency, self-hosting flexibility, and a
 privacy-first approach to data collection and analysis. Let's take a look at

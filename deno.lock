@@ -35,7 +35,7 @@
       "jsr:@std/toml@1.0.1": "jsr:@std/toml@1.0.1",
       "jsr:@std/toml@^1.0.1": "jsr:@std/toml@1.0.1",
       "jsr:@std/yaml@1.0.4": "jsr:@std/yaml@1.0.4",
-      "jsr:@std/yaml@^1.0.4": "jsr:@std/yaml@1.0.4",
+      "jsr:@std/yaml@^1.0.4": "jsr:@std/yaml@1.0.5",
       "jsr:@std/yaml@^1.0.5": "jsr:@std/yaml@1.0.5",
       "npm:@anthropic-ai/sdk": "npm:@anthropic-ai/sdk@0.27.2",
       "npm:@js-temporal/polyfill@0.4.4": "npm:@js-temporal/polyfill@0.4.4",

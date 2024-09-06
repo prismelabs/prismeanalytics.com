@@ -26,6 +26,46 @@ metas:
     - Green web hosting
     - Essential website statistics
     - User-friendly analytics dashboard
+structuredData:
+  - "@context": https://schema.org
+    "@type": BlogPosting
+    mainEntityOfPage:
+      "@type": WebPage
+      "@id": https://www.prismeanalytics.com/c/is/lightweight
+    headline: "Prisme: Lightweight web analytics tool"
+    description: "Boost your website speed and reduce carbon footprint with Prisme Analytics. Our lightweight 1KB script is 75x smaller than Google Analytics, providing essential metri cs without compromising performance. Try our simple, privacy-friendly web analytics tool for faster load times and cleaner insights."
+    image:
+      "@type": ImageObject
+      url: https://www.prismeanalytics.com/images/web-analytics-dashboard-light.png
+    author:
+      "@type": Person
+      name: Alexandre Negrel
+      url: https://www.negrel.dev
+    publisher:
+      "@type": Organization
+      name: Prisme Analytics
+      logo:
+        "@type": ImageObject
+        url: https://www.prismeanalytics.com/logo.png
+    keywords:
+      - Prisme Cloud
+      - Analytics platform
+      - Open-source analytics
+      - Lightweight web analytics
+      - Fast website analytics
+      - Privacy-friendly analytics
+      - Google Analytics alternative
+      - Website speed optimization
+      - Eco-friendly web tools
+      - Simple site metrics
+      - Carbon footprint reduction
+      - Page load time improvement
+      - SEO-friendly analytics
+      - Web performance tools
+      - Data-efficient analytics
+      - Green web hosting
+      - Essential website statistics
+    wordCount: 1588
 ---
 
 Prisme Analytics script is 1 KB in size, which is 75 times smaller than Google
