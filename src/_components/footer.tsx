@@ -1,10 +1,10 @@
 const links = {
   "Why Prisme Analytics?": {
     "Open Source": "/is/open-source-website-analytics/",
-    "Simple": "/is/simple-analytics/",
     "Lightweight": "/is/lightweight-analytics/",
     "Privacy focused": "/is/privacy-focused-analytics/",
     "Progressive": "/is/progressive-analytics/",
+    "Simple": "/is/simple-analytics/",
     "For creators": "#todo",
     "For agencies": "#todo",
     "For ecommerce": "#todo",
