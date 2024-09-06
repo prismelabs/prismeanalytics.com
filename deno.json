@@ -10,7 +10,7 @@
     "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s",
-    "check": "deno fmt --check --ignore=_site,.direnv,docs && deno lint --ignore=_site,.direnv,docs && deno check src/**/*.tsx"
+    "check": "deno fmt --check --ignore=_site,.direnv,docs,src/static/scripts/confetti.min.js && deno lint --ignore=_site,.direnv,docs,src/static/scripts/confetti.min.js && deno check src/**/*.tsx"
   },
   "imports": {
     "lume/": "https://deno.land/x/lume@v2.3.0/",
