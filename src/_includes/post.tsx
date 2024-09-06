@@ -169,6 +169,7 @@ export default function (
                     {prevPost?.url
                       ? (
                         <a
+                          rel="prev"
                           href={prevPost.url}
                           className="flex-1 min-w-64 flex overflow-hidden"
                           title={prevPost.metas.title}
@@ -183,6 +184,7 @@ export default function (
                     {nextPost?.url
                       ? (
                         <a
+                          rel="next"
                           href={nextPost.url}
                           className="flex-1 min-w-64 flex overflow-hidden justify-end"
                           title={nextPost.metas.title}

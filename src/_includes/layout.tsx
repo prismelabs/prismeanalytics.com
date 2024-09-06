@@ -1,5 +1,14 @@
 export default function (
-  { title, comp, lang, alternates, navbar, url, children }: Lume.Data,
+  {
+    title,
+    comp,
+    lang,
+    alternates,
+    navbar,
+    url,
+    children,
+    structuredData = [],
+  }: Lume.Data,
 ) {
   return (
     <html lang={lang}>
@@ -11,6 +20,16 @@ export default function (
         <comp.Css />
         <comp.Js />
         <comp.Analytics />
+        {
+          // deno-lint-ignore no-explicit-any
+          structuredData?.map((data: any) => (
+            <script
+              type="application/ld+json"
+              dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+            >
+            </script>
+          ))
+        }
       </head>
       <body class="bg-background text-foreground min-h-screen flex flex-col">
         <comp.Header

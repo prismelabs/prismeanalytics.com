@@ -1,5 +1,65 @@
 export const title = "Easily generate UTM codes for your marketing campaigns";
 export const layout = "layout.tsx";
+export const structuredData = [{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What are UTM parameters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Urchin Tracking Module (UTM) parameters were first introduced by Google Analytics' predecessor Urchin and are a widely accepted tool to track the effectiveness of online marketing campaigns. With Prisme Analytics, you can use UTM parameters to break down how many people visited your website and compare the results of your campaigns.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "How does a UTM campaign work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "A UTM campaign works by appending specific tags to your URLs, which can then be tracked by analytics platforms like Prisme Analytics. These tags help you understand where your website traffic is coming from and which marketing campaigns are driving the most engagement and conversions.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Why should I use UTM parameters?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "UTM parameters allow you to take a closer look at the origin of your website visitors. Prisme Analytics shows where a visitor comes from by the referrer, but this information is not always passed on by the browser. In addition, only the origin website is listed, but not, for example, on which link on a page was clicked. With the help of UTM parameters, you get precise information about which links were clicked on which page and at the same time improve the reliability of your statistics.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "What are the UTM parameters and how do I use them?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "There are five UTM parameters in total: utm_source, utm_medium, utm_campaign, utm_content and utm_term. Typically, the first three parameters are set, and optionally utm_content and utm_term. utm_source specifies the source, such as a website or newsletter. utm_medium contains the medium used for the campaign, such as social media. utm_campaign identifies the campaign, usually given a name like 'Summer Sale'. utm_content and utm_term are used less frequently but can be very useful for finding out what link a visitor followed and what keywords were used. utm_content indicates what part of a page or email was viewed, while utm_term is used for search terms. The values for the parameters can be freely chosen, but they are case sensitive and no spaces can be used. Plus signs can be used instead of spaces. UTM parameters should be used only for inbound links, not for links that link to pages on the same website.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Can I manually create UTM tags?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "Yes, you can manually create UTM tags by adding parameters to your URLs. However, this process can be time-consuming and prone to errors. Using a UTM campaign generator tool can streamline this process and ensure consistency in your tagging.",
+      },
+    },
+    {
+      "@type": "Question",
+      "name": "Are UTM tags case sensitive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text":
+          "No, UTM tags are not case sensitive. However, it's a good practice to maintain consistency in your tagging to avoid any discrepancies in your analytics data.",
+      },
+    },
+  ],
+}];
 
 export const metas = {
   title:

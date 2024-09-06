@@ -1,6 +1,19 @@
 export const title =
   "Customizable, privacy-friendly Google Analytics alternative";
 export const layout = "layout.tsx";
+export const structuredData = [{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "image": "https://www.prismeanalytics.com/images/og.png",
+  "url": "https://www.prismeanalytics.com",
+  "sameAs": [],
+  "logo": "https://www.prismeanalytics.com/logo.jpg",
+  "name": "Prisme Analytics",
+  "description":
+    "Prisme Analytics is an open source project dedicated to making web analytics more privacy-friendly.",
+  "email": "hello@prismeanalytics.com",
+  "vatID": "FR698515581500019",
+}];
 
 export const metas = {
   title,

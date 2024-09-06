@@ -1,5 +1,82 @@
 export const title = "A free, easy-to-use URL shortener";
 export const layout = "layout.tsx";
+export const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is CuteLink really free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, CuteLink is completely free to use.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Are there any limits on how many links I can shorten?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, you can shorten as many links as you like.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Do the shortened links expire?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, once created, your short links will work indefinitely.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Can I customize the shortened URLs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "Not at the moment. CuteLink generates random short codes for each URL.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Is there any way to track clicks on my shortened links?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "Yes, adds UTM parameters to your long URL and they will appear on your web analytics dashboard.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Are the shortened links secure?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "CuteLink uses HTTPS for all shortened links to ensure basic security.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Can I edit or delete a link after I've created it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "No, once a link is created, it can't be edited or deleted. Please double-check your long URL before shortening.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to create an account to use CuteLink?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "Yes an account is needed to prevent abusive usage. Just paste your long URL and get your short link instantly.",
+        },
+      },
+    ],
+  },
+];
 
 export const metas = {
   title:
@@ -66,7 +143,7 @@ export default function ({ comp }: Lume.Data) {
               <comp.Input
                 label="Long URL"
                 readonly={true}
-                value="https://www.prismeanalytics.com"
+                value="https://www.prismeanalytics.com/?ref=cutelink"
               />
             </div>
             <div>

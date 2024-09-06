@@ -1,5 +1,103 @@
 export const title = "CTR Calculator (Click-Through Rate)";
 export const layout = "layout.tsx";
+export const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Click-Through Rate (CTR)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "CTR stands for Click-Through Rate. It's a metric used in digital marketing to measure the percentage of people who click on a specific link or call to action out of the total number who view it.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "How is CTR calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "CTR is calculated by dividing the number of clicks by the number of impressions and then multiplying by 100 to get a percentage. Formula: CTR = (Number of Clicks / Number of Impressions) × 100",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Why is CTR important?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "CTR is important because it helps measure the effectiveness of your marketing campaigns, ads, or content. A higher CTR generally indicates that your message is relevant and appealing to your target audience.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "What's considered a good CTR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            'A "good" CTR varies depending on the platform, industry, and type of campaign. However, here are some general benchmarks: Search ads: 1-2%, Display ads: 0.1-1%, Email marketing: 2-5%.',
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "How can I improve my CTR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "To improve your CTR, you can: 1. Write compelling headlines and ad copy, 2. Use relevant keywords, 3. Create eye-catching visuals, 4. Improve your targeting, 5. Test different versions (A/B testing).",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Does a high CTR always mean success?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "Not necessarily. While a high CTR is generally good, it's important to consider other metrics like conversion rate and overall ROI. A high CTR with low conversions might indicate that your ad is attractive but your landing page or offer needs improvement.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "How does CTR affect Quality Score in Google Ads?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "CTR is a significant factor in determining your Quality Score in Google Ads. A higher CTR can lead to a better Quality Score, which in turn can result in lower costs and better ad positioning.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Is CTR relevant for SEO?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "While CTR isn't a direct ranking factor, it can indirectly affect SEO. A higher CTR from search results can indicate to search engines that your content is relevant and valuable, potentially leading to improved rankings over time.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I monitor my CTR?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "It's good practice to monitor your CTR regularly, especially when running active campaigns. For ongoing campaigns, weekly or monthly reviews are common, but the frequency may vary based on your specific needs and the volume of data.",
+        },
+      },
+      {
+        "@type": "Question",
+        "name": "Can CTR be too high?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text":
+            "While a high CTR is generally positive, an unusually high CTR might indicate click fraud or poorly targeted ads that are attracting the wrong audience. Always analyze CTR in conjunction with other metrics to get a complete picture of your campaign's performance.",
+        },
+      },
+    ],
+  },
+];
 
 export const metas = {
   title,
