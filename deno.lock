@@ -4061,6 +4061,7 @@
     "https://jsr.io/@std/yaml/1.0.5/_chars.ts": "cacd1566333137f07cf742255698b0eae8122f183d12ce7891598d5b1d330d59",
     "https://jsr.io/@std/yaml/1.0.5/_loader_state.ts": "8064d2cb869b4836b477ba22da82d48288addb6692458f371bd0b17d3844f9e3",
     "https://jsr.io/@std/yaml/1.0.5/_schema.ts": "a3547e58e6d4b650530b9164d1b506f51566b826ac18adb84902e702e0cc96f3",
+    "https://jsr.io/@std/yaml/1.0.5/_type.ts": "a1948888a8eba047099181a31b47ee7c5257e642b775d04f72e22e7e2071fd81",
     "https://jsr.io/@std/yaml/1.0.5/_type/binary.ts": "bd34a9500f9029a3c842a06d2c74070f4d2b192437e1ceabbd24039c30e33d51",
     "https://jsr.io/@std/yaml/1.0.5/_type/bool.ts": "1399b0a055bddf8d7855abb5d2cb4a46aafa6f77a887e8e2889067a3641b46ae",
     "https://jsr.io/@std/yaml/1.0.5/_type/float.ts": "55c33f0f5147f2137f7ab3a88858b9ce0ab3d35e7c2c4a84b3204979d41ab2b7",

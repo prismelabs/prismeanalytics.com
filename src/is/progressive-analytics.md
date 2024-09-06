@@ -66,7 +66,7 @@ structuredData:
 
 Prisme Analytics offers a unique, progressive approach to web analytics,
 allowing website owners to start with simple, privacy-focused tracking and scale
-up to advanced custom even ts and dashboards as their needs grow. This
+up to advanced custom events and dashboards as their needs grow. This
 flexibility makes Prisme an ideal solution for businesses of all sizes, from
 small blogs to large enterprises.
 
@@ -84,7 +84,7 @@ small blogs to large enterprises.
 
 3. **Privacy-first approach**: Prisme is designed with user privacy in mind,
    operating without cookies and collecting only necessary, non-personal data.
-   This approach makes it GDPR , CCPA, and PECR compliant out of the box.
+   This approach makes it GDPR, CCPA, and PECR compliant out of the box.
 
 4. **Customizable dashboards**: As your analytics requirements become more
    complex, Prisme allows you to create custom dashboards tailored to your
@@ -115,8 +115,8 @@ historical data.
 
 ## Lightweight script for optimal performance
 
-Prisme's tracking script is designed to be as [lightweight](/is/lightweight-analytics/) as
-possible:
+Prisme's tracking script is designed to be as
+[lightweight](/is/lightweight-analytics/) as possible:
 
 - At just 1KB, it's 75 times smaller than Google Analytics' Global Site Tag.
 - The script loads quickly, minimizing impact on page load times.
@@ -177,5 +177,5 @@ By choosing Prisme, you're not just selecting an analytics tool for today –
 you're investing in a solution that can grow and adapt with your business over
 time. Experience the benefits of progressive web analytics with Prisme's
 [30-day free trial](https://app.prismeanalytics.com/authn/sign_up) and see how
-it can transform your approach to understanding and o ptimizing your website's
+it can transform your approach to understanding and optimizing your website's
 performance.
