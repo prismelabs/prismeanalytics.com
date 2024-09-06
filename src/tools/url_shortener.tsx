@@ -110,7 +110,10 @@ export default function ({ comp }: Lume.Data) {
               "answer": (
                 <>
                   Yes, adds{" "}
-                  <a href="/utm_builder" className="underline font-medium">
+                  <a
+                    href="/tools/utm_builder"
+                    className="underline font-medium"
+                  >
                     UTM parameters
                   </a>{" "}
                   to your long URL and they will appear on your web analytics

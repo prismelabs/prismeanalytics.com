@@ -126,7 +126,7 @@ of CO2 emissions yearly by switching to Prisme.
 
 ## Try Prisme as your lightweight analytics solution
 
-Prisme offers simple, [Open Source](/open-source-web-analytics/), and
+Prisme offers simple, [Open Source](/open-source-website-analytics/), and
 lightweight site analytics. Our 1 KB script is significantly smaller than
 competitors, and we run on 100% green energy. Experience our user-friendly
 dashboard and boost your website's speed while reducing its carbon footprint
