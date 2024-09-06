@@ -75,7 +75,7 @@ oard, and straightforward data visualization. Try our 30-day free trial and expe
 
 Prisme Analytics offers a refreshingly simple approach to website tracking,
 providing essential insights without unnecessary complexity. Our service is
-designed to be user-friendl y and straightforward, making it easy for website
+designed to be user-friendly and straightforward, making it easy for website
 owners of all technical levels to understand their site's performance.
 
 With Prisme Analytics, you can say goodbye to overwhelming dashboards and

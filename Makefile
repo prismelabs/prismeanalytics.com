@@ -12,6 +12,9 @@ docs/start:
 lint:
 	deno task check
 	cspell docs/docs/**/*.md
+	cspell src/**/*.md
+	cspell src/**/*.tsx
+	cspell src/**/*.jsx
 
 .PHONY: lint/fix
 lint/fix:
