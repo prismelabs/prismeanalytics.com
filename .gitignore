@@ -8,3 +8,5 @@ _cache
 .netlify
 
 .env.local
+
+scripts/genarticle.js
