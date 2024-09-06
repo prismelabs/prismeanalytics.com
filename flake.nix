@@ -28,6 +28,9 @@
                 stdenv.cc.cc.lib
                 pkg-config
 
+                # Static HTTP server
+                httplz
+
                 # Spell checker
                 nodePackages_latest.cspell
                 # Broken link checker

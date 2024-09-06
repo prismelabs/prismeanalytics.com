@@ -1,3 +1,5 @@
+SHELL = bash
+
 .PHONY: start
 start:
 	deno task serve -p 8080
@@ -34,7 +36,7 @@ deploy: _site
 	netlify deploy
 
 .PHONY: deploy/prod
-deploy/prod: _site
+deploy/prod: _site test
 	netlify deploy --prod
 
 .PHONY: indexnow
@@ -46,6 +48,11 @@ indexnow:
 	done
 	rm -f urlsfile
 	gis https://www.prismeanalytics.com
+
+.PHONY: test
+test:
+	@test -d _site || $(MAKE) build
+	httplz -p 5000 _site &> /dev/null & linkchecker http://localhost:5000
 
 .PHONY: clean
 clean:
