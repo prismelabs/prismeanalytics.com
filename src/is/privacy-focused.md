@@ -47,7 +47,7 @@ Google Analytics:
 
 ## Transparent, Open-Source web analytics software
 
-Prisme Analytics is built on [Open Source](/open-source-website-analytics/)
+Prisme Analytics is built on [Open Source](/is/open-source-website-analytics/)
 principles. Our entire codebase is
 [accessible on GitHub](https://github.com/prismelabs/analytics), allowing anyone
 to review and verify our privacy practices. This transparency is crucial in the
@@ -73,7 +73,7 @@ rejecting all investment offers to maintain our focus on user privacy.
 We believe in collecting only essential data points, contrasting with tools like
 Google Analytics that gather vast amounts of information. Our streamlined
 approach not only enhances privacy but also simplifies analytics interpretation.
-[Prisme Analytics is 75 times lighter](/lightweight/) than Google Analytics,
+[Prisme Analytics is 75 times lighter](/is/lightweight/) than Google Analytics,
 improving site performance and reducing your carbon footprint. Explore our
 [live demo dashboard](https://app.prismeanalytics.com/grafana) to see the
 concise data we collect.
@@ -126,7 +126,7 @@ gives you additional flexibility and control.
 
 [Experience Prisme Analytics with our 30-day free trial - no credit card
 required](https://app.prismeanalytics.com/authn/sign_up). Our
-[lightweight](/lightweight/) script allows you to run Prisme alongside your
+[lightweight](/is/lightweight/) script allows you to run Prisme alongside your
 current analytics, enabling a smooth transition to privacy-friendly web
 analytics. Start your journey towards ethical, insightful website tracking
 today!

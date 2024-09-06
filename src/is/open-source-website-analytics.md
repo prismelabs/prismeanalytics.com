@@ -33,8 +33,8 @@ metas:
     - Open source analytics software
 ---
 
-Prisme Analytics is an [Open Source], [privacy-friendly](/privacy-focused/), and
-[lightweight](/lightweight/) web analytics solution that serves as an
+Prisme Analytics is an [Open Source], [privacy-friendly](/is/privacy-focused/), and
+[lightweight](/is/lightweight/) web analytics solution that serves as an
 alternative to Google Analytics. Unlike many proprietary tools, Prisme's
 [Open Source] nature allows for transparency, self-hosting flexibility, and a
 privacy-first approach to data collection and analysis. Let's take a look at
@@ -118,7 +118,7 @@ there are many other ways these two site analytics products differ:
    metrics and presents them on an easier to understand dashboard. Rather than
    tracking every imaginable metric, many of which you may never use, Prisme
    Analytics focuses only on the most critical statistics.
-2. Prisme Analytics is also more [lightweight](/lightweight/). Our script is
+2. Prisme Analytics is also more [lightweight](/is/lightweight/). Our script is
    small and loads quickly, reducing the page weight of your site compared to
    the typical Google Analytics script, which is more than 45 times larger.
 3. Crucially, Prisme doesn't use cookies and doesn't track or collect any
