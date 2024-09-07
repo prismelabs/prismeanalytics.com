@@ -131,6 +131,7 @@ export default ({ comp }: Lume.Data) => {
                   />
                   <img
                     src="/images/web-analytics-dashboard-dark.png"
+                    loading="lazy"
                     alt="Screenshot of web analytics dashboard in dark mode"
                     className="mx-auto rounded-md hidden dark:block"
                     transform-images="jpg png avif webp"

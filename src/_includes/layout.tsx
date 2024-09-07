@@ -31,7 +31,7 @@ export default function (
           ))
         }
       </head>
-      <body class="bg-background text-foreground min-h-screen flex flex-col">
+      <body class="bg-background text-foreground min-h-screen">
         <comp.Header
           lang={lang}
           alternates={alternates}

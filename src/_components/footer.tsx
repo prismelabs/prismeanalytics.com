@@ -41,9 +41,9 @@ export default function ({ comp }: Lume.Data) {
       <footer className="bg-slate-900 z-50">
         <h2 id="footer-heading" className="sr-only">Footer</h2>
         <div className="mx-auto max-w-7xl px-6">
-          <a href="/" className="inline">
+          <a href="/" className="block py-8">
             <img
-              className="h-16 my-8"
+              className="h-16"
               src="/logo.svg"
               alt="Prisme Analytics logo"
             />
