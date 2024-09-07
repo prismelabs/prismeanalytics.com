@@ -3,6 +3,7 @@ export default function ({ comp }: Lume.Data) {
     <section className="w-full h-72 relative z-50">
       <img
         alt="web analytics dashboard screenshot in dark mode"
+        loading="lazy"
         src="/images/web-analytics-dashboard-dark.jpg"
         className="mx-auto w-full h-72 brightness-50 object-cover object-center absolute"
         transform-images="jpg png avif webp"
