@@ -858,6 +858,7 @@ export default ({ comp }: Lume.Data) => {
                 href="https://grafana.com/grafana/"
                 target="_blank"
                 className="place-self-center"
+                aria-label="Visit Grafana website"
               >
                 <img
                   alt="Grafana logo"
@@ -872,6 +873,7 @@ export default ({ comp }: Lume.Data) => {
                 href="https://clickhouse.com/"
                 target="_blank"
                 className="p-6 bg-[#faff69] place-self-center"
+                aria-label="Visit ClickHouse website"
               >
                 <img
                   alt="Clickhouse logo"
@@ -885,6 +887,7 @@ export default ({ comp }: Lume.Data) => {
                 href="https://github.com/prismelabs/analytics"
                 target="_blank"
                 className="underline"
+                aria-label="Prisme Analytics GitHub repository"
               >
                 <img
                   alt="Prisme Analytics Logo"
@@ -903,6 +906,7 @@ export default ({ comp }: Lume.Data) => {
                 href="https://github.com/prismelabs/analytics"
                 target="_blank"
                 className="underline flex gap-2 items-center"
+                aria-label="Prisme Analytics GitHub repository"
               >
                 <comp.GithubIcon className="w-8 h-8" />
                 View source code

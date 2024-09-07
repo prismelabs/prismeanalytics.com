@@ -26,6 +26,7 @@ export default function ({ comp }: Lume.Data) {
             <a
               target="_blank"
               href="https://github.com/prismelabs/analytics"
+              aria-label="Prisme Analytics GitHub repository"
             >
               <comp.GithubIcon className="w-6 h-6" />
             </a>

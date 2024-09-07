@@ -81,6 +81,7 @@ export default function ({ comp }: Lume.Data) {
               target="_blank"
               href="https://x.com/prismeanalytics"
               className="text-zinc-300 hover:text-white"
+              aria-label="Prisme Analytics X (formerly Twitter) account"
             >
               <span className="sr-only">X</span>
               <comp.XIcon className="w-5 h-5" />
@@ -89,6 +90,7 @@ export default function ({ comp }: Lume.Data) {
               target="_blank"
               href="https://github.com/prismelabs/analytics"
               className="text-zinc-300 hover:text-white"
+              aria-label="Prisme Analytics GitHub repository"
             >
               <span className="sr-only">GitHub</span>
               <comp.GithubIcon className="w-5 h-5" />
@@ -97,6 +99,7 @@ export default function ({ comp }: Lume.Data) {
               target="_blank"
               href="https://www.linkedin.com/company/prisme-analytics/"
               className="text-zinc-300 hover:text-white"
+              aria-label="Prisme Analytics LinkedIn page"
             >
               <span className="sr-only">LinkedIn</span>
               <comp.LinkedInIcon className="w-5 h-5" />
