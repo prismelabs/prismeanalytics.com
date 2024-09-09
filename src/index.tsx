@@ -111,7 +111,7 @@ export default ({ comp }: Lume.Data) => {
                     <a
                       className=""
                       target="_blank"
-                      href="https://app.prismeanalytics.com/grafana"
+                      href="https://app.prismeanalytics.com/grafana/d/f8278729-d6bd-49ec-be92-abf01917f14d/web-analytics?orgId=5"
                     >
                       <comp.Button variant="outline" className="!p-6">
                         Live demo
@@ -218,7 +218,7 @@ export default ({ comp }: Lume.Data) => {
                     </p>
                     <p className="mt-6">
                       <a
-                        href="https://app.prismeanalytics.com/grafana"
+                        href="https://app.prismeanalytics.com/grafana/d/f8278729-d6bd-49ec-be92-abf01917f14d/web-analytics?orgId=5"
                         className="text-sm font-semibold leading-6"
                       >
                         View demo <span aria-hidden="true">→</span>

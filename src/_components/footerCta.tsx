@@ -17,7 +17,7 @@ export default function ({ comp }: Lume.Data) {
             Create free account
           </comp.Button>
         </a>
-        <a href="https://app.prismeanalytics.com/grafana">
+        <a href="https://app.prismeanalytics.com/grafana/d/f8278729-d6bd-49ec-be92-abf01917f14d/web-analytics?orgId=5">
           <comp.Button variant="outline">
             Live demo
           </comp.Button>
