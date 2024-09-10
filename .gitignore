@@ -9,4 +9,4 @@ _cache
 
 .env.local
 
-scripts/genarticle.js
+*.local.*
