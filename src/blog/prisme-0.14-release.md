@@ -88,8 +88,8 @@ example, the network is unstable and Prisme can't send events to the database.
 
 Download [Prisme 0.14](https://hub.docker.com/r/prismelabs/analytics) from our
 Docker repository today or experience all new features by signing up for
-[Prisme Cloud](https://app.prismeanalytics.com/) which has a free trial of 30
-days.
+[Prisme Cloud](https://app.prismeanalytics.com/authn/sign_up) which has a free
+trial of 30 days.
 
 ## Special thanks to our community
 
@@ -99,5 +99,5 @@ Your contributions, ranging from pull requests to valuable feedback, are crucial
 in continually enhancing Prisme. And your enthusiasm and dedication inspire us
 at Prisme Labs to persistently innovate and elevate the Prisme platform.
 
-_[Prisme Cloud](https://app.prismeanalytics.com) is the easiest way to get
-started with web analytics. Sign up for a free trial now!_
+_[Prisme Cloud](https://app.prismeanalytics.com/authn/sign_up) is the easiest
+way to get started with web analytics. Sign up for a free trial now!_
