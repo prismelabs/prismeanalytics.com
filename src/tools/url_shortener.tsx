@@ -102,6 +102,47 @@ export const metas = {
 export default function ({ comp }: Lume.Data) {
   return (
     <>
+      <script src="/scripts/alert_dialog.js" defer></script>
+      {/* Background */}
+      <div
+        id="alert-dialog-bg"
+        data-state="closed"
+        class="fixed inset-0 z-50 bg-black/80 data-[state=closed]:hidden data-[state=closed]:block"
+        style="pointer-events: auto;"
+        data-aria-hidden="true"
+        aria-hidden="true"
+      >
+      </div>
+
+      {/* Alert dialog element */}
+      <div
+        id="alert-dialog"
+        data-state="closed"
+        class="fixed left-[50%] top-[50%] z-50 grid w-full max-w-lg translate-x-[-50%] translate-y-[-50%] gap-4 border bg-background p-6 shadow-lg data-[state=closed]:hidden data-[state=closed]:block sm:rounded-lg"
+        tabindex={-1}
+        style="pointer-events: auto;"
+      >
+      </div>
+      <div id="demoDialog" class="hidden">
+        <div class="flex flex-col space-y-2 text-center sm:text-left">
+          <h2 class="text-lg font-semibold">Demo</h2>
+          <p class="text-sm text-muted-foreground">
+            This page is a limited demo, create a free Prisme account (no
+            subscription needed) to generate custom short links.
+          </p>
+        </div>
+        <div class="flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2 mt-4">
+          <comp.Button variant="ghost" onClick="closeAlertDialog()">
+            Cancel
+          </comp.Button>
+          <comp.Button>
+            <a href="https://app.prismeanalytics.com/authn/sign_up?utm_source=prisme&utm_medium=tools&utm_campaign=cutelink&utm_content=dialog">
+              Sign Up
+            </a>
+          </comp.Button>
+        </div>
+      </div>
+
       <main className="pt-16 pb-8 px-4 sm:px-8 md:px-16 lg:px-32 space-y-16">
         <section className="w-full">
           <div className="max-w-4xl mx-auto gap-4 md:gap-8 px-4 sm:px-6 md:px-10 flex flex-col justify-center text-center -mt-8">
@@ -141,8 +182,8 @@ export default function ({ comp }: Lume.Data) {
           <div className="flex justify-center items-center gap-4">
             <div className="flex-grow">
               <comp.Input
+                id="long-url"
                 label="Long URL"
-                readonly={true}
                 value="https://www.prismeanalytics.com/?ref=cutelink"
               />
             </div>
