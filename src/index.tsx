@@ -1,5 +1,5 @@
 export const title =
-  "Customizable, privacy-friendly Google Analytics alternative";
+  "Prisme Analytics | Customizable, privacy-friendly Google Analytics alternative";
 export const layout = "layout.tsx";
 export const structuredData = [{
   "@context": "https://schema.org",
