@@ -118,7 +118,7 @@ approach not only enhances privacy but also simplifies analytics interpretation.
 [Prisme Analytics is 75 times lighter](/is/lightweight-analytics/) than Google
 Analytics, improving site performance and reducing your carbon footprint.
 Explore our
-[live demo dashboard](https://app.prismeanalytics.com/grafana/d/f8278729-d6bd-49ec-be92-abf01917f14d/web-analytics?orgId=5)
+[live demo dashboard](https://app.prismeanalytics.com/grafana/d/f8278729-d6bd-49ec-be92-abf01917f14d/web-analytics?orgId=5&kiosk)
 to see the concise data we collect.
 
 ## Aggregate-Only, personal data-free analytics
