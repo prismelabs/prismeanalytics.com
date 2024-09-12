@@ -32,7 +32,6 @@ const links = {
     "UTM builder": "/tools/utm_builder",
     "CTR calculator": "/tools/ctr_calculator",
     "URL shortener": "/tools/url_shortener",
-    "Visitor data": "/tools/visitor_data",
   },
 };
 

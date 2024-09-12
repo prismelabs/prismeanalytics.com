@@ -719,6 +719,80 @@ export default ({ comp }: Lume.Data) => {
                 </div>
               </div>
             </div>
+            <script src="/scripts/visitor_data.js" defer></script>
+            <div
+              id="visitor-data"
+              className="mx-auto w-full max-w-4xl hidden"
+            >
+              <div class="mx-auto max-w-7xl lg:mx-0 mb-4">
+                <h2 class="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+                  Precision you can trust
+                </h2>
+              </div>
+              <p className="text-muted-foreground">
+                We've captured every detail of your journey on our site. This is
+                your{" "}
+                <span
+                  id="nth-visit"
+                  className="font-semibold text-foreground"
+                />{" "}
+                visit today
+                <span id="device-browser" className="hidden">
+                  {" "}using{" "}
+                  <span
+                    id="browser"
+                    className="font-semibold text-foreground"
+                  />
+                </span>
+                <span id="device-os" className="hidden">
+                  {" "}on{" "}
+                  <span id="os" className="font-semibold text-foreground" />
+                </span>
+                <span id="device-name" className="hidden">
+                  , with your{" "}
+                  <span id="device" className="font-semibold text-foreground" />
+                </span>
+                .{" "}
+                <span id="location" className="hidden">
+                  You are located in{" "}
+                  <span
+                    id="country"
+                    className="font-semibold text-foreground"
+                  />.{" "}
+                </span>
+                You arrived at{" "}
+                <span
+                  id="arrived-at"
+                  className="font-semibold text-foreground"
+                />{" "}
+                <span id="from" className="hidden">
+                  from{" "}
+                  <span
+                    id="source"
+                    className="font-semibold text-foreground"
+                  />
+                </span>.{" "}
+                <span id="time-on-page" className="hidden">
+                  Your average time on page is{" "}
+                  <span
+                    id="avg-time-on-page"
+                    className="font-semibold text-foreground"
+                  />{" "}
+                  and you spent most time on{" "}
+                  <span
+                    id="most-time-on-page"
+                    className="font-semibold text-foreground"
+                  >
+                    this page
+                  </span>.
+                </span>
+                <br />
+              </p>
+              <p className="font-semibold mt-4">
+                Note that we don't collect any personal information and all of
+                these data are isolated across devices, domains and days.
+              </p>
+            </div>
           </section>
           <section>
             <div class="mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-8 lg:py-40">
