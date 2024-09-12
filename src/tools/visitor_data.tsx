@@ -1,4 +1,4 @@
-export const title = "Your data | Prisme Analytics";
+export const title = "Your Data | Prisme Analytics";
 export const layout = "layout.tsx";
 export const metas = {
   title: "Visitor data | Prisme Analytics",

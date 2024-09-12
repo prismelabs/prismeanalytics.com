@@ -140,7 +140,7 @@ export default function ({ comp }: Lume.Data) {
               className="aspect-square w-full h-auto max-w-32 mx-auto my-4"
             />
             <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold">
-              CTR (Click-Through Rate) Calculator
+              CTR (Click-Through Rate) calculator
             </h1>
             <p className="text-xl text-muted-foreground max-w-xl mx-auto">
               Calculate your click-through rates for ad campaigns and compare

@@ -1,4 +1,4 @@
-export const title = "A free, easy-to-use URL shortener";
+export const title = "A Free, Easy-to-use URL Shortener";
 export const layout = "layout.tsx";
 export const structuredData = [
   {

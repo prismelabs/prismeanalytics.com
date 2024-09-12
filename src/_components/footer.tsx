@@ -29,10 +29,10 @@ const links = {
     "Feedback": "/feedback",
   },
   "Tools": {
-    "UTM Builder": "/tools/utm_builder",
-    "CTR Calculator": "/tools/ctr_calculator",
-    "URL Shortener": "/tools/url_shortener",
-    "Visitor Data": "/tools/visitor_data",
+    "UTM builder": "/tools/utm_builder",
+    "CTR calculator": "/tools/ctr_calculator",
+    "URL shortener": "/tools/url_shortener",
+    "Visitor data": "/tools/visitor_data",
   },
 };
 
