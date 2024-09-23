@@ -719,7 +719,9 @@ export default ({ comp }: Lume.Data) => {
                 </div>
               </div>
             </div>
-            <script src="/scripts/visitor_data.js" defer></script>
+            {
+              /*
+                 <script src="/scripts/visitor_data.js" defer></script>
             <div
               id="visitor-data"
               className="mx-auto w-full max-w-4xl hidden"
@@ -793,6 +795,8 @@ export default ({ comp }: Lume.Data) => {
                 these data are isolated across devices, domains and days.
               </p>
             </div>
+          */
+            }
           </section>
           <section>
             <div class="mx-auto max-w-7xl px-6 pb-24 sm:pb-32 lg:px-8 lg:py-40">
