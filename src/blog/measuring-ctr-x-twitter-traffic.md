@@ -137,7 +137,7 @@ related to a specific link.
 
 1. Log into your Prisme dashboard.
 2. Navigate to the `Sources` section.
-3. Look for traffic coming from `x.com` or your Cutelink domain.
+3. Identify direct traffic or traffic from `x.com`.
 4. You'll see a breakdown of UTM parameters or ref values, showing you which
    tweets are performing best.
 

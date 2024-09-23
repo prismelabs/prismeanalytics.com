@@ -1,5 +1,5 @@
 export const title = "";
-export const layout = "none.tsx";
+export const layout = "emptybody.tsx";
 
 export default ({ comp }: Lume.Data) => {
   return (
