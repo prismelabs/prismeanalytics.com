@@ -10,9 +10,8 @@ const links = {
     "For ecommerce": "#todo",
   },
   "Comparison": {
-    "vs Google Analytics": "#todo",
-    "vs Matomo": "#todo",
-    "vs Cloudflare": "#todo",
+    "vs Google Analytics": "/vs/google-analytics/",
+    "vs Matomo": "/vs/matomo/",
     "vs Plausible": "#todo",
   },
   "Company": {
