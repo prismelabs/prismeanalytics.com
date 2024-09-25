@@ -54,10 +54,9 @@ make an informed decision about which solution best fits your needs.
 
 ### Prisme Analytics
 
-- [Privacy-focused](/is/privacy-focused-analytics) with no collection of personal data or
-  personally identifiable information (PII)
-- Cookie-free tracking, eliminating the need
-  for user consent
+- [Privacy-focused](/is/privacy-focused-analytics) with no collection of
+  personal data or personally identifiable information (PII)
+- Cookie-free tracking, eliminating the need for user consent
 - Aggregated data only, focusing on overall traffic trends rather than
   individual user tracking
 

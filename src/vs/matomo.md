@@ -56,8 +56,8 @@ website analytics needs.
 
 ### Prisme Analytics
 
-- [Cookie-free tracking](/is/privacy-focused-analytics): Operates without using cookies,
-  eliminating the need for consent banners.
+- [Cookie-free tracking](/is/privacy-focused-analytics): Operates without using
+  cookies, eliminating the need for consent banners.
 - No personal data collection: Focuses on aggregate data only, without gathering
   personally identifiable information (PII).
 - EU-based infrastructure: All data is processed and stored within the EU,
@@ -161,5 +161,5 @@ ethical website tracking.
 
 Ready to explore a privacy-focused analytics solution?
 [Try Prisme Analytics with our 30-day free trial](https://app.prismeanalytics.com/authn/sign_up)
-and experience the benefits of lightweight, privacy-respecting web analytics
-for yourself.
+and experience the benefits of lightweight, privacy-respecting web analytics for
+yourself.
