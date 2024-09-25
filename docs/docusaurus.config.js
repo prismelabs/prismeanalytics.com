@@ -100,18 +100,26 @@ const config = {
                 label: "Get Started",
                 to: "/docs/",
               },
+              {
+                label: "Guides",
+                to: "/docs/guides/overview",
+              },
             ],
           },
           {
             title: "Community",
             items: [
               {
-                label: "Twitter",
-                href: "https://twitter.com/prismeanalytics",
+                label: "X / Twitter",
+                href: "https://x.com/prismeanalytics",
               },
               {
                 label: "GitHub",
                 href: "https://github.com/prismelabs/analytics",
+              },
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/company/prisme-analytics/",
               },
             ],
           },

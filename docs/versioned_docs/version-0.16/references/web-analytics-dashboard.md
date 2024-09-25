@@ -1,3 +1,15 @@
+---
+sidebar_position: 1
+---
+
+import TopSources from "./images/general-dashboard/top-sources.png"
+import TrafficSources from "./images/general-dashboard/traffic-sources.png"
+import TopEntryPages from "./images/general-dashboard/top-entry-pages.png"
+import TopPages from "./images/general-dashboard/top-pages.png"
+import TopExitPages from "./images/general-dashboard/top-exit-pages.png"
+import TopLocations from "./images/general-dashboard/top-locations.png"
+import TopCustomEvents from "./images/general-dashboard/top-custom-events.png"
+
 # Web analytics dashboard
 
 Prisme Analytics comes with a built-in web analytics dashboard, that focus on
@@ -14,47 +26,22 @@ Parameters section influences how your analytics data are retrieved and
 displayed.
 
 It enables you to filter traffic data and visualize only what you want/need.
-Here is a screenshot of 7 parameters of general dashboard:
+Here is a screenshot of 14 parameters of general dashboard:
 
 ![General dashboard parameters screenshot](./images/general-dashboard/parameters.png)
 
-### Date time range
-
-First parameter is date time range. It is built-in into
-[Grafana](https://grafana.com/grafana), the software we're using to display our
-dashboard.
-
-This parameter allows you to select the period you want to display (e.g. last 6
-months, last 2 hours, etc). You can also select arbitrary date.
-
-![Date time range picker screenshot](./images/general-dashboard/datetime-range-picker.png)
-
-### Domain
-
-Next parameter is the domains. Prisme takes a different approach than other
-analytics services and let you visualize all of you websites data on a single
-dashboard. This parameter let you filter which domains you want to see.
-![Domain picker screenshot](./images/general-dashboard/domain-picker.png)
-
-### Path
-
-Path parameter filters pages path.
-
-### Operating systems (OS)
-
-Operating Systems filter on visitors operating systems family.
-
-### Browsers
-
-Browsers filters on visitors browsers family.
-
-### Referrals
-
-Referrals filters on referral sources.
-
-### Locations
-
-Referrals filters on visitors locations (country).
+- **Date time range**: The specific time period we want to visualize
+- **Domains**: Website domain names
+- **Entry Paths**: Paths of first pages viewed by a visitor within a session
+- **Operating Systems**: Visitors' Operating System family
+- **Browsers**: Visitors' browser family
+- **Referrals**: Domain from which page was visited or `direct`
+- **Locations**: Visitors' country
+- **Exit Paths**: Paths of last pages viewed by a visitor within a session
+- **Paths**: Paths of visited pages.
+- **UTM parameters (source, medium, campaign, term, content)**: Session started
+  with the given
+  [UTM parameters](https://www.prismeanalytics.com/blog/understanding-utm-parameters/)
 
 ## Overview section
 
@@ -66,13 +53,16 @@ website traffic.
 
 ![summary panel screenshot](./images/general-dashboard/summary.png)
 
-Summary panel is made of metrics and change block. Metrics meaning are detailed
-on another page:
+Summary panel is made of metrics and `Change` block.
 
-- [Unique visitors](./analytics-metrics.md#unique-visitors)
-- [Total sessions](./analytics-metrics.md#total-sessions-or-visits)
-- [Total page views](./analytics-metrics.md#total-page-views)
-- [Views per session](./analytics-metrics.md#views-per-session)
+- **Unique visitors**: Number of [people who visited](./glossary.md#visitor)
+  your website
+- **Unique sessions**: Number of
+  [sessions (or visits)](./glossary.md#session-or-visit)
+- **Total [page views](./glossary.md#page-view)**: Total number of times your
+  pages were loaded by your visitors
+- **Views per session**: Average number of [page view](./glossary.md#page-view)
+  per [session](./glossary.md#session-or-visit)
 
 The `Change` values represent the percentage change from one time period to
 another within the metric. For instance, if your dashboard displays data for the
@@ -86,18 +76,20 @@ previous 7-day period (blue rectangle).
 
 ![summary section 2 screenshot](./images/general-dashboard/summary2.png)
 
-Second summary panel shows more advanced metrics. Metrics meaning are detailed
-on another page:
+Second summary panel shows more advanced metrics.
 
-- [Live visitors](./analytics-metrics.md#live-visitors)
-- [Bounce rate](./analytics-metrics.md#bounce-rate)
-- [Session duration](./analytics-metrics.md#session-duration)
+- **Live visitors**: Number of visitors currently active on your website
+- **Bounce rate**: Rate of sessions that [bounce](./glossary.md#bounce)
+- **Average session duration**: Average
+  [session](./glossary.md#session-or-visit) duration
 
 ### Time series
 
 ![time series panel screenshot](./images/general-dashboard/timeseries.png)
 
-Time serie panel shows you **visitors**, **visits** and **pageviews** over the
+Time serie panel shows you **[visitors](./glossary.md#visitor)**,
+**[sessions](./glossary.md#session-or-visit)** and
+**[page views](./glossary.md#page-view)** over the
 [selected period of time](#date-time-range).
 
 ## Sources section
@@ -108,7 +100,7 @@ Second section is made of two panels showing where your traffic is coming from.
 
 First panel is a bar gauge showing 10 most used sources.
 
-![top sources bar gauge screenshot](./images/general-dashboard/top-sources.png)
+<img src={TopSources} height="400" alt="top sources bar gauge screenshot" />
 
 ### Traffic sources
 
@@ -116,7 +108,7 @@ Second panel is pie chart showing proportion of **internal traffic** (e.g.
 traffic from the same website) vs **direct traffic** vs **external traffic**
 (e.g. visitors coming from another website)
 
-![traffic sources pie chart screenshot](./images/general-dashboard/traffic-sources.png)
+<img src={TrafficSources} height="400" alt="traffic sources pie chart screenshot" />
 
 ## Top pages
 
@@ -125,22 +117,22 @@ This section shows most popular pages of you websites.
 ### Entry pages
 
 This bar gauge panels show the 10 most popular
-[entry pages](./analytics-metrics.md#entry-pages).
+[entry pages](./glossary.md#entry-page).
 
-![entry pages bar gauge screenshot](./images/general-dashboard/top-entry-pages.png)
+<img src={TopEntryPages} height="600" alt="entry pages bar gauge screenshot" />
 
 ### Top pages
 
 This bar gauge panels show the 10 most popular pages.
 
-![pages bar gauge screenshot](./images/general-dashboard/top-pages.png)
+<img src={TopPages} height="600" alt="pages bar gauge screenshot" />
 
 ### Exit pages
 
 This bar gauge panels show the 10 most popular
-[exit pages](./analytics-metrics.md#exit-pages).
+[exit pages](./glossary.md#exit-page).
 
-![exit pages bar gauge screenshot](./images/general-dashboard/top-exit-pages.png)
+<img src={TopExitPages} height="600" alt="exit pages bar gauge screenshot" />
 
 ## Location section
 
@@ -148,16 +140,16 @@ Location section shows visitors location.
 
 ### Map
 
-This map contains markers whose size correspond to eht number of page views per
-country
+This map contains markers whose size is relative to the number of page views per
+country.
 
 ![visitors location map panel screenshot](./images/general-dashboard/map.png)
 
 ### Top locations
 
-This bar gauge panels show the 10 most popular visitors' location.
+This bar gauge panels shows the 10 most popular visitors' location.
 
-![visitors location bar gauge screenshot](./images/general-dashboard/top-locations.png)
+<img src={TopLocations} height="600" alt="visitors location bar gauge screenshot" />
 
 ## Devices section
 
@@ -174,3 +166,13 @@ This pie chart shows visitors' browser family proportion.
 Second pie chart shows visitors' operating systems family proportion.
 
 ![operating system pie chart panel screenshot](./images/general-dashboard/os.png)
+
+## Custom events section
+
+Custom events section shows your custom events.
+
+### Top custom events
+
+This bar gauge panels shows the 10 most received custom events.
+
+<img src={TopCustomEvents} height="600" alt="top custom events bar gauge screenshot" />

@@ -1,8 +1,10 @@
+---
+sidebar_position: 8
+---
+
 # Admin metrics
 
-This document list and explain metrics exposed by Prisme instances. If you're
-not self-hosting Prisme you're may be looking for
-[analytics metrics](./analytics-metrics.md).
+This document list and explain prometheus metrics exposed by Prisme instances.
 
 Admin metrics are exposed under
 [`http://<PRISME_ADMIN_HOSTPORT>/metrics`](./server/default-mode.md#host-port)
@@ -155,10 +157,6 @@ Buckets:
 - 30
 - 50
 - 100
-
-### Session miss (counter) `sessionstorage_get_session_misses`
-
-Number of sessions that wasn't found in memory.
 
 ## IP geolocator
 
