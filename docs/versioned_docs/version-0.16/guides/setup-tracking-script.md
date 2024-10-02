@@ -33,6 +33,14 @@ Tracking script can be configured, see options
 
 :::
 
+:::note
+
+If you're serving tracking script using a CDN, be sure to set
+[`prisme-url`](../references/tracking-script.md#prisme-url-data-prisme-url)
+option
+
+:::
+
 ## Step 2: Add noscript tag (optional)
 
 If you website can works without javascript and you wants to track visitors with
