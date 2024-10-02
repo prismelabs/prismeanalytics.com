@@ -46,27 +46,28 @@ make sure to read it before upgrading.
 The most important new feature of this release is **session tracking**. Previous
 versions of Prisme are able to track unique visitors across pages but there was
 no such thing as
-[sessions](/docs/references/analytics-metrics#total-sessions-or-visits).
+[sessions](/docs/0.15/references/analytics-metrics#total-sessions-or-visits).
 
 Sessions tracking enables the addition of few metrics such as
-[bounce rate](/docs/references/analytics-metrics#bounce-rate),
-[views per sessions](/docs/references/analytics-metrics#views-per-session) and
-[average session duration](/docs/references/analytics-metrics#session-duration).
+[bounce rate](/docs/0.15/references/analytics-metrics#bounce-rate),
+[views per sessions](/docs/0.15/references/analytics-metrics#views-per-session)
+and
+[average session duration](/docs/0.15/references/analytics-metrics#session-duration).
 
 It is now possible to filter on
-[entry pages](/docs/references/analytics-metrics#entry-pages),
-[exit pages](/docs/references/analytics-metrics#exit-pages),
-[pageviews per session](/docs/references/analytics-metrics#views-per-session)
+[entry pages](/docs/0.15/references/analytics-metrics#entry-pages),
+[exit pages](/docs/0.15/references/analytics-metrics#exit-pages),
+[pageviews per session](/docs/0.15/references/analytics-metrics#views-per-session)
 and more.
 
 ## Bot filtering
 
 If you've used previous versions of Prisme Analytics, you may have noticed
 `AhrefsBot` or other bots appearing in your
-[browsers pie chart](/docs/references/web-analytics-dashboard#browsers-1). These
-bots don't represent real users and can impact your metrics. To provide a more
-accurate picture of your website's performance, we're introducing a light bot
-filter in this release.
+[browsers pie chart](/docs/0.15/references/web-analytics-dashboard#browsers-1).
+These bots don't represent real users and can impact your metrics. To provide a
+more accurate picture of your website's performance, we're introducing a light
+bot filter in this release.
 
 This initial filter won't eliminate all bots, as it is a prototype. However, our
 aim is to continually improve the filter over time, ensuring that only genuine
@@ -79,7 +80,7 @@ you can now monitor the health and performance of your instance, receive timely
 alerts in case of issues.
 
 If you're hosting Prisme instances be sure to read our
-[metrics reference](/docs/references/admin-metrics).
+[metrics reference](/docs/0.15/references/admin-metrics).
 
 ## Minor changes and maintenance
 
