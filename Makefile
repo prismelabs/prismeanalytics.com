@@ -55,7 +55,7 @@ indexnow:
 .PHONY: test
 test:
 	@test -d _site || $(MAKE) build
-	httplz -p 5000 _site &> /dev/null & linkchecker http://localhost:5000
+	httplz -p 5000 _site &> /dev/null & linkchecker http://localhost:5000; kill $$(jobs -p)
 
 .PHONY: clean
 clean:
