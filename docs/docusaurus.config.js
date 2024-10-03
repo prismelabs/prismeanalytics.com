@@ -37,8 +37,7 @@ const config = {
   scripts: [
     "/docs/theme.js",
     {
-      // src: "https://app.prismeanalytics.com/static/wa.js",
-      src: "http://localhost:8000/static/wa.js",
+      src: "https://app.prismeanalytics.com/static/wa.js",
       defer: true,
     },
     "/docs/scroll-depth.js",
