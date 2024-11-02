@@ -1,5 +1,5 @@
 export default function (
-  { title, comp, lang, alternates, navbar, url }: Lume.Data,
+  { title, comp, lang, alternates }: Lume.Data,
 ) {
   return (
     <html lang={lang}>
@@ -13,12 +13,7 @@ export default function (
         <comp.Analytics />
       </head>
       <body class="bg-background text-foreground min-h-screen flex flex-col">
-        <comp.Header
-          lang={lang}
-          alternates={alternates}
-          navbar={navbar}
-          url={url}
-        />
+        <comp.Header />
         <main className="min-h-96 my-32 flex justify-center items-center">
           <div className="text-center">
             <h1 className="font-bold text-foreground text-4xl tracking-normal text-center mb-4">

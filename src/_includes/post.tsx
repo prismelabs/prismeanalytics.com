@@ -10,7 +10,6 @@ export default function (
     comp,
     lang,
     alternates,
-    navbar,
     url,
     tags,
     metas,
@@ -94,12 +93,7 @@ export default function (
           )}
       </head>
       <body class="bg-background text-foreground min-h-screen flex flex-col">
-        <comp.Header
-          lang={lang}
-          alternates={alternates}
-          navbar={navbar}
-          url={url}
-        />
+        <comp.Header />
         <main className="w-full px-4 py-8 mx-auto max-w-xl md:max-w-4xl lg:max-w-7xl space-y-12">
           <div className="flex gap-12 xl:gap-24">
             <section className="order-last sticky top-24 hidden lg:block h-min w-1/3">

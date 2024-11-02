@@ -4,8 +4,6 @@ export default function (
     comp,
     lang,
     alternates,
-    navbar,
-    url,
     children,
     structuredData = [],
   }: Lume.Data,
@@ -32,12 +30,7 @@ export default function (
         }
       </head>
       <body class="bg-background text-foreground min-h-screen">
-        <comp.Header
-          lang={lang}
-          alternates={alternates}
-          navbar={navbar}
-          url={url}
-        />
+        <comp.Header />
         {children}
         <comp.Footer lang={lang} alternates={alternates} />
       </body>
