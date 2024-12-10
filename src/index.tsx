@@ -229,6 +229,48 @@ export default ({ comp }: Lume.Data) => {
               </div>
             </div>
           </section>
+          <section id="stats-section" class="hidden">
+            <div class="py-8 sm:py-16">
+              <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <dl class="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+                  <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base/7 text-muted-foreground">
+                      Total visitors
+                    </dt>
+                    <dd
+                      id="stats-total-visitors"
+                      class="order-first text-3xl font-semibold tracking-tight sm:text-5xl"
+                    >
+                      xx K
+                    </dd>
+                  </div>
+                  <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base/7 text-muted-foreground">
+                      Total sessions
+                    </dt>
+                    <dd
+                      id="stats-total-sessions"
+                      class="order-first text-3xl font-semibold tracking-tight sm:text-5xl"
+                    >
+                      xx K
+                    </dd>
+                  </div>
+                  <div class="mx-auto flex max-w-xs flex-col gap-y-4">
+                    <dt class="text-base/7 text-muted-foreground">
+                      Pageviews last 24h
+                    </dt>
+                    <dd
+                      id="stats-last-24h-pageviews"
+                      class="order-first text-3xl font-semibold tracking-tight sm:text-5xl"
+                    >
+                      xx K
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <script src="/scripts/stats.js" defer async></script>
+          </section>
           <section className="relative overflow-hidden w-full mx-auto pb-8 md:pb-16 lg:pb-24">
             <div className="absolute bg-gradient-to-r saturate-[2] from-grafana-blue/20 to-grafana-purple/20 linear-gradient-mask h-full w-full pointer-events-none" />
             <div className="absolute h-12 rotate-3 z-10 -top-6 -inset-x-12 saturate-200 bg-gradient-to-r from-grafana-purple/10 to-grafana-purple/30 blur-3xl" />
