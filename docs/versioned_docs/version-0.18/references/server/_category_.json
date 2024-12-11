@@ -1,0 +1,8 @@
+{
+  "label": "Server configuration",
+  "position": 2,
+  "link": {
+    "type": "doc",
+    "id": "server-modes"
+  }
+}
