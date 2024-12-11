@@ -100,6 +100,13 @@ behind a trusted proxy.
 
 Default: `PRISME_PROXY_HEADER=X-Forwarded-For`
 
+#### Proxy request id header
+
+HTTP header used to retrieve request ID forwarded by a trusted proxy. If header
+is empty, a new request id will be generated.
+
+Default: `PRISME_PROXY_REQUEST_ID_HEADER=X-Request-Id`
+
 ### ClickHouse options
 
 #### Secure connection
@@ -150,3 +157,38 @@ Default: `PRISME_EVENTSTORE_MAX_BATCH_SIZE=4096`
 Maximum duration before current batch is sent to event store.
 
 Default: `PRISME_EVENTSTORE_MAX_BATCH_TIMEOUT=1m`
+
+### Session storage
+
+In-memory session storage options. Sessions are linked to a device id which is
+similar to visitor id except that it doesn't change over time.
+
+#### Garbage collector interval
+
+Interval at which **expired** sessions are collected.
+
+Default: `PRISME_SESSIONSTORAGE_GC_INTERVAL=10s`
+
+#### Inactive TTL
+
+The maximum time a session can remain inactive before it **expires**.
+
+Default: `PRISME_SESSIONSTORAGE_SESSION_INACTIVE_TTL=24h`
+
+#### Device expiry percentile
+
+The garbage collector removes expired sessions from a device only after a
+specified percentage of its total sessions have expired. This threshold helps
+optimize system performance by batching cleanup operations instead of running
+them for each individual session expiration.
+
+Default: `PRISME_SESSIONSTORAGE_DEVICE_EXPIRY_PERCENTILE=50`
+
+By default, sessions associated to a device are collected when 50% of all
+device's sessions are expired.
+
+#### Max sessions per device
+
+Maximum number of sessions per device.
+
+Default: `PRISME_SESSIONSTORAGE_MAX_SERSSIONS_PER_VISITOR=64`

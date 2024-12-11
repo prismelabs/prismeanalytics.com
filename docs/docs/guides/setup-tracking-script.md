@@ -80,6 +80,21 @@ instance hostname is `app.prismeanalytics.com`.
 If you received a non 200 response, it means an error occurred. In that case,
 checkout relevant [troubleshoot](#troubleshoot) section.
 
+## Step 4: Multiple domains (optional)
+
+If your website is accessible via multiple domains/subdomains (e.g.
+`example.com` and `www.example.com`) you **must** register all of them.
+
+If you want to store them all under a single domain name, you can specify one
+using `data-domain` attribute:
+
+```html
+<script src="https://<your-prisme-instance-hostname>/static/wa.js"
+    data-domain="example.com"
+    defer>
+</script>
+```
+
 ## Troubleshoot
 
 ### 400 Bad Request

@@ -63,6 +63,37 @@ pageview on websites with client side routing).
 Enable manual tracking if value isn't `false`. When enabled, a `pageview` method
 is added to global `prisme` object.
 
+### Visitor ID (`data-visitor-id`)
+
+Visitor ID to visitor.
+
+::::warning
+
+Use this option at your own risk, depending on the value used, you may not be
+GDPR compliant.
+
+::::
+
+### Outbound links (`data-outbound-links`)
+
+[Outbound link](./glossary.md#outbound-link) tracking is monitoring when users
+click links that take them away from your website to external sites.
+
+Setting this option to `false` disable outbound links tracking.
+
+### File downloads (`data-file-downloads`)
+
+File downloads tracking is monitoring when users click links with `download`
+attribute.
+
+Setting this option to `false` disable file downloads tracking.
+
+### Status code (`data-status`)
+
+The HTTP status code associated with page view events. Most commonly used to
+track 404 (Not Found) errors by setting `data-status="404"` on error pages,
+helping identify broken links and missing content.
+
 ## JavaScript API
 
 Prisme expose all of it's public API functions under `window.prisme`. If you're

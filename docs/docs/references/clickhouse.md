@@ -7,9 +7,17 @@ sidebar_position: 4
 [ClickHouse](https://clickhouse.com) database is used as Prisme Analytics events
 store. This page document schemas of Prisme Analytics tables.
 
+:::note
+
+Field annotated as `(ALIAS)` won't show up if not explicitly queried using their
+name (e.g. `SELECT * ...` won't work). You can see all fields of a table, their
+type and default value using `DESCRIBE <table_name>`
+
+:::
+
 ## Sessions table
 
-Sessions are stored in `sessions` table with the following schemas:
+Sessions are stored in `sessions` table with the following schema:
 
 |    Column name    |          Type          |                                                                         Description                                                                         |
 | :---------------: | :--------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -20,7 +28,7 @@ Sessions are stored in `sessions` table with the following schemas:
 |  exit_timestamp   |        DateTime        |                                                      Date and time of this session's last viewed page.                                                      |
 |     exit_path     |         String         |                                                          Path of this session's last viewed page?                                                           |
 |    visitor_id     |         String         |                                                                 Unique visitor identifier.                                                                  |
-|      is_anon      |          Bool          |                                                              Whether the visitor is anonymous.                                                              |
+|      is_anon      |          Bool          |                                                                Whether visitor is anonymous.                                                                |
 |   session_uuid    |          UUID          |                                                             UUIDv7 associated to this session.                                                              |
 |    session_id     |    UInt128 (ALIAS)     |       session_uuid as a UInt128, [use this field if you want to sort on session_uuid](https://clickhouse.com/docs/en/sql-reference/data-types/uuid).        |
 | operating_system  | LowCardinality(String) |                                                               Visitor's Operating System (OS)                                                               |
@@ -33,38 +41,46 @@ Sessions are stored in `sessions` table with the following schemas:
 |   utm_campaign    |         String         |                                           [UTM campaign parameter](https://en.wikipedia.org/wiki/UTM_parameters).                                           |
 |     utm_term      |         String         |                                             [UTM term parameter](https://en.wikipedia.org/wiki/UTM_parameters).                                             |
 |    utm_content    |         String         |                                           [UTM content parameter](https://en.wikipedia.org/wiki/UTM_parameters).                                            |
+|    exit_status    |         UInt16         |                                                                HTTP status of exit pageview.                                                                |
 |      version      |     UInt16 (ALIAS)     | [Version field of VersionedCollapsingMergeTree](https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/versionedcollapsingmergetree#version) |
-|  pageview_count   | UInt16 (ALIAS version) |                                                       Number of pageviews associated to this session.                                                       |
+|  pageview_count   |     UInt16 (ALIAS)     |                                                       Number of pageviews associated to this session.                                                       |
 |     is_bounce     |     UInt16 (ALIAS)     |                                                          Whether this session is a bounce or not.                                                           |
 
 ## Events tables
 
 ### Page views events
 
-Page views events are stored in `pageviews` table with the following schemas:
+Page views events are stored in `pageviews` table with the following schema:
 
-| Column name  |   Type   |                   Description                    |
-| :----------: | :------: | :----------------------------------------------: |
-|  timestamp   | DateTime | Date and time at which pageview events occurred. |
-|    domain    |  String  |       Domain from which events originate.        |
-|     path     |  String  |                Viewed page path.                 |
-|  visitor_id  |  String  |                 The visitor ID.                  |
-| session_uuid |   UUID   |               The session UUIDv7.                |
+|    Column name    |          Type           |                   Description                    |
+| :---------------: | :---------------------: | :----------------------------------------------: |
+|     timestamp     |        DateTime         | Date and time at which pageview events occurred. |
+|      domain       |         String          |       Domain from which events originate.        |
+|       path        |         String          |                Viewed page path.                 |
+|    visitor_id     |         String          |                 The visitor ID.                  |
+|      is_anon      |          Bool           |          Whether visitor is anonymous.           |
+|      status       |         UInt16          |                 HTTP status code                 |
+|   session_uuid    |          UUID           |               The session UUIDv7.                |
+| session_timestamp | DateTime('UTC') (ALIAS) |              Session creation date               |
+|    session_id     |     UInt128 (ALIAS)     |      Session UUID as a 128 unsigned integer      |
 
 ### Custom events
 
 Custom events are stored in `events_custom` table with the following schemas:
 
-| Column name  |     Type      |                   Description                    |
-| :----------: | :-----------: | :----------------------------------------------: |
-|  timestamp   |   DateTime    | Date and time at which pageview events occurred. |
-|    domain    |    String     |       Domain from which events originate.        |
-|     path     |    String     |                Viewed page path.                 |
-|  visitor_id  |    String     |                  A visitor ID.                   |
-| session_uuid |     UUID      |               The session UUIDv7.                |
-|     name     |    String     |                Name of the event.                |
-|     keys     | Array(String) |       Top level keys of event JSON object.       |
-|    values    | Array(String) |      Top level values of event JSON object.      |
+|    Column name    |          Type           |                   Description                    |
+| :---------------: | :---------------------: | :----------------------------------------------: |
+|     timestamp     |        DateTime         | Date and time at which pageview events occurred. |
+|      domain       |         String          |       Domain from which events originate.        |
+|       path        |         String          |                Viewed page path.                 |
+|    visitor_id     |         String          |                  A visitor ID.                   |
+|      is_anon      |      Bool (ALIAS)       |          Whether visitor is anonymous.           |
+|   session_uuid    |          UUID           |               The session UUIDv7.                |
+| session_timestamp | DateTime('UTC') (ALIAS) |              Session creation date               |
+|    session_id     |     UInt128 (ALIAS)     |      Session UUID as a 128 unsigned integer      |
+|       name        |         String          |                Name of the event.                |
+|       keys        |      Array(String)      |       Top level keys of event JSON object.       |
+|      values       |      Array(String)      |      Top level values of event JSON object.      |
 
 Prisme stores custom events JSON in two columns, `keys` and `values`, instead of
 a single String column to improve query performances. Unfortunately, this is not
@@ -117,3 +133,37 @@ SELECT * FROM prisme.events_custom
 If you're dealing with a more complex case, you may need more specialized JSON
 functions. You can find the list of all ClickHouse JSON functions
 [here](https://clickhouse.com/docs/en/sql-reference/functions/json-functions).
+
+### File downloads events
+
+File downloads events are stored in `file_downloads` table with the following
+schema:
+
+|    Column name    |          Type           |                   Description                    |
+| :---------------: | :---------------------: | :----------------------------------------------: |
+|     timestamp     |        DateTime         | Date and time at which pageview events occurred. |
+|      domain       |         String          |       Domain from which events originate.        |
+|       path        |         String          |                Viewed page path.                 |
+|    visitor_id     |         String          |                  A visitor ID.                   |
+|      is_anon      |      Bool (ALIAS)       |          Whether visitor is anonymous.           |
+|   session_uuid    |          UUID           |               The session UUIDv7.                |
+| session_timestamp | DateTime('UTC') (ALIAS) |              Session creation date               |
+|    session_id     |     UInt128 (ALIAS)     |      Session UUID as a 128 unsigned integer      |
+|        url        |         String          |          Absolute downloaded file URL.           |
+
+### Outbound link clicks
+
+[Outbound link](./glossary.md#outbound-link) clicks events are stored in
+`outbound_link_clicks` table with the following schema:
+
+|    Column name    |          Type           |                   Description                    |
+| :---------------: | :---------------------: | :----------------------------------------------: |
+|     timestamp     |        DateTime         | Date and time at which pageview events occurred. |
+|      domain       |         String          |       Domain from which events originate.        |
+|       path        |         String          |                Viewed page path.                 |
+|    visitor_id     |         String          |                  A visitor ID.                   |
+|      is_anon      |      Bool (ALIAS)       |          Whether visitor is anonymous.           |
+|   session_uuid    |          UUID           |               The session UUIDv7.                |
+| session_timestamp | DateTime('UTC') (ALIAS) |              Session creation date               |
+|    session_id     |     UInt128 (ALIAS)     |      Session UUID as a 128 unsigned integer      |
+|       link        |         String          |             Absolute outbound link.              |

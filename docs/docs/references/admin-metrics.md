@@ -129,9 +129,17 @@ Buckets:
 
 ## Sessions storage
 
-### Active sessions (gauge) `sessionstorage_active_sessions`
+### GC cycles (counter) `sessionstorage_gc_cycles_total`
 
-Number of active sessions stored in memory.
+Number of garbage collector cycles.
+
+### Total devices (counter) `sessionstorage_devices_total`
+
+Number of inserted and deleted devices
+
+Labels:
+
+- type (`inserted` or `deleted`)
 
 ### Total sessions (counter) `sessionstorage_sessions_total`
 

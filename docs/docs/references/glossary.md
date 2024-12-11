@@ -51,6 +51,10 @@ sequence of character that specifies where a resource can be found on the
 internet. For example, `https://www.prismeanalytics.com/` is the web address of
 Prisme Analytics home page.
 
+## Outbound link
+
+Outbound link define a link/URL that points to external/different sites.
+
 ## UTM parameters
 
 Urchin Tracking Module (UTM) parameters are a set of parameters that can be
