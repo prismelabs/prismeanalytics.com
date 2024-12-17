@@ -13,7 +13,7 @@
     "check": "deno fmt --check --ignore=_site,.cache,.direnv,docs,src/static/scripts/confetti.min.js,src/static/scripts/instant.min.js && deno lint --ignore=_site,.cache,.direnv,docs,src/static/scripts/confetti.min.js,src/static/scripts/instant.min.js && deno check src/**/*.tsx"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v2.3.0/",
+    "lume/": "https://deno.land/x/lume@v2.4.3/",
     "@/": "./",
     "markdown-it-emoji": "npm:markdown-it-emoji",
     "markdown-it-anchor": "npm:markdown-it-anchor"
