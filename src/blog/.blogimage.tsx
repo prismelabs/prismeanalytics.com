@@ -27,6 +27,7 @@ export default ({ comp }: Lume.Data) => {
                     <div className="flex items-center gap-6">
                       <img src="/logo.svg" className="size-16" />
                       <p className="mt-2 text-5xl font-bold tracking-tight text-foreground sm:text-4xl">
+                        {/* Screenshot with 1200x630 viewport size */}
                         Measuring Click-Through Rates on LinkedIn
                       </p>
                     </div>
