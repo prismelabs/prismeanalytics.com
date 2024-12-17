@@ -39,7 +39,7 @@ Menu: Menu > Develop > Show Web Inspector Keyboard: Ctrl + Shift + I
 (Windows/Linux) or Command + Option + I (Mac).
 Then select the Console tab if it’s not already selected.
 
-## Step 2: Disable Prisme tracking.
+## Step 2: Disable Prisme tracking
 
 Note: We store the option you've selected in your browser's local storage, as
 the data stored in there doesn't have an expiration date and will persist even
@@ -55,4 +55,12 @@ If you wish to turn this off later, use:
 ```js
 delete localStorage["prismeAnalytics.tracking.enable"]
 ```
+
+Finally, if you want to check if tracking is disabled, use:
+
+```js
+console.log(localStorage["prismeAnalytics.tracking.enable"])
+```
+
+This snippet will print `false` if tracking is disabled.
 

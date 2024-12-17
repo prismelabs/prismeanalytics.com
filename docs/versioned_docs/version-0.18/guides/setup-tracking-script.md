@@ -41,6 +41,10 @@ option
 
 :::
 
+If you want to detect `404 Not Found`, `500 Internal Server Error` or any
+other error, adds `data-status` attribute to Prisme `<script>` tag on
+the corresponding page.
+
 ## Step 2: Add noscript tag (optional)
 
 If you website can works without javascript and you wants to track visitors with
