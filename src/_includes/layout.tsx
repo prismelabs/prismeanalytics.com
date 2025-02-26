@@ -18,6 +18,7 @@ export default function (
         <comp.Css />
         <comp.Js />
         <comp.Analytics />
+        <comp.CrispChat />
         {
           // deno-lint-ignore no-explicit-any
           structuredData?.map((data: any) => (
