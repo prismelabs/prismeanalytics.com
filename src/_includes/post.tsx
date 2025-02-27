@@ -117,7 +117,7 @@ export default function (
                     src="/logo.svg"
                     alt="Prisme Analytics logo"
                   />
-                  <p className="text-2xl font-bold">Prisme Cloud (beta)</p>
+                  <p className="text-2xl font-bold">Try Prisme Cloud</p>
                 </div>
 
                 <ul className="list-none text-sm space-y-2">
@@ -144,8 +144,10 @@ export default function (
                       Create free account
                     </comp.Button>
                   </a>
-                  <p className="text-xs leading-5 text-muted-foreground">
-                    No credit card required.
+                  <p className="text-xs leading-5 text-muted-foreground text-center">
+                    30 days free trial
+                    <br />
+                    No credit card required
                   </p>
                 </div>
               </div>

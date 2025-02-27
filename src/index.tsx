@@ -119,7 +119,9 @@ export default ({ comp }: Lume.Data) => {
                     </a>
                   </div>
                   <p className="text-sm text-muted-foreground">
-                    Prisme is free during beta!
+                    30 days trial
+                    <br />
+                    No credit card required
                   </p>
                 </div>
                 <div className="mt-8 rounded-xl w-fit mx-auto bg-muted p-2 ring-1 ring-inset ring-input lg:rounded-2xl lg:p-4">
@@ -567,17 +569,16 @@ export default ({ comp }: Lume.Data) => {
                     Simple no-tricks pricing
                   </h2>
                   <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                    Prisme is 100% free during beta!
+                    A single plan that suits all your needs.
                   </p>
                 </div>
                 <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-muted sm:mt-20 lg:mx-0 lg:flex lg:max-w-none bg-muted/50">
                   <div className="p-8 sm:p-10 lg:flex-auto">
                     <h3 className="text-2xl font-bold tracking-tight">
-                      Beta tester plan
+                      All inclusive plan
                     </h3>
                     <p className="mt-6 text-base leading-7 text-muted-foreground">
-                      In exchange of honest review and feedback, enjoy Prisme
-                      Cloud for free.
+                      Ideal for all your projects.
                     </p>
                     <div className="mt-10 flex items-center gap-x-4">
                       <h4 className="flex-none text-sm font-semibold leading-6 text-grafana-purple">
@@ -623,7 +624,10 @@ export default ({ comp }: Lume.Data) => {
                         </p>
                         <p className="mt-6 flex items-baseline justify-center gap-x-2">
                           <span className="text-5xl font-bold tracking-tight">
-                            0€
+                            8.99€
+                          </span>
+                          <span className="text-muted-foreground tracking-tight">
+                            / month
                           </span>
                         </p>
                         <a
@@ -635,7 +639,9 @@ export default ({ comp }: Lume.Data) => {
                           </comp.Button>
                         </a>
                         <p className="mt-6 text-xs leading-5 text-muted-foreground">
-                          No credit card required.
+                          30 days free trial
+                          <br />
+                          No credit card required
                         </p>
                       </div>
                     </div>
