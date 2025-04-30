@@ -1,6 +1,6 @@
 export default function ({ comp }: Lume.Data) {
   return (
-    <section className="w-full h-72 relative z-50">
+    <section className="w-full h-72 relative z-20">
       <img
         alt="web analytics dashboard screenshot in dark mode"
         loading="lazy"
