@@ -12,15 +12,25 @@
     };
   };
 
-  outputs = { flake-utils, nixpkgs, gis, indexnow, ... }:
-    flake-utils.lib.eachDefaultSystem (system:
+  outputs =
+    {
+      flake-utils,
+      nixpkgs,
+      gis,
+      indexnow,
+      ...
+    }:
+    flake-utils.lib.eachDefaultSystem (
+      system:
       let
         pkgs = import nixpkgs { inherit system; };
         lib = pkgs.lib;
-      in {
+      in
+      {
         devShells = {
           default = pkgs.mkShell rec {
-            buildInputs = with pkgs;
+            buildInputs =
+              with pkgs;
               [
                 deno
                 netlify-cli
@@ -35,12 +45,13 @@
                 nodePackages_latest.cspell
                 # Broken link checker
                 linkchecker
-              ] ++ [ gis.packages.${system}.default ]
+              ]
+              ++ [ gis.packages.${system}.default ]
               ++ [ indexnow.packages.${system}.default ];
 
             LD_LIBRARY_PATH = "${lib.makeLibraryPath buildInputs}";
           };
         };
-      });
+      }
+    );
 }
-
