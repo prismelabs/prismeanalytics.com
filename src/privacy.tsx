@@ -143,7 +143,12 @@ export default ({}: Lume.Data) => {
         statistical analysis. Our aim is to track overall trends in website
         traffic, not individual visitors. All data remains aggregate, with no
         collection of personal data. You can review the data we collect in our
-        live demo.
+        <a
+          target="_blank"
+          href="https://app.prismeanalytics.com/grafana/d/eegq2vj9n7bb4c/web-analytics?orgId=5&kiosk=&from=now-7d&to=now&timezone=browser"
+        >
+          live demo
+        </a>.
       </p>
       <p>
         Data collected includes referral sources, top pages, visit duration,

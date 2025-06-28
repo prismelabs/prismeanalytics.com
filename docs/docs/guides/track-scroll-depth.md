@@ -14,7 +14,7 @@ In this guide, we go over measuring scroll depth, calculating, tracking and
 visualizing it with Prisme Analytics.
 
 You can check the result on our
-[live demo](https://app.prismeanalytics.com/grafana/d/bdupbuejtfu9sf/scroll-depth?orgId=5).
+[live demo](https://app.prismeanalytics.com/grafana/d/eegq2vj9n7bb4c/web-analytics?orgId=5&kiosk=&from=now-7d&to=now&timezone=browser).
 
 ## Prerequisites
 

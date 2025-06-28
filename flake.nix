@@ -33,6 +33,7 @@
               with pkgs;
               [
                 deno
+                nodejs_20
                 netlify-cli
                 vips
                 stdenv.cc.cc.lib

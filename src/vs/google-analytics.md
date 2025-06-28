@@ -128,7 +128,7 @@ make an informed decision about which solution best fits your needs.
 
 - Focuses on essential metrics for most website owners
 - Clean, easy-to-understand dashboard
-- [Live demo available](https://app.prismeanalytics.com/grafana/d/f8278729-d6bd-49ec-be92-abf01917f14d/web-analytics?orgId=5&kiosk)
+- [Live demo available](https://app.prismeanalytics.com/grafana/d/eegq2vj9n7bb4c/web-analytics?orgId=5&kiosk=&from=now-7d&to=now&timezone=browser)
 
 ### Google Analytics
 
