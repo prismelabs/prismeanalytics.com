@@ -72,6 +72,6 @@ multiple devices or on multiple days, they are counted as separate visitors.
 A set of interconnected webpages, hosted under a [domain name](#domain-name).
 
 [page view]: #page-view
-[session]: #session
+[session]: #session-or-visit
 [visitor]: #visitor
 [website]: #website

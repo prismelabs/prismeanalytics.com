@@ -98,7 +98,7 @@ on another page:
 ![time series panel screenshot](./images/general-dashboard/timeseries.png)
 
 Time serie panel shows you **visitors**, **visits** and **pageviews** over the
-[selected period of time](#date-time-range).
+selected period of time.
 
 ## Sources section
 
