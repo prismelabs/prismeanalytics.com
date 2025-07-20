@@ -49,7 +49,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          lastVersion: "0.18",
+          lastVersion: "0.20",
           routeBasePath: "/",
           sidebarPath: "./sidebars.js",
         },
